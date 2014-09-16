@@ -10,5 +10,9 @@ body {
 div {
   border: 1px solid #ccc;
   border-radius: 4px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   min-width: 3in;
   min-height: 2in; }
