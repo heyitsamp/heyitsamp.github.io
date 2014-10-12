@@ -2,7 +2,7 @@
 
 
 
-.flexBox {
+.flexContainer {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -12,8 +12,7 @@
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   
-    text-align: center;
-    justify-content: space-around;
+    padding:0;
      
 }
 
@@ -22,7 +21,7 @@
   flex: 1 100%;
 }
 
-.tile {
+.flexTile {
     width: 250px;
     height: 250px;
 }
@@ -53,7 +52,7 @@ footer {
 
 #tiles {
   /*text-align: left;*/
-  background: black;
+  background: deepskyblue;
 }
 
 .aside-1 {
@@ -65,52 +64,8 @@ footer {
 }
 
 body {
-    background: lightblue;
   /*padding: 2em; */
 }
-
-
-
-/*The tiles*/
-#ms{
-    background: #ff33cc;
-}
-
-#disney{
-    background: #00ccff;
-}
-
-#atomic{
-    background: #ff9900;
-}
-
-#pg{
-    background: #33cc00;
-}
-
-#cocacola{
-    background: #ffcc00;
-}
-
-#obama{
-    background: #cc00ff;
-}
-
-#kmd{
-    background: #ffffff;
-}
-
-#eb{
-    background: #ff0066;
-}
-
-#branding{
-    
-}
-
-
-
-
 
 /*
 @media all and (min-width: 600px) {
