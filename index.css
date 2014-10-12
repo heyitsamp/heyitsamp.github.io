@@ -1,7 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
 
-
-
 .flexBox {
   display: -webkit-box;
   display: -moz-box;
@@ -12,23 +10,31 @@
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   
-    text-align: center;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
      
 }
 
 #mainFlexBox > * {
   padding: 10px;
   flex: 1 100%;
+    
 }
 
 .tile {
     width: 250px;
     height: 250px;
+    margin: 20px;
+    border-radius: 16px;
+}
+
+.tile img {
+    position: relative;
+    /*center this in JavaScript*/
 }
 
 header {
-  background: tomato;
+  background: black;
 }
 
 header nav{
@@ -51,7 +57,7 @@ footer {
   background: lightgreen;
 }
 
-#tiles {
+#tileContainer {
   /*text-align: left;*/
   background: black;
 }
@@ -65,8 +71,8 @@ footer {
 }
 
 body {
-    background: lightblue;
-  /*padding: 2em; */
+    /*background: lightblue;
+    padding: 2em; */
 }
 
 
