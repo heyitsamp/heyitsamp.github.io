@@ -15,16 +15,24 @@
      
 }
 
-#logoImg{
+#logoLockup{
     
 }
 
+#logoImg{
+    display:inline;
+}
+
 #logoText{
+    
+    /*position:relative;
+    top:-60px;*/
+    display:inline;
     color:green;
 }
 
 #mainFlexBox > * {
-  padding: 10px;
+  padding: 0px;
   flex: 1 100%;
     
 }
@@ -42,7 +50,6 @@
 }
 
 header {
-  background: black;
     text-align: center;
 }
 
@@ -68,7 +75,7 @@ footer {
 
 #tileContainer {
   /*text-align: left;*/
-  background: black;
+  background: lightGray;
 }
 
 .aside-1 {

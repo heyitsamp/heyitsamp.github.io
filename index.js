@@ -11,6 +11,9 @@ function initUI(){
     
     //setup tile image load callbacks (so they can center themselves based on their own width
     //and height
+    
+    
+    //Eventually populate images array from XML file (a CMS)
     var images = [
         "atomic",
         "branding",
@@ -23,10 +26,12 @@ function initUI(){
         "pg"
     ]
     
-    //trying to make a callback
+    
+    
+    
     var j = images.length;
     for(var i=0; i<j; i++){
-        //$("#" + images[i] + " img").load(onLogoLoad($(this)));
+        //$("#" + images[i] + " img").load(onTileImgLoad($(this)));
         
         //REMEMBER!!! logoImg here is the div holding the <img> tags!!!
         var imgContainer = $("#" + images[i] + " img");
@@ -36,10 +41,11 @@ function initUI(){
         //idk why, but this load stuff only works if I wrap
         //the callback in that anonymous function
         imgContainer.attr("src", images[i] + ".png").fadeOut(0).load(function(){
-            onLogoLoad($(this))
+            onTileImgLoad($(this))
         });
         
     }
+    
     
     var logoVersions = [
         ["amp-00ffff.png","#00ffff"], 
@@ -51,10 +57,16 @@ function initUI(){
     ]
     
     //random color for amp logo
-    var rand = logoVersions[Math.floor(Math.random()*logoVersions.length)];
+    var randLogo = logoVersions[Math.floor(Math.random()*logoVersions.length)];
+    trace(randLogo + "THIS IS RAND");
     
-    //$("#logo img").attr("src", rand[0]);
-    $("#logoText").css("color", rand[1]);
+    trace(randLogo[0] + "THIS IS LOGO VERSIONS RAND");
+    
+    $("#logoImg img").attr("src", randLogo[0]).load(function(){
+        logoLoadCallback($(this));
+    });
+    
+    $("#logoText").css("color", randLogo[1]);
     
     //select all the logos inside their tiles
     /*
@@ -78,7 +90,11 @@ function initUI(){
     
 }
 
-function onLogoLoad(imgContainer){
+function logoLoadCallback(logo){
+    //logo.css.("height", logo.height());
+}
+
+function onTileImgLoad(imgContainer){
     //this also uses jQuery's fadein
     //on logo load, center the logo horizontally and vertically!
     //trace($(imgContainer).attr("src"));
