@@ -15,6 +15,14 @@
      
 }
 
+#logoImg{
+    
+}
+
+#logoText{
+    color:green;
+}
+
 #mainFlexBox > * {
   padding: 10px;
   flex: 1 100%;
