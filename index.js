@@ -24,6 +24,8 @@ var logoVersions = [
     ["amp-ffcc00.png","#ffcc00"]
 ]
 
+
+
 /******************************
 PRIVATE PROPERTIES
 *******************************/
@@ -167,8 +169,7 @@ function randomizeLogo() {
     $("#logoText").css("color", randLogo[1]).css("opacity", "0")
     //$("#logoText").css("color", randLogo[1]);
     
-    $("nav a:hover").css({"lkjsdf":"lskjdf","lksdjf":"lskjdf"});
-    $("nav a:focus").css({});
+    $("nav a").css("color", randLogo[1]);
     
 }
 
