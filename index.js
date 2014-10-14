@@ -30,6 +30,7 @@ PRIVATE PROPERTIES
 *******************************/
 var imgFadeInSpeed = 3000;
 var logoTextFadeInSpeed = 3000;
+var featureSectionJQueryObj = $("#featureSection");
 
 
 /**********************
@@ -86,6 +87,18 @@ function initUI(){
     $("#featureSectionBottomBorderContainer img").attr("src", "shadBottom.png");
     $( window ).resize(onWindowResize());
     
+    /*Set random feature (Just a random tile for now)*/
+    
+    var tilesContainer = $("#tilesContainer");
+    var numTiles = tilesContainer.children().length;
+    /*
+    *******eq*********
+    parent.eq(index) let's you grab a child @ specific index*/
+    var randomTile = tilesContainer.eq(Math.floor(Math.random()*numTiles));
+    //$("#featureSection").append(randomTile);
+    //setFeature(randomTile);
+    
+    
     /*
     Set the height of the html element --- logoLockup.. 
     Otherwise the website jumps
@@ -99,6 +112,25 @@ function initUI(){
     $("#logoLockup").css("height", "115");
 }
 
+    
+    
+    
+    
+    
+    
+function setFeature(feature){
+    /*Feature should always be a div*/
+    featureSectionJQueryObj.empty();
+    featureSectionJQueryObj.append(feature);
+    trace(feature + "THIS IS FEATURE");
+    /*featureSectionJQueryObj.replaceWith(feature);???
+    Actually this won't exactly work*/
+}
+    
+    
+    
+    
+    
 function onWindowResize(){
     $("#featureSectionTopBorderContainer img").css("width", "100%");
     $("#featureSectionBottomBorderContainer img").css("width", "100%");
