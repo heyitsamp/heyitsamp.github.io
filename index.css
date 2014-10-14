@@ -6,29 +6,59 @@
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;  
-  
+    
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   
     align-items: center;
     justify-content: center;
-     
+}
+
+body{
+    background: black;
+    /*When there's padding on the left and right sides,
+    when the browser is closed as much as it can go, the Amp
+    logo gets cut off on the right side and not the left side
+    so only pad on the top and bottom. A maybe-permanent shim*/
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+    
+    
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+
+    /* Rules below not implemented in browsers yet */
+    -o-user-select: none;
+    user-select: none;
+}
+
+/*
+Gonna set up all images to fade in when they load
+*/
+img {
+    opacity: 0;
 }
 
 #logoLockup{
     
 }
 
-#logoImg{
+#logoImgContainer{
     display:inline;
 }
 
 #logoText{
-    
-    /*position:relative;
-    top:-60px;*/
+    white-space: nowrap;
+    position:relative;
+    /*I'm sorry, this is hard-coded for now. I plan on getting the correct pixel number
+    for this after the CMS is set up, etc. or, maybe an interactive dev version of the
+    site.*/
+    top:-60px;
     display:inline;
-    color:green;
+    
+    
 }
 
 #mainFlexBox > * {
@@ -50,32 +80,59 @@
 }
 
 header {
+    white-space: nowrap;
+    text-align: center;
+    background: black;
+}
+
+footer {
+    white-space: nowrap;
     text-align: center;
 }
 
-header nav{
+nav{
     justify-content: space-around;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+
+    /* Rules below not implemented in browsers yet */
+    -o-user-select: none;
+    user-select: none;
 }
 
-header nav li{
+nav li{
     display: inline;
     list-style: none;
-    margin:0;
-    padding:0;
-    text-decoration: none;
+    margin:0px;
+    padding:0px;
     font-size: 10pt;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-color: #ff0066;
 }
 
-footer {
-  background: lightgreen;
+nav li a{
+    padding: .8em 1.5em;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    background: linear-gradient(#33cc00, #00ffff);
+}
+
+nav a:hover, nav a:focus {
+    outline: 0;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0,0,0,.2);
+    background: #fac754;
+    background: linear-gradient(#fac754, #ff9900);
+}
+
+nav a:active {
+    box-shadow: 0 0 1px 1px rgba(0,0,0,.3) inset;
 }
 
 #tileContainer {
-  /*text-align: left;*/
-  background: lightGray;
+  background: black;
 }
 
 .aside-1 {
@@ -90,6 +147,7 @@ body {
     /*background: lightblue;
     padding: 2em; */
 }
+
 
 
 
@@ -148,62 +206,3 @@ body {
 }
 */
 
-
-
-
-
-
-
-
-
-
-/*
-#logoLockup{
-    margin:0;
-    padding:0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 490px;
-}
-
-#mainNav{
-    
-}
-
-#mainNav li {
-    list-style: none;
-    margin:0;
-    padding:0;
-    text-decoration: none;
-    font-size: 10pt;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-color: #ff0066;
-}
-
-#mainFlexContainer {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap; }
-
-#mainFlexContainer div {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  margin-right: 6px;
-  margin-left: 6px;
-  margin-top: 6px;
-  margin-bottom: 6px;
-  min-width: 3in;
-  min-height: 2in; }
-  div img {
-    width: 100%;
-    height: auto;
-    vertical-align: bottom;
-    border-radius: 16px; }
-*/

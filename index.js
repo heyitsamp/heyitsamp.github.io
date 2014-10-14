@@ -1,17 +1,13 @@
 $(function()    {
-    
-    //cmd + option + J opens the JavaScript console in Chrome
-    //This centers each logo vertically and horizontally.
-    //trace("1234567890");
     initUI();
-}
-);
+});
 
 function initUI(){
     
-    //setup tile image load callbacks (so they can center themselves based on their own width
-    //and height
-    
+    /*
+    setup tile image load callbacks (so they can center themselves based on their own width
+    and height
+    */
     
     //Eventually populate images array from XML file (a CMS)
     var images = [
@@ -31,16 +27,21 @@ function initUI(){
     
     var j = images.length;
     for(var i=0; i<j; i++){
-        //$("#" + images[i] + " img").load(onTileImgLoad($(this)));
         
-        //REMEMBER!!! logoImg here is the div holding the <img> tags!!!
-        var imgContainer = $("#" + images[i] + " img");
+        /*
+        $("#" + images[i] + " img").load(onTileImgLoad($(this)));
+        REMEMBER!!! logoImg here is the div holding the <img> tags!!!
+        */
         
-        //this is where the image loading magic happens!
-        //BUG
-        //idk why, but this load stuff only works if I wrap
-        //the callback in that anonymous function
-        imgContainer.attr("src", images[i] + ".png").fadeOut(0).load(function(){
+        var tileImgContainer = $("#" + images[i] + " img");
+        
+        /*
+        this is where the image loading magic happens!
+        BUG
+        idk why, but this load stuff only works if I wrap
+        the callback in that anonymous function
+        */
+        tileImgContainer.attr("src", images[i] + ".png").css("opacity","0").load(function(){
             onTileImgLoad($(this))
         });
         
@@ -56,61 +57,72 @@ function initUI(){
         ["amp-ffcc00.png","#ffcc00"]
     ]
     
-    //random color for amp logo
+    /*
+    Preload each logo version so we can cycle thru in a cool effect at the top
+    HAVEN'T DONE THIS YET, WANT TO CYCLE THROUGH THE COLORS QUICKLY 
+    */
+    
+    //random amp logo
     var randLogo = logoVersions[Math.floor(Math.random()*logoVersions.length)];
-    trace(randLogo + "THIS IS RAND");
-    
-    trace(randLogo[0] + "THIS IS LOGO VERSIONS RAND");
-    
-    $("#logoImg img").attr("src", randLogo[0]).load(function(){
+    $("#logoImgContainer img").attr("src", randLogo[0]).load(function(){
         logoLoadCallback($(this));
     });
     
+    /*
+    Hiding the logo and the text
+    */
+    $("#logoImgContainer img").css("opacity", "0");
+    $("#logoText").css("opacity", "0");
     $("#logoText").css("color", randLogo[1]);
     
-    //select all the logos inside their tiles
     /*
-    $(".tile img").each(
-        function(){
-            
-            //horizontally center logos inside their tiles
-            $(this).css("left", 
-                $(this).parent().width()/2
-                -( $(this).width()/2)
-            )
-            //vertically center logos inside their tiles
-            $(this).css("top", 
-                $(this).parent().height()/2
-                -( $(this).height()/2)
-            )
-            
-        }
-    );
+    Set the height of the html element --- logoLockup.. Otherwise the website jumps
+    when this image loads
     */
     
+    /*
+    $("#logoLockup").css("height", $("logoImgContainer img").clientHeight);
+    
+    
+    Hardcoded =((((( I couldn't get the above to work and was spending too
+    much time on it=((((
+    */
+    $("#logoLockup").css("height", "115");
 }
 
 function logoLoadCallback(logo){
     //logo.css.("height", logo.height());
+    logo.animate({opacity:100}, 3000);
+    $("#logoText").animate({opacity: 100}, 3000);
 }
 
-function onTileImgLoad(imgContainer){
-    //this also uses jQuery's fadein
-    //on logo load, center the logo horizontally and vertically!
-    //trace($(imgContainer).attr("src"));
+function fadeInAfterLoad(jqImgTagObj){
+    jqImgTagObj.fadeIn();
+}
+
+function onTileImgLoad(tileImgContainer){
+    /*
+    this also uses jQuery's fadein
+    on logo load, center the logo horizontally and vertically!
+    trace($(imgContainer).attr("src"));
+    */
     
-    //horizontally center logos inside their tiles
-    imgContainer.css("left", 
-        imgContainer.parent().width()/2
-        -(imgContainer.width()/2)
+    /*horizontally center logos inside their tiles*/
+    tileImgContainer.css("left", 
+        tileImgContainer.parent().width()/2
+        -(tileImgContainer.width()/2)
     )
     
-    //vertically center logos inside their tiles
-    imgContainer.css("top", 
-        imgContainer.parent().height()/2
-        -( imgContainer.height()/2)
+    /*vertically center logos inside their tiles*/
+    tileImgContainer.css("top", 
+        tileImgContainer.parent().height()/2
+        -( tileImgContainer.height()/2)
     )
-    imgContainer.fadeIn();
+    
+    /*
+    Yeah, Yeah, I know what's with the opacity ---- remember we're Flash guys at heart though!!!!!!!
+    */
+    tileImgContainer.animate({opacity:100}, 4000);
 }
 
 
