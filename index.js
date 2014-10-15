@@ -6,7 +6,6 @@ PUBLIC PROPERTIES
 /*Eventually populate images array from XML file (a CMS)*/
 var companyNames = [
     "atomic",
-    "branding",
     "cocacola",
     "disney",
     "eb",
@@ -23,6 +22,8 @@ var logoVersions = [
     ["amp-ff9900.png","#ff9900"], 
     ["amp-ffcc00.png","#ffcc00"]
 ]
+
+var numTiles = companyNames.length;
 
 
 
@@ -45,7 +46,7 @@ function initUI(){
     /*This is where the image loading magic happens!*/
     var j = companyNames.length;
     for(var i=0; i<j; i++){
-        var tileImgContainer = $("#" + companyNames[i] + " img");
+        var tileImgContainer = $("#tile" + i + " img");
         /*BUG =(
         idk why, but this load stuff only works if I wrap
         the callback in that anonymous function

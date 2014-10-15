@@ -26,11 +26,12 @@ body{
 }
 
 #logoLockup{
+    display:inline-block;
     height: 90px;
 }
 
 #logoImgContainer{
-    display:inline;
+    display:inline-block;
 }
 
 #logoImgContainer img{
@@ -38,13 +39,14 @@ body{
 }
 
 #logoText{
-    width:50px;
-    position:relative;
-    /*I'm sorry, this is hard-coded for now. I plan on getting the correct pixel number
+    text-align: left;
+    margin-left:20px;
+    width:300px;
+    /*position:relative;
+    I'm sorry, this is hard-coded for now. I plan on getting the correct pixel number
     for this after the CMS is set up, etc. or, maybe an interactive dev version of the
     site.*/
-    top:-35px;
-    display:inline;
+    display:inline-block;
     
     
 }
@@ -58,7 +60,7 @@ body{
     width: 250px;
     height: 250px;
     margin: 16px;
-    border-radius: 16px;
+    border-radius: 10px;
 }
 
 .tile img {
@@ -67,8 +69,6 @@ body{
 }
 
 header {
-    
-    white-space: nowrap;
     text-align: center;
     background: black;
 }
@@ -90,7 +90,6 @@ header {
 }
 
 footer {
-    white-space: nowrap;
     text-align: center;
 }
 
@@ -155,35 +154,35 @@ body {
 
 
 /*The tiles*/
-#ms{
+#tile1{
     background: #ff33cc;
 }
 
-#disney{
+#tile2{
     background: #00ccff;
 }
 
-#atomic{
+#tile3{
     background: #ff9900;
 }
 
-#pg{
+#tile4{
     background: #33cc00;
 }
 
-#cocacola{
+#tile5{
     background: #ffcc00;
 }
 
-#obama{
+#tile6{
     background: #cc00ff;
 }
 
-#kmd{
+#tile7{
     background: #ffffff;
 }
 
-#eb{
+#tile8{
     background: #ff0066;
 }
 
