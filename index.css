@@ -51,11 +51,6 @@ body{
     
 }
 
-#mainFlexBox > * {
-  padding: 0px;
-  flex: 1 100%;
-}
-
 .tile {
     width: 250px;
     height: 250px;
