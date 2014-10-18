@@ -51,9 +51,10 @@ body{
     width: 220px*/
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 366px) {
   #logoImgContainer img{
-        max-width: auto;
+      max-width: 100%;
+      
   }
 }
 
@@ -66,6 +67,7 @@ body{
     for this after the CMS is set up, etc. or, maybe an interactive dev version of the
     site.*/
     display:inline-block;
+    color:#ccc;
     
     
 }
