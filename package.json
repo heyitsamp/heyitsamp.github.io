@@ -1,0 +1,24 @@
+{
+  "name": "AmpWebsite",
+  "version": "1.0.0",
+  "description": "AmpWeb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://Williamswoodruff@github.com/heyitsamp/ampweb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heyitsamp/ampweb/issues"
+  },
+  "homepage": "https://github.com/heyitsamp/ampweb",
+  "devDependencies": {
+    "autoprefixer-core": "^3.1.2",
+    "grunt": "^0.4.5",
+    "grunt-postcss": "^0.1.0"
+  }
+}
