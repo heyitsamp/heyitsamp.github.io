@@ -100,15 +100,16 @@ footer {
 }
 
 nav{
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
     -webkit-user-select: none; /* Chrome/Safari */        
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+ */
 
     /* Rules below not implemented in browsers yet */
     user-select: none;
+}
+
+ul {
+    padding:0;
 }
 
 nav li{
