@@ -1,17 +1,17 @@
 {
-  "name": "AmpWebsite",
+  "name": "ampweb",
   "version": "1.0.0",
-  "description": "AmpWeb",
+  "description": "Amp Website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://Williamswoodruff@github.com/heyitsamp/ampweb.git"
+    "url": "https://github.com/heyitsamp/ampweb.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "",
   "bugs": {
     "url": "https://github.com/heyitsamp/ampweb/issues"
   },
