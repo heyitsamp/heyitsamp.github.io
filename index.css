@@ -79,9 +79,11 @@ header {
     background: black;
 }
 
-#featureSectionTopBorderContainer {
-    width: 100%;
-    height: auto;
+.featureBorder {
+    margin: 20px 16px;
+    border: none;
+    border-top: 1px solid #2e2e2e;
+    height: 1px;
 }
 
 #featureSection{

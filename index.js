@@ -86,11 +86,6 @@ $(function(){
 
 
 
-        /*Setting up the feature section*/
-        $("#featureSectionTopBorderContainer img").attr("src", "shadTop.png");
-        $("#featureSectionBottomBorderContainer img").attr("src", "shadBottom.png");
-        $( window ).resize(onWindowResize());
-
         /*Set random feature (Just a random tile for now)*/
         //LOOKING AT CLONE AND CREATING AN EMPTY
         //jQuery object
@@ -126,11 +121,6 @@ $(function(){
         featureSectionJQueryObj.append(feature);
         /*featureSectionJQueryObj.replaceWith(feature);???
         Actually this won't exactly work*/
-    }
-
-    function onWindowResize(){
-        $("#featureSectionTopBorderContainer img").css("width", "100%");
-        $("#featureSectionBottomBorderContainer img").css("width", "100%");
     }
 
     function logoLoadCallback(logo){
