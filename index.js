@@ -4,16 +4,6 @@ $(function(){
     PUBLIC PROPERTIES
     *******************************/
     /*Eventually populate images array from XML file (a CMS)*/
-    var companyNames = [
-        "atomic",
-        "cocacola",
-        "disney",
-        "eb",
-        "kmd",
-        "ms",
-        "obama",
-        "pg"
-    ]
     var logoVersions = [
         ["amp-00ffff.png","#00ffff"], 
         ["amp-33ff00.png","#33ff00"], 
@@ -22,10 +12,6 @@ $(function(){
         ["amp-ff9900.png","#ff9900"], 
         ["amp-ffcc00.png","#ffcc00"]
     ]
-
-    var numTiles = companyNames.length;
-
-
 
     /******************************
     PRIVATE PROPERTIES
@@ -44,18 +30,16 @@ $(function(){
 
     function initUI(){
         /*This is where the image loading magic happens!*/
+        /*
         var j = companyNames.length;
         for(var i=0; i<j; i++){
             var tileImgContainer = $("#tile" + i + " img");
-            /*BUG =(
-            idk why, but this load stuff only works if I wrap
-            the callback in that anonymous function
-            */
+            
             tileImgContainer.attr("src", companyNames[i] + ".png").load(function(){
                 centerImgAfterLoad($(this))
             });
         }
-
+*/
         /*
         Every image starts out invisible, until it loads, and then
         fades in. This is fine for now. It stops jumpyness on every image
@@ -112,9 +96,6 @@ $(function(){
         //$("#logoLockup").css("height", "115");
     }
 
-
-
-
     function setFeature(feature){
         /*Feature should always be a div*/
         featureSectionJQueryObj.empty();
@@ -131,20 +112,6 @@ $(function(){
 
     function imgFadeInAfterLoad(jqImgTagObj){
         jqImgTagObj.animate({opacity: 100}, imgFadeInSpeed);
-    }
-
-    function centerImgAfterLoad(tileImgContainer){
-        /*horizontally center logos inside their tiles*/
-        tileImgContainer.css("left", 
-            tileImgContainer.parent().width()/2
-            -(tileImgContainer.width()/2)
-        )
-
-        /*vertically center logos inside their tiles*/
-        tileImgContainer.css("top", 
-            tileImgContainer.parent().height()/2
-            -( tileImgContainer.height()/2)
-        )
     }
 
     function randomizeLogo() {
