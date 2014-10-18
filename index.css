@@ -32,7 +32,8 @@ body{
     so only pad on the top and bottom. A maybe-permanent shim*/
     margin-top: 20px;
     margin-bottom: 15px;
-    
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 #logoLockup{
@@ -218,10 +219,6 @@ body {
 #branding{
     
 }
-
-
-
-
 
 /*
 @media all and (min-width: 600px) {
