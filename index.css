@@ -39,9 +39,14 @@ body{
 #logoImgContainer img{
     width: 366px; 
     height: 116px;
-    max-width: 100%;
     /*make sure that CSS and HTML agree on width and height always for everything
     width: 220px*/
+}
+
+@media all and (max-width: 600px) {
+  #logoImgContainer img{
+        max-width: auto;
+  }
 }
 
 #logoText{
