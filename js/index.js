@@ -65,12 +65,12 @@ $(function(){
 
 
         /*Randomize the amp logo*/
-        $("#logoObjectElement").load(function(){randomizeHeaderColor()});
+        $("#logoObjectElement").load(function(){randomizeHeaderColor();});
         //randomizeHeaderColor();
         /*Setup the nave buttons to randomize
         the logo every time you click a nav
         button.*/
-        $("nav li").click(randomizeHeaderColor);
+        $("nav li").click(onNavItemClick);
     }
 
     function setFeature(feature){
@@ -80,6 +80,10 @@ $(function(){
 
     function imgFadeInAfterLoad(jqImgTagObj){
         jqImgTagObj.animate({opacity: 100}, imgFadeInSpeed);
+    }
+
+    function onNavItemClick() {
+        //alsdjflkasdjflkjsdlfjlksdjflkasdjflksjdlfkjasdfjkalsdfjaksdf
     }
 
     function randomizeHeaderColor() {
