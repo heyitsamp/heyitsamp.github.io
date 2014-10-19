@@ -8,20 +8,9 @@ For the header, text on top of an image is what the big website guys are doing.
 */
 
 .flexBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;  
-    
-    -webkit-flex-flow: row wrap;  
-    
-        -ms-flex-flow: row wrap;  
-    
-            flex-flow: row wrap;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    display: flex;  
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 body{
@@ -86,14 +75,8 @@ body{
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .tile img {
@@ -129,11 +112,6 @@ footer {
 }
 
 nav{
-    -webkit-user-select: none; /* Chrome/Safari */        
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+ */
-
-    /* Rules below not implemented in browsers yet */
     user-select: none;
 }
 
