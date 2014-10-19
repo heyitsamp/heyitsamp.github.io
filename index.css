@@ -45,16 +45,20 @@ body{
     display:inline-block;
 }
 
+.SVGLogo{
+    fill: #ffffff;
+}
+
 #logoImgContainer img{
-    width: 366px; 
-    height: 116px;
+    width: 104px; 
+    height: auto;
     /*make sure that CSS and HTML agree on width and height always for everything
     width: 220px*/
 }
 
-@media all and (max-width: 366px) {
+@media all and (max-width: 103px) {
   #logoImgContainer img{
-      width: 100%;
+      
       height: auto;
   }
 }
@@ -212,7 +216,7 @@ body {
 }
 
 #tile7{
-    background: #ffffff;
+    background: #333333;
 }
 
 #tile8{

@@ -104,25 +104,19 @@ $(function(){
         Actually this won't exactly work*/
     }
 
+    /*
+    This has been deprecated since the logo switched to SVG
+    
     function logoLoadCallback(logo){
-        /*logo.css.("height", logo.height());*/
-        //$("#logoImgContainer img").css("opacity", "0");
         $("#logoText").animate({opacity: 100}, logoTextFadeInSpeed);
-    }
-
+    }*/
     function imgFadeInAfterLoad(jqImgTagObj){
         jqImgTagObj.animate({opacity: 100}, imgFadeInSpeed);
     }
 
     function randomizeLogo() {
         /*Random number*/
-        var randLogo = logoVersions[Math.floor(Math.random()*logoVersions.length)];
-
-        /*Setting img src*/
-        $("#logoImgContainer img").attr("src", randLogo[0]).load(function(){
-            logoLoadCallback($(this));
-        });
-
+        var randLogoLockupColor = logoVersions[Math.floor(Math.random()*logoVersions.length)];
         /*Hiding the logo text*/
         $("#logoText").css("color", randLogo[1]).css("opacity", "0")
         //$("#logoText").css("color", randLogo[1]);
