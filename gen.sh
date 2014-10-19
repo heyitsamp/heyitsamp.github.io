@@ -20,6 +20,8 @@ for f in content/*.html; do
     bare=`basename $f .html`
     echo creating "$bare"
     sed '
+	1a\
+<!-- AUTOMATICALLY GENERATED. DO NOT EDIT! -->
 	/<!-- content below -->/{
 	    r '"$f"'
 	}
