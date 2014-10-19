@@ -3,16 +3,15 @@ $(function(){
     /******************************
     PUBLIC PROPERTIES
     *******************************/
-    /*Eventually populate images array from XML file (a CMS)*/
-    var logoVersions = [
-        ["amp-00ffff.svg","#00ffff"], 
-        ["amp-33ff00.svg","#33ff00"], 
-        ["amp-ff33cc.svg","#ff33cc"], 
-        ["amp-ff0066.svg","#ff0066"], 
-        ["amp-ff9900.svg","#ff9900"], 
-        ["amp-ffcc00.svg","#ffcc00"]
+    var colorList = [
+        "#00ffff",
+        "#33ff00",
+        "#ff33cc",
+        "#ff0066",
+        "#ff9900",
+        "#ffcc00"
     ]
-
+    
     /******************************
     PRIVATE PROPERTIES
     *******************************/
@@ -62,7 +61,8 @@ $(function(){
 
 
         /*Randomize the amp logo*/
-        randomizeLogo();
+        $("#logoObjectElement").load(function(){randomizeHeaderColor()});
+        //randomizeHeaderColor();
         /*Setup the nave buttons to randomize
         the logo every time you click a nav
         button.*/
@@ -114,15 +114,32 @@ $(function(){
         jqImgTagObj.animate({opacity: 100}, imgFadeInSpeed);
     }
 
-    function randomizeLogo() {
+    function randomizeHeaderColor() {
         /*Random number*/
-        var randLogoLockupColor = logoVersions[Math.floor(Math.random()*logoVersions.length)];
+        var randColor = colorList[Math.floor(Math.random()*colorList.length)];
         /*Hiding the logo text*/
-        $("#logoText").css("color", randLogo[1]).css("opacity", "0")
+        
+        trace("1");
+        
+        $("#logoText").css("color", randColor).css("opacity", "0").animate({opacity: 100}, imgFadeInSpeed);
+        
+        trace("2");
+        //$("#logo").setAttribute("fill", "white");
+        //$("#logo").css("opacity", ".5");
+        //$("#logoObject .svgPathElement").setAttribute("fill", "white");
+        //$("#logoObject path");
+        //trace("These are the children" + $("#logoObject path"));
+        var a = document.getElementById("logoObjectElement");
+        var svgDoc = a.contentDocument; //get the inner DOM of alpha.svg
+        var delta = svgDoc.getElementById("delta"); //get the inner element by id
+            delta.addEventListener("mousedown",function(){alert('hello world!')},false);    //add behaviour
+        trace("3");
+        
+        
+        
         //$("#logoText").css("color", randLogo[1]);
-
-        $("nav a").css("color", randLogo[1]);
-
+        $("nav a").css("color", randColor);
+        trace("4");
     }
 
 
