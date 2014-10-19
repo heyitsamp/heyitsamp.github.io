@@ -22,9 +22,7 @@ For the header, text on top of an image is what the big website guys are doing.
 }
 
 body{
-    background: #1e1e1e;
-    font-family: roboto;
-    font-size: 10px;
+    background: black;
     /*When there's padding on the left and right sides,
     when the browser is closed as much as it can go, the Amp
     logo gets cut off on the right side and not the left side
@@ -102,7 +100,7 @@ body{
 
 header {
     text-align: center;
-    background: #1e1e1e;
+    background: black;
 }
 
 .featureBorder {
@@ -168,7 +166,7 @@ nav a:active {
 }
 
 #tilesContainer {
-  background: #1e1e1e;
+  background: black;
 }
 
 .aside-1 {
@@ -213,29 +211,12 @@ body {
 }
 
 #tile7{
-    background: #0099cc;
+    background: #333333;
 }
 
 #tile8{
     background: #ff0066;
 }
-
-#tile9{
-    background: #ccff00;
-}
-
-#tile10{
-    background: #00cc66;
-}
-
-#tile11{
-    background: #cc0099;
-}
-
-#tile12{
-    background: #999900;
-}
-
 
 #branding{
     
