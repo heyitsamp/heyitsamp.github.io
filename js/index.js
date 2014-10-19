@@ -5,12 +5,12 @@ $(function(){
     *******************************/
     /*Eventually populate images array from XML file (a CMS)*/
     var logoVersions = [
-        ["amp-00ffff.png","#00ffff"], 
-        ["amp-33ff00.png","#33ff00"], 
-        ["amp-ff33cc.png","#ff33cc"], 
-        ["amp-ff0066.png","#ff0066"], 
-        ["amp-ff9900.png","#ff9900"], 
-        ["amp-ffcc00.png","#ffcc00"]
+        ["amp-00ffff.svg","#00ffff"], 
+        ["amp-33ff00.svg","#33ff00"], 
+        ["amp-ff33cc.svg","#ff33cc"], 
+        ["amp-ff0066.svg","#ff0066"], 
+        ["amp-ff9900.svg","#ff9900"], 
+        ["amp-ffcc00.svg","#ffcc00"]
     ]
 
     /******************************
