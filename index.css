@@ -47,12 +47,14 @@ body{
 }
 */
 
+/*
 @media all and (max-width: 103px) {
-  /*#logoImgContainer img{
+  #logoImgContainer img{
       
       height: auto;
-  }*/
+  }
 }
+*/
 
 #logoText{
     text-align: left;
