@@ -38,18 +38,20 @@ body{
     fill: #ffffff;
 }
 
+/*make sure that CSS and HTML agree on width and height always for everything*/
+/*
 #logoImgContainer img{
     width: 104px; 
     height: auto;
-    /*make sure that CSS and HTML agree on width and height always for everything
-    width: 220px*/
+    
 }
+*/
 
 @media all and (max-width: 103px) {
-  #logoImgContainer img{
+  /*#logoImgContainer img{
       
       height: auto;
-  }
+  }*/
 }
 
 #logoText{
