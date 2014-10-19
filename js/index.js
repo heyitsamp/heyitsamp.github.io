@@ -47,7 +47,7 @@ $(function(){
         */
         
         //it looks very ugly if this isn't hidden in JavaScript
-        $("#logoLockup, nav").css("opacity", "0");
+        //$("#logoLockup, nav").css("opacity", "0");
         $("img").css("opacity", "0").load(function(){
             imgFadeInAfterLoad($(this));
         });
@@ -86,12 +86,12 @@ $(function(){
         /*Random color*/
         var randColor = colorList[Math.floor(Math.random()*colorList.length)];
         
-        $("#logoLockup, nav").css("opacity", "0");
+        //$("#logoLockup, nav").css("opacity", "0");
         //change to random color
         $("#logoText").css("color", randColor);
         $("#logoObjectElement").contents().find(".svgPathElement").attr("fill", randColor);
         $("nav a").css("color", randColor);
-        $("#logoLockup, nav").animate({opacity: 100}, 3000);
+        //$("#logoLockup, nav").animate({opacity: 100}, 3000);
         trace("hello?");
     }
 
