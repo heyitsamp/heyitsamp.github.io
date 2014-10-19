@@ -8,11 +8,22 @@ module.exports = function(grunt) {
                   autoprefixer({ browsers: ['last 2 version'] }).postcss
                 ]
             },
-            dist: { src: 'index.css' }
+            dist: { 
+                files: {
+                    'build/index.css': 'index.css'
+                }
+                 
+            }
         },
+         watch: {
+            styles: {
+                files: ['index.css'],
+                tasks: ['postcss']
+            }
+        }
     });
 
     grunt.loadNpmTasks('grunt-postcss');
-
-    grunt.registerTask('default', ['postcss']);
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.registerTask('default', ['postcss', 'watch']);
 };
