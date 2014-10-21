@@ -26,16 +26,13 @@ $(function(){
     var featureSectionJQueryObj = $("#featureSection");
     var currentFeature = "";
 
-
     /**********************
     COMMENCE THE INITIATION
     ***********************/
     initUI();
-
-
-
+    
     function initUI(){
-        $("#everythingBelowFeatureSection").css("top", $("header nav").offset().top + "px");
+        $("#everythingBelowFeatureSection").css("top", $("header nav").offset().top + $("header nav").height() + "px");
         
         $("#logoLockup, nav").css("opacity", "0");
         
@@ -86,22 +83,18 @@ $(function(){
     function onNavItemClick() {
         randomizeHeaderColor();
     }
-
+    
     function randomizeHeaderColor() {
         var randColor = colorList[Math.floor(Math.random()*colorList.length)];
-        
-        $("#logoLockup, nav").css("opacity", "0");
+        $("#logoLockup, nav").animate({opacity: 0}, 0);
         //change to random color
         $("#logoText").css("color", randColor);
         $("#logoObjectElement").contents().find(".svgPathElement").attr("fill", randColor);
         $("nav a").css("color", randColor);
         $("#logoLockup, nav").animate({opacity: 100}, imgFadeInSpeed);
     }
-
-
+    
     function trace(str){
         console.log(str);
     }
-    
-    
 });
