@@ -4,12 +4,12 @@ $(function(){
     PUBLIC PROPERTIES
     *******************************/
     var colorList = [
-        "#00ffff",
-        "#33ff00",
-        "#ff33cc",
-        "#ff0066",
-        "#ff9900",
-        "#ffcc00"
+	"color-cyan",
+	"color-green",
+	"color-magenta",
+	"color-pink",
+	"color-orange",
+	"color-yellow"
     ]
     
     var colorsUsedAlready = [];
@@ -36,13 +36,11 @@ $(function(){
     function initUI(){
         $("#everythingBelowTheFeatureSection").css("top", $("header").height() + "px");
         
-        $("#logoLockup, nav").css("opacity", "0");
-        
         $("img").css("opacity", "0").load(function(){
             imgFadeInAfterLoad($(this));
         });
         
-        $("#tilesContainer").children().click(function(){
+        $("#tilesContainer").children().click(function(event){
             var theImgTagJQueryObj = $(this).find("img");
             var str = theImgTagJQueryObj.attr("src").replace("img/", "");
             str = str.replace(".png", "");
@@ -51,7 +49,7 @@ $(function(){
             setFeature(str);
         });
         
-        $("#logoObjectElement").load(function(){randomizeHeaderColor();});
+        randomizeHeaderColor();
         $("nav li").click(onNavItemClick);
     }
     
@@ -100,15 +98,22 @@ $(function(){
     function onNavItemClick() {
         randomizeHeaderColor();
     }
+
+    function clearColorClasses(element) {
+	var i,
+	    classes = (element.attr("class") || "").split(" ");
+	for (i = 0; i < classes.length; i++) {
+	    if (classes[i].substring(0, "color-".length) === "color-") {
+		element.removeClass(classes[i]);
+	    }
+	}
+    };
     
     function randomizeHeaderColor() {
-        var randColor = colorList[Math.floor(Math.random()*colorList.length)];
-        //$("#logoLockup, nav").animate({opacity: 0}, 0);
-        //change to random color
-        $("#logoText").css("color", randColor);
-        $("#logoObjectElement").contents().find(".svgPathElement").attr("fill", randColor);
-        $("nav a").css("color", randColor);
-        $("#logoLockup, nav").animate({opacity: 100}, imgFadeInSpeed);
+	var body = $("body"),
+            randColor = colorList[Math.floor(Math.random()*colorList.length)];
+	clearColorClasses(body);
+	body.addClass(randColor);
     }
     
     function trace(str){
