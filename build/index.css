@@ -96,6 +96,12 @@ body{
     fill: #ffcc00;
 }
 
+nav li a.current,
+nav li a.current:hover {
+    border-color: white;
+    color: white;
+}
+
 
 #logoLockup{
     

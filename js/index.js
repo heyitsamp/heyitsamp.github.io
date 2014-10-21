@@ -98,6 +98,15 @@ $(function(){
     
     function onNavItemClick(event) {
 	event.preventDefault();
+
+	$("nav li a").removeClass("current");
+
+	// addClass on both header and footer item
+	var href = $(this).attr("href");
+	$("nav li a").filter(function() {
+	    return $(this).attr("href") === href;
+	}).addClass("current");
+
         randomizeHeaderColor();
     }
 
