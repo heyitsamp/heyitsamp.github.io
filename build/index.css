@@ -11,9 +11,9 @@ For the header, text on top of an image is what the big website guys are doing.
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;  
-    -webkit-flex-flow: row wrap;  
-        -ms-flex-flow: row wrap;  
+    display: flex;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
             flex-flow: row wrap;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -68,10 +68,6 @@ body{
     text-align: left;
     margin-left:20px;
     width:300px;
-    /*position:relative;
-    I'm sorry, this is hard-coded for now. I plan on getting the correct pixel number
-    for this after the CMS is set up, etc. or, maybe an interactive dev version of the
-    site.*/
     display:inline-block;
     color:#ccc;
     
@@ -95,11 +91,7 @@ body{
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-}
-
-.tile img {
-    position: relative;
-    /*center this in JavaScript*/
+    cursor: pointer;
 }
 
 header {
@@ -108,7 +100,12 @@ header {
 }
 
 .featureBorder {
-    margin: 20px 16px;
+    margin-bottom: 0px;
+    background: black;
+    padding-top: 0px;
+    /*padding-bottom: 20px;*/
+    padding-left: 16px;
+    padding-right: 16px;
     border: none;
     border-top: 1px solid #2e2e2e;
     height: 1px;
@@ -169,24 +166,15 @@ nav a:active {
     
 }
 
+#everythingBelowFeatureSection{
+    position: absolute;
+    z-index: 2;
+}
+
 #tilesContainer {
   background: black;
+    
 }
-
-.aside-1 {
-  background: gold;
-}
-
-.aside-2 {
-  background: hotpink;
-}
-
-body {
-    /*background: lightblue;
-    padding: 2em; */
-}
-
-
 
 
 /*The tiles*/
@@ -223,20 +211,5 @@ body {
 }
 
 #branding{
-    
+    background: #fff;
 }
-
-/*
-@media all and (min-width: 600px) {
-  .aside { flex: 1 auto; }
-}
-
-@media all and (min-width: 800px) {
-  .main    { flex: 3 0px; }
-  .aside-1 { order: 1; } 
-  .main    { order: 2; }
-  .aside-2 { order: 3; }
-  .footer  { order: 4; }
-}
-*/
-

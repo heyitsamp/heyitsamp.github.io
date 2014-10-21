@@ -19,63 +19,64 @@ $(function(){
     *******************************/
     var imgFadeInSpeed = 3000;
     var logoTextFadeInSpeed = 3000;
+    var scrollToTopOfPageSpeed = 500;
+    var featureSlideRevealSpeed = 500;
+    var featureFadeOutSpeed = 150;
+    var featureFadeInSpeed = 1000;
     var featureSectionJQueryObj = $("#featureSection");
+    var currentFeature = "";
 
 
     /**********************
-    COMMENCE THE INITIATION!!! MUAHAHAHAHAAAAA!!!!
+    COMMENCE THE INITIATION
     ***********************/
     initUI();
 
 
 
     function initUI(){
-        /*This is where the image loading magic happens!*/
-        /*
-        var j = companyNames.length;
-        for(var i=0; i<j; i++){
-            var tileImgContainer = $("#tile" + i + " img");
-            
-            tileImgContainer.attr("src", companyNames[i] + ".png").load(function(){
-                centerImgAfterLoad($(this))
-            });
-        }
-*/
-        /*
-        Every image starts out invisible, until it loads, and then
-        fades in. This is fine for now. It stops jumpyness on every image
-        */
+        $("#everythingBelowFeatureSection").css("top", $("header nav").offset().top + "px");
         
-        //it looks very ugly if this isn't hidden in JavaScript
-        //$("#logoLockup, nav").css("opacity", "0");
+        $("#logoLockup, nav").css("opacity", "0");
+        
         $("img").css("opacity", "0").load(function(){
             imgFadeInAfterLoad($(this));
         });
-
-        /* SPECIAL EFFECT
-        Haven't done this yet,
-        want to cycle through the colors
-        quickly in a special effect
-        -----------------------------------
-        Need to do this for the effect----->
-        Preload each logo version so we can 
-        cycle thru in a cool effect at the top 
-        */
-
-
-
-        /*Randomize the amp logo*/
+        
+        $("#tilesContainer").children().click(function(){
+            var theImgTagJQueryObj = $(this).find("img");
+            setFeature(theImgTagJQueryObj.attr("src").substring(0,theImgTagJQueryObj.attr("src").lastIndexOf(".")))
+        });
+        
         $("#logoObjectElement").load(function(){randomizeHeaderColor();});
-        //randomizeHeaderColor();
-        /*Setup the nave buttons to randomize
-        the logo every time you click a nav
-        button.*/
         $("nav li").click(onNavItemClick);
     }
 
     function setFeature(feature){
-        featureSectionJQueryObj.empty();
-        featureSectionJQueryObj.append(feature);
+        trace(feature);
+        trace(currentFeature);
+        if(feature == currentFeature){
+            return;
+        }
+        currentFeature = feature;
+        trace("THIS IS SCROLLTOP" + $("body").scrollTop());
+        $("body").animate({scrollTop : 0}, scrollToTopOfPageSpeed);
+        
+        featureSectionJQueryObj.animate({opacity:0}, featureFadeOutSpeed, function(){
+            featureSectionJQueryObj.load("content/" + feature + ".html", function(){
+                
+                /*STYLE 1 --- THE PAGE SLIDES TO FIT THE NEW LOADED CONTENT, AND THEN THE FEATURE FADES IN*/
+                $("#everythingBelowFeatureSection").animate({top:(featureSectionJQueryObj.offset().top + featureSectionJQueryObj.height() + "px")}, featureSlideRevealSpeed, function(){featureSectionJQueryObj.animate({opacity:100}, featureFadeInSpeed);});
+            });
+                /*END STYLE 1*/
+                
+                /*STYLE 2 --- THE CONTENT LOADS AND FADES IN WHILE THE PAGE SLIDES TO FIT THE NEW LOADED CONTENT*/
+            /*$("#everythingBelowFeatureSection").animate({top:(featureSectionJQueryObj.offset().top + featureSectionJQueryObj.height() + "px")}, featureSlideRevealSpeed);
+                featureSectionJQueryObj.animate({opacity:100}, featureFadeInSpeed);
+            });*/
+                /*END STYLE 2*/
+                
+        });
     }
 
     function imgFadeInAfterLoad(jqImgTagObj){
@@ -83,20 +84,18 @@ $(function(){
     }
 
     function onNavItemClick() {
-        //alsdjflkasdjflkjsdlfjlksdjflkasdjflksjdlfkjasdfjkalsdfjaksdf
+        randomizeHeaderColor();
     }
 
     function randomizeHeaderColor() {
-        /*Random color*/
         var randColor = colorList[Math.floor(Math.random()*colorList.length)];
         
-        //$("#logoLockup, nav").css("opacity", "0");
+        $("#logoLockup, nav").css("opacity", "0");
         //change to random color
         $("#logoText").css("color", randColor);
         $("#logoObjectElement").contents().find(".svgPathElement").attr("fill", randColor);
         $("nav a").css("color", randColor);
-        //$("#logoLockup, nav").animate({opacity: 100}, 3000);
-        trace("hello?");
+        $("#logoLockup, nav").animate({opacity: 100}, imgFadeInSpeed);
     }
 
 
