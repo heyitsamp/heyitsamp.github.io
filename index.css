@@ -166,6 +166,9 @@ header {
 
 #featureSection{
     color:white;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 16px;
 }
 
 .featureLeftColumn{
@@ -173,7 +176,21 @@ header {
 }
 
 .featureRightColumn{
-    
+    display:flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    width: 300px;
+}
+
+.featureImageGroup{
+    display:flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+}
+
+.featureImageGroup > *{
+    padding-bottom: 16px;
+    padding-top: 16px;
 }
 
 .featureText{
@@ -186,29 +203,21 @@ header {
     padding-right: 16px;
     padding-left: 8px;
     padding-top: 8px;
-    margin-left: 30px;
-    margin-right: 20px;
     width: 250px;
 }
 
 .featureLogo{
-    position:relative;
+    width: 163px;
     margin-top: 100px;
-    margin-left: 20px;
     margin-right: 30px;
 }
 
-
 /*This is needed to remove the margin for when the logo
 goes on top of the feature text!!!!*/
-@media all and (max-width: 535px) {
+@media all and (max-width: 556px) {
     .featureLogo{
         margin-top: 0px;
     }
-}
-
-.featureImageGroup{
-    
 }
 
 #featureSectionBottomBorderContainer {
