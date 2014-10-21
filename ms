@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- AUTOMATICALLY GENERATED. DO NOT EDIT! -->
 <!-- Turn it up to 11 -->
 <head>
   <meta name="viewport" content="width=device-width">
@@ -32,7 +33,28 @@
     
     <div id="featureSection" class="flexBox">
         <!-- content below -->
-    </div>
+<!-- Put this "Feature's" "logo" in here -->
+<img class="featureLogo" src="images/ms.png">
+
+<!-- Put the paragraph of text in here -->
+<div class="featureText">
+    <p>The assignment at Microsoft was the front microsoft.com for all their products, basically doing the homepage for a year. One spot was touted as the best ad ever within the MS communities. The coffee was free and the machine had a cool loading bar.
+    </p>
+</div>
+<!-- This is the stack of images -->
+<div class="featureImageGroup">
+    <img src="images/ms-wmp11.jpg">
+    <img src="images/ms-webfeeds.jpg">
+    <img src="images/ms-teamsystem.jpg">
+</div>
+<p>GAM3 is the pitch that brought TMP Worldwide to Microsoft's inner circle of cutting edge agencies. A recuitment tool built around a proving grounds portal with challenges, leaderboards, targeting top technology campuses, very science.
+</p>
+
+<!-- This is the stack of images -->
+<div class="featureImageGroup">
+    <img src="images/ms-gam3.jpg">
+
+</div>    </div>
     
     <div id="everythingBelowTheFeatureSection">
         <hr class="featureBorder"/>

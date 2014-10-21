@@ -62,8 +62,6 @@ body{
     width:300px;
     display:inline-block;
     color:#ccc;
-    
-    
 }
 
 .tile {
@@ -96,6 +94,14 @@ header {
 
 #featureSection{
     color:white;
+}
+
+.featureLogo{
+    align-self:center;
+}
+
+.featureImageGroup{
+    
 }
 
 #featureSectionBottomBorderContainer {
@@ -155,7 +161,6 @@ nav a:active {
   background: black;
     
 }
-
 
 /*The tiles*/
 #tile1{
