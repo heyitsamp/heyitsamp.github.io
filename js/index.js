@@ -91,7 +91,6 @@ $(function(){
         $("#everythingBelowTheFeatureSection").animate({top:(featureSectionJQueryObj.offset().top + featureSectionJQueryObj.height() + "px")}, featureSlideRevealSpeed);
         featureSectionJQueryObj.animate({opacity:100}, featureFadeInSpeed);
         */
-        
     }
     
     function imgFadeInAfterLoad(jqImgTagObj){

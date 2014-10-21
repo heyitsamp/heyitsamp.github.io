@@ -65,6 +65,10 @@ body{
 */
 
 #logoText{
+    font-size: 10pt;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    
     text-align: left;
     margin-left:20px;
     width:300px;
@@ -113,10 +117,43 @@ header {
     color:white;
 }
 
+.featureLeftColumn{
+    
+}
+
+.featureRightColumn{
+    
+}
+
+.featureText{
+    font-size: 10pt;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-color: #ff0000;
+    
+    white-space: normal;
+    padding-right: 16px;
+    padding-left: 8px;
+    padding-top: 8px;
+    margin-left: 30px;
+    margin-right: 20px;
+    width: 250px;
+}
+
 .featureLogo{
-    -webkit-align-self:center;
-        -ms-flex-item-align:center;
-            align-self:center;
+    position:relative;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+
+/*This is needed to remove the margin for when the logo
+goes on top of the feature text!!!!*/
+@media all and (max-width: 535px) {
+    .featureLogo{
+        margin-top: 0px;
+    }
 }
 
 .featureImageGroup{
