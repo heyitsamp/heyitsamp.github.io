@@ -41,6 +41,7 @@ $(function(){
         });
         
         $("#tilesContainer").children().click(function(event){
+	    event.preventDefault();
             var theImgTagJQueryObj = $(this).find("img");
             var str = theImgTagJQueryObj.attr("src").replace("img/", "");
             str = str.replace(".png", "");
@@ -50,7 +51,7 @@ $(function(){
         });
         
         randomizeHeaderColor();
-        $("nav li").click(onNavItemClick);
+        $("nav li a").click(onNavItemClick);
     }
     
     function setFeature(feature){
@@ -95,7 +96,8 @@ $(function(){
         jqImgTagObj.animate({opacity: 100}, imgFadeInSpeed);
     }
     
-    function onNavItemClick() {
+    function onNavItemClick(event) {
+	event.preventDefault();
         randomizeHeaderColor();
     }
 
