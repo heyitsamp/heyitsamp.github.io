@@ -34,6 +34,69 @@ body{
     
 }
 
+/* Half my kingdom for some SCSS. (I don't have a kingdom, so I'm safe.) --SK */
+
+.color-cyan header, .color-cyan header a, .color-cyan header a:hover {
+    color: #00ffff;
+}
+.color-cyan nav a {
+    border-color: #00ffff;
+}
+.color-cyan #logoImgContainer path {
+    fill: #00ffff;
+}
+
+.color-green header, .color-green header a, .color-green header a:hover {
+    color: #33ff00;
+}
+.color-green nav a {
+    border-color: #33ff00;
+}
+.color-green #logoImgContainer path {
+    fill: #33ff00;
+}
+
+.color-magenta header, .color-magenta header a, .color-magenta header a:hover {
+    color: #ff33cc;
+}
+.color-magenta nav a {
+    border-color: #ff33cc;
+}
+.color-magenta #logoImgContainer path {
+    fill: #ff33cc;
+}
+
+.color-pink header, .color-pink header a, .color-pink header a:hover {
+    color: #ff0066;
+}
+.color-pink nav a {
+    border-color: #ff0066;
+}
+.color-pink #logoImgContainer path {
+    fill: #ff0066;
+}
+
+.color-orange header, .color-orange header a, .color-orange header a:hover {
+    color: #ff9900;
+}
+.color-orange nav a {
+    border-color: #ff9900;
+}
+.color-orange #logoImgContainer path {
+    fill: #ff9900;
+}
+
+.color-yellow header, .color-yellow header a, .color-yellow header a:hover {
+    color: #ffcc00;
+}
+.color-yellow nav a {
+    border-color: #ffcc00;
+}
+.color-yellow #logoImgContainer path {
+    fill: #ffcc00;
+}
+
+
 #logoLockup{
     
 }
@@ -69,7 +132,6 @@ body{
     margin-left:20px;
     width:300px;
     display:inline-block;
-    color:#ccc;
 }
 
 .tile {
