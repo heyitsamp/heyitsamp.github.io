@@ -44,7 +44,7 @@ $(function(){
         
         $("#tilesContainer").children().click(function(){
             var theImgTagJQueryObj = $(this).find("img");
-            var str = theImgTagJQueryObj.attr("src").replace("images/", "");
+            var str = theImgTagJQueryObj.attr("src").replace("img/", "");
             str = str.replace(".png", "");
             str = str.replace(".svg", "");
             //setFeature(theImgTagJQueryObj.attr("src").substring(0,theImgTagJQueryObj.attr("src").lastIndexOf(".")))
