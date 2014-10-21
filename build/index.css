@@ -203,7 +203,8 @@ header {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-    width: 300px;
+    max-width: 300px;
+
 }
 
 .featureImageGroup{

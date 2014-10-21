@@ -179,7 +179,8 @@ header {
     display:flex;
     flex-flow: column;
     flex-wrap: wrap;
-    width: 300px;
+    max-width: 300px;
+
 }
 
 .featureImageGroup{
