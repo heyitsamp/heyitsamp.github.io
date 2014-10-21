@@ -180,7 +180,6 @@ header {
     flex-flow: column;
     flex-wrap: wrap;
     max-width: 300px;
-
 }
 
 .featureImageGroup{
@@ -192,6 +191,8 @@ header {
 .featureImageGroup > *{
     padding-bottom: 16px;
     padding-top: 16px;
+    width: auto;
+    height: auto;
 }
 
 .featureText{
@@ -208,7 +209,7 @@ header {
 }
 
 .featureLogo{
-    width: 163px;
+    max-width: 163px;
     margin-top: 100px;
     margin-right: 30px;
 }
