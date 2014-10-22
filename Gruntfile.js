@@ -15,15 +15,31 @@ module.exports = function(grunt) {
                  
             }
         },
-         watch: {
-            styles: {
-                files: ['index.css'],
-                tasks: ['postcss']
-            }
-        }
+	jshint: {
+	    options: {
+		curly: true,
+		eqeqeq: true,
+		freeze: true,
+		immed: true,
+		latedef: true,
+		undef: true,
+		unused: true,
+		strict: true
+	    },
+	    dist: {
+		src: 'js/*.js',
+	    }
+	},
+	watch: {
+	    styles: {
+		files: ['index.css'],
+		tasks: ['postcss']
+	    }
+	}
     });
 
     grunt.loadNpmTasks('grunt-postcss');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.registerTask('default', ['postcss']);
     
