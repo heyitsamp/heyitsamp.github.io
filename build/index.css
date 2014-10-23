@@ -204,7 +204,6 @@ header {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
     max-width: 300px;
-
 }
 
 .featureImageGroup{
@@ -223,6 +222,8 @@ header {
 .featureImageGroup > *{
     padding-bottom: 16px;
     padding-top: 16px;
+    width: auto;
+    height: auto;
 }
 
 .featureText{
@@ -239,14 +240,14 @@ header {
 }
 
 .featureLogo{
-    width: 163px;
     margin-top: 100px;
     margin-right: 30px;
+    width: 163px;
 }
 
 /*This is needed to remove the margin for when the logo
 goes on top of the feature text!!!!*/
-@media all and (max-width: 556px) {
+@media all and (max-width: 548px) {
     .featureLogo{
         margin-top: 0px;
     }
