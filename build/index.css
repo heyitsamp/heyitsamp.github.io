@@ -193,16 +193,13 @@ header {
 }
 
 .featureRightColumn{
-    display:-webkit-box;
-    display:-webkit-flex;
-    display:-ms-flexbox;
-    display:flex;
+    display:flex-inline;
     -webkit-flex-flow: column;
         -ms-flex-flow: column;
             flex-flow: column;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -webkit-flex-wrap: no-wrap;
+        -ms-flex-wrap: no-wrap;
+            flex-wrap: no-wrap;
     max-width: 300px;
 }
 
@@ -222,7 +219,9 @@ header {
 .featureImageGroup > *{
     padding-bottom: 16px;
     padding-top: 16px;
-    width: auto;
+    min-width:100%;
+    max-width:100%;
+    width: 100%;
     height: auto;
 }
 
