@@ -34,6 +34,40 @@ body{
     
 }
 
+div.feature-information {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+img.feature-logo, div.feature-text {
+}
+div.feature-text {
+    max-width: 50%;
+}
+img.feature-logo {
+    width: 150px;
+    height: 100px;
+}
+
+.feature-images img {
+    width: 200px;
+    height: 200px;
+}
+
 /* Half my kingdom for some SCSS. (I don't have a kingdom, so I'm safe.) --SK */
 
 .color-cyan header, .color-cyan footer, .color-cyan nav a, .color-cyan nav a:hover, color-cyan nav a:visited {
