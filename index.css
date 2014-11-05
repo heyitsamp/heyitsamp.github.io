@@ -4,7 +4,7 @@
 TODO:
 --> Get amp logos with high enough resolution that will not give highest quality results on any platform, but acceptable on most. Get 220 x 70
 
-For the header, text on top of an image is what the big website guys are doing.
+For the header, text on top of an image is what the big website guys are doing. 
 */
 
 .flexBox {
@@ -36,15 +36,21 @@ img.feature-logo, div.feature-text {
 }
 div.feature-text {
     max-width: 50%;
+    font-family:sans-serif;
+    line-height: 34px;
+    color: #999999;
 }
 img.feature-logo {
     width: 150px;
-    height: 100px;
+    height: auto;
+    margin-right: 30px;
 }
 
 .feature-images img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
+    margin: 16px;
+    border-radius: 16px
 }
 
 /* Half my kingdom for some SCSS. (I don't have a kingdom, so I'm safe.) --SK */
@@ -137,14 +143,18 @@ nav li a.current:hover {
 }
 */
 
-/*
-@media all and (max-width: 103px) {
+@media all and (max-width: 548px) {
   #logoImgContainer img{
-      
       height: auto;
   }
 }
-*/
+
+@media all and (max-width: 400px) {
+    div.feature-information{
+    flex-direction: column;
+    }
+}
+
 
 #logoText{
     font-size: 10pt;
@@ -161,7 +171,7 @@ nav li a.current:hover {
     width: 250px;
     height: 250px;
     margin: 16px;
-    border-radius: 10px;
+    border-radius: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
