@@ -67,6 +67,9 @@ img.feature-logo {
     margin-right: 30px;
 }
 
+.feature-images {
+    text-align: center;
+}
 .feature-images img {
     width: 250px;
     height: 250px;
