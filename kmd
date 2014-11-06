@@ -2,10 +2,15 @@
 <!-- AUTOMATICALLY GENERATED. DO NOT EDIT! -->
 <!-- Turn it up to 11 -->
 <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="build/index.css">
-    <script type="text/javascript" src="jquery.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <link rel="stylesheet" href="css/colorbox.css">
+    <script src="js/vendor/jquery-min.js"></script>
+    <script src="js/vendor/jquery.colorbox-min.js"></script>
+    <script src="js/colorbox-options.js"></script>
+    <script src="js/index.js"></script>
+    <title>Amp</title>
 </head>
 <body>
     <header>
@@ -54,15 +59,15 @@
         
         <nav>
             <ul>
-                <li><a href="/">HOME</a></li>
-                <li><a href="/about">ABOUT</a></li>
-                <li><a href="/labs">LABS</a></li>
-                <li><a href="/contact">CONTACT</a></li>
+                <li><a href=".">HOME</a></li>
+                <li><a href="about">ABOUT</a></li>
+                <li><a href="labs">LABS</a></li>
+                <li><a href="contact">CONTACT</a></li>
             </ul>
         </nav>
     </header>
     
-    <div id="featureSection" class="flexBox">
+    <div id="featureSection">
         <!-- content below -->
 <div class="featureLeftColumn">
     <!-- Put this "Feature's" "logo" in here -->
@@ -84,45 +89,32 @@
     </div>
 </div>    </div>
     
-    <div id="everythingBelowTheFeatureSection">
-        <hr class="featureBorder"/>
-        
-        <div id="tilesContainer" class="flexBox">
-            <a id="tile1" class="tile"
-	      href="/atomic"><img src="img/atomic.png"></a>
-            <a id="tile2" class="tile"
-	      href="/pi"><img src="img/pi.png"></a>
-            <a id="tile3" class="tile"
-	      href="/cocacola"><img src="img/cocacola.png"></a>
-            <a id="tile4" class="tile"
-	      href="/disney"><img src="img/disney.png"></a>
-            <a id="tile5" class="tile"
-	      href="/eb"><img src="img/eb.png"></a>
-            <a id="tile6" class="tile"
-	      href="/kmd"><img src="img/kmd.png"></a>
-            <a id="tile7" class="tile"
-	      href="/ms"><img src="img/ms.png"></a>
-            <a id="tile8" class="tile"
-	      href="/pg"><img src="img/pg.png"></a>
-            <a id="tile9" class="tile"
-	      href="/profile01"><img src="img/profile01.png"></a>
-            <a id="tile10" class="tile"
-	      href="/usejets"><img src="img/usjets.png"></a>
-            <a id="tile11" class="tile"
-	      href="/profile02"><img src="img/profile02.png"></a>
-            <a id="tile12" class="tile"
-	      href="/profile03"><img src="img/profile03.png"></a>
-        </div>
+  <div id="everythingBelowTheFeatureSection">
+    <hr class="featureBorder"/>
+    
+    <div id="tiles"><a
+      id="atomic" href="atomic"><img src="img/index/atomic.png"></a><a
+      id="pi" href="pi"><img src="img/index/pi.png"></a><a
+      id="coca-cola" href="coca-cola"><img src="img/index/coca-cola.png"></a><a
+      id="disney" href="disney"><img src="img/disney/disney.png"></a><a
+      id="eb" href="eb"><img src="img/index/eb.png"></a><a
+      id="kmd" href="kmd"><img src="img/index/kmd.png"></a><a
+      id="microsoft" href="microsoft"><img src="img/index/microsoft.png"></a><a
+      id="pg" href="pg"><img src="img/index/pg.png"></a><a
+      id="profile01" href="profile01"><img src="img/index/profile01.png"></a><a
+      id="usejets" href="usejets"><img src="img/index/usjets.png"></a><a
+      id="profile02" href="profile02"><img src="img/index/profile02.png"></a><a
+      id="profile03" href="profile03"><img src="img/index/profile03.png"></a></div>
 
-        <footer>
-            <nav>
-                <ul>
-		  <li><a href="/">HOME</a></li>
-		  <li><a href="/about">ABOUT</a></li>
-		  <li><a href="/labs">LABS</a></li>
-		  <li><a href="/contact">CONTACT</a></li>
-                </ul>
-            </nav>
-        </footer>
-    </div>
+    <footer>
+	<nav>
+	    <ul>
+	      <li><a href=".">HOME</a></li>
+	      <li><a href="about">ABOUT</a></li>
+	      <li><a href="labs">LABS</a></li>
+	      <li><a href="contact">CONTACT</a></li>
+	    </ul>
+	</nav>
+    </footer>
+  </div>
 </body>

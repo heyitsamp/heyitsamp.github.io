@@ -195,26 +195,6 @@ nav li a.current:hover {
     display:inline-block;
 }
 
-.tile {
-    width: 250px;
-    height: 250px;
-    margin: 16px;
-    border-radius: 16px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    cursor: pointer;
-}
-
 header {
     text-align: center;
     background: black;
@@ -359,41 +339,52 @@ nav a:active {
     z-index: 2;
 }
 
-#tilesContainer {
-  background: black;
-    
+#tiles {
+    text-align: center;
+}
+#tiles > a {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    margin: 16px;
+    line-height: 250px;
+    text-align: center;
+    border-radius: 16px;
+    cursor: pointer;
+}
+#tiles > a > img {
+    vertical-align: middle;
 }
 
-/*The tiles*/
-#tile1{
+#atomic {
     background: #ff33cc;
 }
 
-#tile2{
+#pi {
     background: #00ccff;
 }
 
-#tile3{
+#coca-cola {
     background: #ff9900;
 }
 
-#tile4{
+#disney {
     background: #33cc00;
 }
 
-#tile5{
+#eb {
     background: #ffcc00;
 }
 
-#tile6{
+#kmd{
     background: #cc00ff;
 }
 
-#tile7{
+#microsoft {
     background: #333333;
 }
 
-#tile8{
+#pg {
     background: #ff0066;
 }
 

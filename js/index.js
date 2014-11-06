@@ -40,7 +40,7 @@ $(function(){
             imgFadeInAfterLoad($(this));
         });
         
-        $("#tilesContainer > a").on("click", function(event) {
+        $("#tiles > a").on("click", function(event) {
 	    event.preventDefault();
             setFeature($(this).attr("href"));
         });
