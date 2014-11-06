@@ -23,7 +23,7 @@ $(function(){
     var featureSlideRevealSpeed = 500;
     var featureFadeOutSpeed = 150;
     var featureFadeInSpeed = 1000;
-    var featureSectionJQueryObj = $("#featureSection");
+    var $feature = $("#featureSection");
     var featureSectionNumImgs = 0;
     var featureSectionImgIterator = 0;
     var currentFeature = "";
@@ -40,20 +40,17 @@ $(function(){
             imgFadeInAfterLoad($(this));
         });
         
-        $("#tilesContainer").children().click(function(event){
+        $("#tilesContainer > a").on("click", function(event) {
 	    event.preventDefault();
-            var theImgTagJQueryObj = $(this).find("img");
-            var str = theImgTagJQueryObj.attr("src").replace("img/", "");
-            str = str.replace(".png", "");
-            str = str.replace(".svg", "");
-            //setFeature(theImgTagJQueryObj.attr("src").substring(0,theImgTagJQueryObj.attr("src").lastIndexOf(".")))
-            setFeature(str);
+            setFeature($(this).attr("href"));
         });
         
         randomizeHeaderColor();
         $("nav li a").click(onNavItemClick);
     }
-    
+
+    // setFeature loads feature and displays it. feature is named like
+    // "disney".
     function setFeature(feature){
         if(feature == currentFeature){
             return;
@@ -61,24 +58,26 @@ $(function(){
         currentFeature = feature;
         $("body, html").animate({scrollTop : 0}, scrollToTopOfPageSpeed);
         trace("");
-        featureSectionJQueryObj.animate({opacity:0}, featureFadeOutSpeed, function(){
-            featureSectionJQueryObj.load("content/" + feature + ".html", function(){
+        $feature.animate({opacity:0}, featureFadeOutSpeed, function(){
+            $feature.load("content/" + feature + ".html", function() {
+		$("div.feature-images > a").colorbox(colorboxOptions);
+		
                 /*STYLE 1 --- THE PAGE SLIDES TO FIT THE NEW LOADED CONTENT, AND THEN THE FEATURE FADES IN*/
-                $("#everythingBelowTheFeatureSection").animate({top:(featureSectionJQueryObj.offset().top + featureSectionJQueryObj.height() + "px")}, featureSlideRevealSpeed, function(){featureSectionJQueryObj.animate({opacity:100}, featureFadeInSpeed);});
+                $("#everythingBelowTheFeatureSection").animate({top:($feature.offset().top + $feature.height() + "px")}, featureSlideRevealSpeed, function(){$feature.animate({opacity:100}, featureFadeInSpeed);});
                 
-                //featureSectionJQueryObj.find("img").each().load(function(){revealFeatureSection();});
-                //featureSectionJQueryObj.find("img").each().load(function(){});
-                //featureSectionJQueryObj.find("img").each(function(){});
-                featureSectionNumImgs = featureSectionJQueryObj.find("img").length;
-                featureSectionJQueryObj.find("img").each(function(){$(this).load(revealFeatureSection())});
-                //featureSectionJQueryObj.find("img").each($(this).load(revealFeatureSection();));
+                //$feature.find("img").each().load(function(){revealFeatureSection();});
+                //$feature.find("img").each().load(function(){});
+                //$feature.find("img").each(function(){});
+                featureSectionNumImgs = $feature.find("img").length;
+                $feature.find("img").each(function(){$(this).load(revealFeatureSection())});
+                //$feature.find("img").each($(this).load(revealFeatureSection();));
                 
             });
                 /*END STYLE 1*/
                 
                 /*STYLE 2 --- THE CONTENT LOADS AND FADES IN WHILE THE PAGE SLIDES TO FIT THE NEW LOADED CONTENT*/
-            /*$("#everythingBelowTheFeatureSection").animate({top:(featureSectionJQueryObj.offset().top + featureSectionJQueryObj.height() + "px")}, featureSlideRevealSpeed);
-                featureSectionJQueryObj.animate({opacity:100}, featureFadeInSpeed);
+            /*$("#everythingBelowTheFeatureSection").animate({top:($feature.offset().top + $feature.height() + "px")}, featureSlideRevealSpeed);
+                $feature.animate({opacity:100}, featureFadeInSpeed);
             });*/
                 /*END STYLE 2*/
                 
@@ -87,8 +86,8 @@ $(function(){
     
     function revealFeatureSection(){
         /*trace("image loaded!");
-        $("#everythingBelowTheFeatureSection").animate({top:(featureSectionJQueryObj.offset().top + featureSectionJQueryObj.height() + "px")}, featureSlideRevealSpeed);
-        featureSectionJQueryObj.animate({opacity:100}, featureFadeInSpeed);
+        $("#everythingBelowTheFeatureSection").animate({top:($feature.offset().top + $feature.height() + "px")}, featureSlideRevealSpeed);
+        $feature.animate({opacity:100}, featureFadeInSpeed);
         */
     }
     
