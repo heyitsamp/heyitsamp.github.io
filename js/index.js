@@ -28,6 +28,7 @@ $(function(){
     var featureSectionNumImgs = 0;
     var featureSectionImgIterator = 0;
     var currentFeature = "";
+    var currentHeaderColor;
     
     /**********************
     COMMENCE THE INITIATION
@@ -124,6 +125,11 @@ $(function(){
 	var body = $("body"),
             randColor = colorList[Math.floor(Math.random()*colorList.length)];
 	clearColorClasses(body);
+    if(currentHeaderColor == randColor){
+        randomizeHeaderColor();
+        return;
+    }
+    currentHeaderColor = randColor;
 	body.addClass(randColor);
     }
     
