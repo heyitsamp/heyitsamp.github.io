@@ -6,16 +6,15 @@
 	var historySupport = !!(window.history && history.pushState);
 
     var updateFeature = function() {
-		var feature = location.pathname.slice(1),
-			$feature = $("#feature");
+		var feature = location.pathname.slice(1);
 
-		if (feature.length === 0 && $feature.children().length > 0) {
-			$feature.empty();
+		if (feature.length === 0) {
+			$("#tiles > div.feature").remove();
 			return;
 		}
 
 	    var href = "content/" + feature + ".html";
-		$feature.load(href, function(response, status, xhr) {
+		$("#"+feature).after($("<div class=feature></div>").load(href, function(response, status, xhr) {
 			if (status !== "success") {
 				console.log("Error: "+xhr.status+" "+xhr.statusText+": "+href);
 
@@ -26,7 +25,7 @@
 				return;
 			}
 			$("div.feature-images > a").colorbox(colorboxOptions);
-		});
+		}));
     };
     
 	if (historySupport) {
@@ -46,8 +45,7 @@
 			event.preventDefault();
 
 			history.pushState(null, null, $(this).attr("href"));
-			$("html, body").animate({scrollTop: $feature.offset().top},
-				scrollTime);
+			$("html, body").animate({scrollTop: $(this).offset().top}, scrollTime);
 			updateFeature();
 		});
 	});
@@ -71,14 +69,7 @@ $(function(){
     PRIVATE PROPERTIES
     *******************************/
     // var imgFadeInSpeed = 3000;
-    // var featureSlideRevealSpeed = 500;
-    // var featureFadeOutSpeed = 150;
-    // var featureFadeInSpeed = 1000;
-    // var featureSectionNumImgs = 0;
     var currentHeaderColor;
-
-    // var scrollTime = 500,
-    // var $feature = $("#featureSection");
 
     /**********************
     COMMENCE THE INITIATION
@@ -102,12 +93,6 @@ $(function(){
 	    // in load success, check time
 	    // set timeout if not long enough
 	    // otherwise call directly
-
-	    // $("html, body").animate({scrollTop : 0}, scrollToTopOfPageSpeed);
-	    // also roll up feature, if it is open
-	    // kick off xhr, but load result manually
-	    // load result hidden
-	    // unroll result
         
         randomizeHeaderColor();
 
@@ -127,74 +112,32 @@ $(function(){
 
     }());
 
-    /* setFeature 
-    function setFeature(feature) {
-        $feature.animate({opacity:0}, featureFadeOutSpeed, function(){
-            $feature.load(href, function(response, status, xhr) {
-		// console.log(location.href);
-		
-                /*STYLE 1 --- THE PAGE SLIDES TO FIT THE NEW LOADED CONTENT, AND THEN THE FEATURE FADES IN* /
-                $("#everythingBelowTheFeatureSection").animate({top:($feature.offset().top + $feature.height() + "px")}, featureSlideRevealSpeed, function(){$feature.animate({opacity:100}, featureFadeInSpeed);});
-                
-                //$feature.find("img").each().load(function(){revealFeatureSection();});
-                //$feature.find("img").each().load(function(){});
-                //$feature.find("img").each(function(){});
-                featureSectionNumImgs = $feature.find("img").length;
-                $feature.find("img").each(function() {
-		    $(this).load(revealFeatureSection());
-		});
-                //$feature.find("img").each($(this).load(revealFeatureSection();));
-
-            });
-                // END STYLE 1
-
-                /*STYLE 2 --- THE CONTENT LOADS AND FADES IN WHILE THE PAGE SLIDES TO FIT THE NEW LOADED CONTENT* /
-            /*$("#everythingBelowTheFeatureSection").animate({top:($feature.offset().top + $feature.height() + "px")}, featureSlideRevealSpeed);
-                $feature.animate({opacity:100}, featureFadeInSpeed);
-            });* /
-                //END STYLE 2
-
-        });
-    }
     
-    function revealFeatureSection(){
-        /*trace("image loaded!");
-        $("#everythingBelowTheFeatureSection").animate({top:($feature.offset().top + $feature.height() + "px")}, featureSlideRevealSpeed);
-        $feature.animate({opacity:100}, featureFadeInSpeed);
-        * /
-    }
-
-    
+	/*
     function imgFadeInAfterLoad(jqImgTagObj){
         jqImgTagObj.animate({opacity: 100}, imgFadeInSpeed);
     }
 	*/
     
     function clearColorClasses(element) {
-	var i,
-	    classes = (element.attr("class") || "").split(" ");
-	for (i = 0; i < classes.length; i++) {
-	    if (classes[i].substring(0, "color-".length) === "color-") {
-		element.removeClass(classes[i]);
-	    }
-	}
+		var i,
+			classes = (element.attr("class") || "").split(" ");
+		for (i = 0; i < classes.length; i++) {
+			if (classes[i].substring(0, "color-".length) === "color-") {
+			element.removeClass(classes[i]);
+			}
+		}
     }
     
     function randomizeHeaderColor() {
-	var body = $("body"),
-            randColor = colorList[Math.floor(Math.random()*colorList.length)];
-	clearColorClasses(body);
-    if(currentHeaderColor === randColor){
-        randomizeHeaderColor();
-        return;
+		var body = $("body"),
+			randColor = colorList[Math.floor(Math.random()*colorList.length)];
+		clearColorClasses(body);
+		if(currentHeaderColor === randColor){
+			randomizeHeaderColor();
+			return;
+		}
+		currentHeaderColor = randColor;
+		body.addClass(randColor);
     }
-    currentHeaderColor = randColor;
-	body.addClass(randColor);
-    }
-    
-    /*
-    function trace(str){
-        console.log(str);
-    }
-    */
 });

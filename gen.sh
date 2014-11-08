@@ -19,6 +19,10 @@ for f in content/*.html; do
     esac
     bare=`basename $f .html`
     echo creating "$bare"
+
+    echo 'BROKEN TEMPORARILY' >"$bare"
+
+    continue
     sed '
 	1a\
 <!-- AUTOMATICALLY GENERATED. DO NOT EDIT! -->

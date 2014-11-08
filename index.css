@@ -26,6 +26,15 @@ body{
     
 }
 
+div.feature {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+div.feature > div {
+    display: inline-block;
+}
+
 div.feature-information {
     display: flex;
     flex-direction: row;
