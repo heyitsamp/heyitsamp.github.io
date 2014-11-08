@@ -41,6 +41,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default', ['postcss']);
+    grunt.registerTask('default', ['postcss', 'jshint']);
     
 };

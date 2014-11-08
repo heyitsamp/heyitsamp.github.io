@@ -67,7 +67,7 @@
         </nav>
     </header>
     
-    <div id="featureSection">
+    <div id="feature">
         <!-- content below -->
 <div class="featureLeftColumn">
     <!-- Put this "Feature's" "logo" in here -->

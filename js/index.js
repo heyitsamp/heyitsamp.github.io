@@ -1,88 +1,159 @@
-/* global $, console */
+/* global $, document, console, window, colorboxOptions, location, history */
+(function() {
+    "use strict";
+    var scrollTime = 500;
+
+	var historySupport = !!(window.history && history.pushState);
+
+    var updateFeature = function() {
+		var feature = location.pathname.slice(1),
+			$feature = $("#feature");
+
+		if (feature.length === 0 && $feature.children().length > 0) {
+			$feature.empty();
+			return;
+		}
+
+	    var href = "content/" + feature + ".html";
+		$feature.load(href, function(response, status, xhr) {
+			if (status !== "success") {
+				console.log("Error: "+xhr.status+" "+xhr.statusText+": "+href);
+
+				// The browser will give a familiar error message if we do
+				// it the old fashioned way.
+				// However, after this, back is broken in IE and Chrome.
+				window.location.href = feature;
+				return;
+			}
+			$("div.feature-images > a").colorbox(colorboxOptions);
+		});
+    };
+    
+	if (historySupport) {
+		$(window).on("popstate", function() {
+			updateFeature();
+		});
+	}
+
+	$(document).ready(function() {
+		var $feature = $("#feature");
+
+		$("#tiles > a").on("click", function(event) {
+			if (!historySupport) {
+				// let the browser treat it like a regular link
+				return;
+			}
+			event.preventDefault();
+
+			history.pushState(null, null, $(this).attr("href"));
+			$("html, body").animate({scrollTop: $feature.offset().top},
+				scrollTime);
+			updateFeature();
+		});
+	});
+}());
 $(function(){
+    "use strict";
 
     /******************************
     PUBLIC PROPERTIES
     *******************************/
     var colorList = [
-	"color-cyan",
-	"color-green",
-	"color-magenta",
-	"color-pink",
-	"color-orange",
-	"color-yellow"
-    ]
-    
-    var colorsUsedAlready = [];
+		"color-cyan",
+		"color-green",
+		"color-magenta",
+		"color-pink",
+		"color-orange",
+		"color-yellow"
+    ];
     
     /******************************
     PRIVATE PROPERTIES
     *******************************/
-    var imgFadeInSpeed = 3000;
-    var logoTextFadeInSpeed = 3000;
-    var scrollToTopOfPageSpeed = 500;
-    var featureSlideRevealSpeed = 500;
-    var featureFadeOutSpeed = 150;
-    var featureFadeInSpeed = 1000;
-    var $feature = $("#featureSection");
-    var featureSectionNumImgs = 0;
-    var featureSectionImgIterator = 0;
-    var currentFeature = "";
+    // var imgFadeInSpeed = 3000;
+    // var featureSlideRevealSpeed = 500;
+    // var featureFadeOutSpeed = 150;
+    // var featureFadeInSpeed = 1000;
+    // var featureSectionNumImgs = 0;
     var currentHeaderColor;
-    
+
+    // var scrollTime = 500,
+    // var $feature = $("#featureSection");
+
     /**********************
     COMMENCE THE INITIATION
     ***********************/
-    initUI();
-    
-    function initUI(){
-        $("#everythingBelowTheFeatureSection").css("top", $("header").height() + "px");
+    (function (){
+
+		/* BUG: broken in IE
+			$("img").css("opacity", "0").load(function(){
+				imgFadeInAfterLoad($(this));
+			});
+		*/
         
-        $("img").css("opacity", "0").load(function(){
-            imgFadeInAfterLoad($(this));
-        });
-        
-        $("#tiles > a").on("click", function(event) {
-	    event.preventDefault();
-            setFeature($(this).attr("href"));
-        });
+	    // zero the height of the old element and remove it
+	    // xhr into a new element and then set it's height
+
+	    // how to load something zero height and animate it's height to full?
+
+	    // how to xhr not to element?
+	    // or xhr to zero height element?
+
+	    // in load success, check time
+	    // set timeout if not long enough
+	    // otherwise call directly
+
+	    // $("html, body").animate({scrollTop : 0}, scrollToTopOfPageSpeed);
+	    // also roll up feature, if it is open
+	    // kick off xhr, but load result manually
+	    // load result hidden
+	    // unroll result
         
         randomizeHeaderColor();
-        $("nav li a").click(onNavItemClick);
-    }
 
-    // setFeature loads feature and displays it. feature is named like
-    // "disney".
-    function setFeature(feature){
-        if(feature == currentFeature){
-            return;
-        }
-        currentFeature = feature;
-        $("body, html").animate({scrollTop : 0}, scrollToTopOfPageSpeed);
-        trace("");
+        $("nav li a").click(function(event) {
+			event.preventDefault();
+
+			$("nav li a").removeClass("current");
+
+			// addClass on both header and footer item
+			var destination = this.href;
+			$("nav li a").filter(function() {
+			return this.href === destination;
+	    }).addClass("current");
+
+	    randomizeHeaderColor();
+	});
+
+    }());
+
+    /* setFeature 
+    function setFeature(feature) {
         $feature.animate({opacity:0}, featureFadeOutSpeed, function(){
-            $feature.load("content/" + feature + ".html", function() {
-		$("div.feature-images > a").colorbox(colorboxOptions);
+            $feature.load(href, function(response, status, xhr) {
+		// console.log(location.href);
 		
-                /*STYLE 1 --- THE PAGE SLIDES TO FIT THE NEW LOADED CONTENT, AND THEN THE FEATURE FADES IN*/
+                /*STYLE 1 --- THE PAGE SLIDES TO FIT THE NEW LOADED CONTENT, AND THEN THE FEATURE FADES IN* /
                 $("#everythingBelowTheFeatureSection").animate({top:($feature.offset().top + $feature.height() + "px")}, featureSlideRevealSpeed, function(){$feature.animate({opacity:100}, featureFadeInSpeed);});
                 
                 //$feature.find("img").each().load(function(){revealFeatureSection();});
                 //$feature.find("img").each().load(function(){});
                 //$feature.find("img").each(function(){});
                 featureSectionNumImgs = $feature.find("img").length;
-                $feature.find("img").each(function(){$(this).load(revealFeatureSection())});
+                $feature.find("img").each(function() {
+		    $(this).load(revealFeatureSection());
+		});
                 //$feature.find("img").each($(this).load(revealFeatureSection();));
-                
+
             });
-                /*END STYLE 1*/
-                
-                /*STYLE 2 --- THE CONTENT LOADS AND FADES IN WHILE THE PAGE SLIDES TO FIT THE NEW LOADED CONTENT*/
+                // END STYLE 1
+
+                /*STYLE 2 --- THE CONTENT LOADS AND FADES IN WHILE THE PAGE SLIDES TO FIT THE NEW LOADED CONTENT* /
             /*$("#everythingBelowTheFeatureSection").animate({top:($feature.offset().top + $feature.height() + "px")}, featureSlideRevealSpeed);
                 $feature.animate({opacity:100}, featureFadeInSpeed);
-            });*/
-                /*END STYLE 2*/
-                
+            });* /
+                //END STYLE 2
+
         });
     }
     
@@ -90,27 +161,15 @@ $(function(){
         /*trace("image loaded!");
         $("#everythingBelowTheFeatureSection").animate({top:($feature.offset().top + $feature.height() + "px")}, featureSlideRevealSpeed);
         $feature.animate({opacity:100}, featureFadeInSpeed);
-        */
+        * /
     }
+
     
     function imgFadeInAfterLoad(jqImgTagObj){
         jqImgTagObj.animate({opacity: 100}, imgFadeInSpeed);
     }
+	*/
     
-    function onNavItemClick(event) {
-	event.preventDefault();
-
-	$("nav li a").removeClass("current");
-
-	// addClass on both header and footer item
-	var href = $(this).attr("href");
-	$("nav li a").filter(function() {
-	    return $(this).attr("href") === href;
-	}).addClass("current");
-
-        randomizeHeaderColor();
-    }
-
     function clearColorClasses(element) {
 	var i,
 	    classes = (element.attr("class") || "").split(" ");
@@ -119,13 +178,13 @@ $(function(){
 		element.removeClass(classes[i]);
 	    }
 	}
-    };
+    }
     
     function randomizeHeaderColor() {
 	var body = $("body"),
             randColor = colorList[Math.floor(Math.random()*colorList.length)];
 	clearColorClasses(body);
-    if(currentHeaderColor == randColor){
+    if(currentHeaderColor === randColor){
         randomizeHeaderColor();
         return;
     }
@@ -133,7 +192,9 @@ $(function(){
 	body.addClass(randColor);
     }
     
+    /*
     function trace(str){
         console.log(str);
     }
+    */
 });

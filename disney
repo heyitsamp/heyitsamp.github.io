@@ -67,7 +67,7 @@
         </nav>
     </header>
     
-    <div id="featureSection">
+    <div id="feature">
         <!-- content below -->
 <div><!-- this div makes firefox happy. i'm sure we'll find a use for it ~sk -->
   <div class="feature-information">

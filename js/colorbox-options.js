@@ -1,3 +1,4 @@
+/* exported colorboxOptions */
 // docs are here, toward bottom of page: http://www.jacklmoore.com/colorbox/
 var colorboxOptions = {
     // key: "value",
