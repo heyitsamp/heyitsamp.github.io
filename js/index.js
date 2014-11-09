@@ -13,7 +13,7 @@
 			return;
 		}
 
-	    var href = "content/" + feature + ".html";
+	    var href = "features/" + feature + ".html";
 		$("#"+feature).after($("<div class=feature></div>").load(href, function(response, status, xhr) {
 			if (status !== "success") {
 				console.log("Error: "+xhr.status+" "+xhr.statusText+": "+href);
@@ -35,8 +35,6 @@
 	}
 
 	$(document).ready(function() {
-		var $feature = $("#feature");
-
 		$("#tiles > a").on("click", function(event) {
 			if (!historySupport) {
 				// let the browser treat it like a regular link
