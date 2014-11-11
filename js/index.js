@@ -15,7 +15,7 @@
 		}
 
 	    var href = "features/" + feature + ".html";
-		$("#"+feature).after($("<div class=feature></div>").load(href, function(response, status, xhr) {
+		$("#"+feature).after($("<div class=feature><img src='img/colorbox/loading.gif' /></div>").load(href, function(response, status, xhr) {
 			if (status !== "success") {
 				console.log("Error: "+xhr.status+" "+xhr.statusText+": "+href);
 
