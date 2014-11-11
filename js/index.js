@@ -6,9 +6,10 @@
 	var historySupport = !!(window.history && history.pushState);
 
     var updateFeature = function() {
-		var feature = location.pathname.slice(1);
+		var path = location.pathname;
+		var feature = path.slice(path.lastIndexOf("/")+1);
 
-		if (feature.length === 0) {
+		if (feature.length === 0 || feature == "index.html") {
 			$("#tiles > div.feature").remove();
 			return;
 		}
