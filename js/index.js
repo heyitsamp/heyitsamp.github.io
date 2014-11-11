@@ -1,7 +1,8 @@
 /* global $, document, console, window, colorboxOptions, location, history */
 (function() {
     "use strict";
-    var scrollTime = 500;
+    var scrollTime = 500,
+		loadingImage = "img/colorbox/loading.gif";
 
 	var historySupport = !!(window.history && history.pushState);
 
@@ -15,7 +16,7 @@
 		}
 
 	    var href = "features/" + feature + ".html";
-		$("#"+feature).after($("<div class=feature><img src='img/colorbox/loading.gif' /></div>").load(href, function(response, status, xhr) {
+		$("#"+feature).after($("<div class=feature><img src=\""+loadingImage+"\" /></div>").load(href, function(response, status, xhr) {
 			if (status !== "success") {
 				console.log("Error: "+xhr.status+" "+xhr.statusText+": "+href);
 
@@ -47,6 +48,7 @@
 			$("html, body").animate({scrollTop: $(this).offset().top}, scrollTime);
 			updateFeature();
 		});
+		$("<img />").attr("src", loadingImage);
 	});
 }());
 $(function(){
