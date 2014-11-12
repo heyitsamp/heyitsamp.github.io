@@ -64,6 +64,10 @@ img.feature-logo {
     margin: 16px;
     border-radius: 16px
 }
+.disney {
+    background-image: src="img/disney/disney_bg.png";
+}
+
 
 /* Half my kingdom for some SCSS. (I don't have a kingdom, so I'm safe.) --SK */
 
