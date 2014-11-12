@@ -86,7 +86,7 @@ img.feature-logo {
     border-radius: 16px
 }
 .disney {
-    background-image: src="img/disney/disney_bg.png";
+    background-image: url(../img/disney/disney_bg.png);
 }
 
 
