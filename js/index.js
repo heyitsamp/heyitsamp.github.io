@@ -10,8 +10,8 @@
 		var path = location.pathname;
 		var feature = path.slice(path.lastIndexOf("/")+1);
 
+		$("#tiles > div.feature").remove();
 		if (feature.length === 0 || feature == "index.html") {
-			$("#tiles > div.feature").remove();
 			return;
 		}
 
