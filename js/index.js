@@ -15,6 +15,8 @@
 			return;
 		}
 
+		$("html, body").animate({scrollTop: $("#"+feature).offset().top}, scrollTime);
+
 	    var href = "features/" + feature + ".html";
 		$("#"+feature).after($("<div class=feature><img src=\""+loadingImage+"\" /></div>").load(href, function(response, status, xhr) {
 			if (status !== "success") {
@@ -45,7 +47,6 @@
 			event.preventDefault();
 
 			history.pushState(null, null, $(this).attr("href"));
-			$("html, body").animate({scrollTop: $(this).offset().top}, scrollTime);
 			updateFeature();
 		});
 		$("<img />").attr("src", loadingImage);
