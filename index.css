@@ -31,6 +31,15 @@ div.feature {
     width: 100%;
     text-align: left;
 }
+
+.cboxElement:hover,
+.cboxElement:active,
+.cboxElement:focus {
+    outline:0;
+}
+
+
+
 div.feature > div {
     display: inline-block;
 }
