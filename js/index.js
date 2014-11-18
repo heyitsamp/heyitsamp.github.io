@@ -77,14 +77,14 @@ $(function(){
     /**********************
     COMMENCE THE INITIATION
     ***********************/
-    (function (){
+    (function () {
 
 		/* BUG: broken in IE
 			$("img").css("opacity", "0").load(function(){
 				imgFadeInAfterLoad($(this));
 			});
 		*/
-        
+
 	    // zero the height of the old element and remove it
 	    // xhr into a new element and then set it's height
 
@@ -96,7 +96,7 @@ $(function(){
 	    // in load success, check time
 	    // set timeout if not long enough
 	    // otherwise call directly
-        
+
         randomizeHeaderColor();
 
         $("nav li a").click(function(event) {
@@ -107,15 +107,15 @@ $(function(){
 			// addClass on header item
 			var destination = this.href;
 			$("nav li a").filter(function() {
-			return this.href === destination;
-	    }).addClass("current");
+				return this.href === destination;
+			}).addClass("current");
 
-	    randomizeHeaderColor();
-	});
+			randomizeHeaderColor();
+		});
 
     }());
 
-    
+
 	/*
     function imgFadeInAfterLoad(jqImgTagObj){
         jqImgTagObj.animate({opacity: 100}, imgFadeInSpeed);
