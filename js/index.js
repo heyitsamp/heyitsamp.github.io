@@ -104,7 +104,7 @@ $(function(){
 
 			$("nav li a").removeClass("current");
 
-			// addClass on both header and footer item
+			// addClass on header item
 			var destination = this.href;
 			$("nav li a").filter(function() {
 			return this.href === destination;
