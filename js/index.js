@@ -15,7 +15,8 @@
 			return;
 		}
 
-		$("html, body").animate({scrollTop: $("#"+feature).offset().top}, scrollTime);
+		var square = $("#"+feature);
+		$("html, body").animate({scrollTop: square.offset().top+square.height()-32}, scrollTime);
 
 	    var href = "features/" + feature + ".html";
 		$("#"+feature).after($("<div class=feature><img src=\""+loadingImage+"\" /></div>").load(href, function(response, status, xhr) {
