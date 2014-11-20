@@ -3,7 +3,6 @@
     "use strict";
 
     //Run this JS soon as the js file loads
-    //$({....}) waits until the document loads. $(){} <---- Function is same as $(document).ready(){}
 
 
     var scrollTime = 500,
@@ -60,7 +59,7 @@
         "square" variable contains an <img> tag*/
 
         var featureHrefPrepend = "features/";
-        var href;
+        var href = featureHrefPrepend + feature + ".html";
 
         if(square.has("img").length > 0){
             //Is tile
@@ -72,12 +71,10 @@
                 */
                 fx.end = square.offset().top+square.height()-32;
             }});
-            href = featureHrefPrepend + feature + ".html";
             $("#"+feature).after($("<div class=feature><img src=\""+loadingImage+"\" /></div>").load(href, ajaxCallback));
         } else {
             //Is nav item
             $("html, body").animate({scrollTop: 0}, scrollTime);
-            href = featureHrefPrepend + feature + ".html";
             $("#tiles").prepend($("<div class=feature><img src=\""+loadingImage+"\" /></div>").load(href, ajaxCallback));
         }
 
