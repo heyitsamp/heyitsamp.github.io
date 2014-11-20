@@ -69,6 +69,7 @@
                 window.location.href = feature;
                 return;
             } else {
+                /*jshint validthis:true */
                 $(this).slideDown(scrollTime);
             }
         }

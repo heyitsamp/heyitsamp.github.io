@@ -89,7 +89,29 @@
   <div id="tiles">
       <!--about feature appears here:-->
       <!--labs feature appears here:-->
-      <!--contact feature appears here:-->
+      <!--contact feature appears here:--><div class=feature><div class="disney"><!-- this div makes firefox happy. i'm sure we'll find a use for it ~sk -->
+  <div class="feature-information">
+    <img class="feature-logo" src="img/index/disney.png" />
+    <div class="feature-text">
+      <p>ipsum dolor sit amet, denique adolescens ut sed. Mei simul tantas
+      aliquam ei, eleifend maiestatis cu usu. Porro tempor efficiantur nam ex, sed
+      erat erant ad. Ex dicat causae eirmod eos, at hinc soleat lobortis sit.</p>
+
+      <p>Usu graece iisque contentiones cu, cu affert meliore prodesset cum. Et
+      est tota mutat, ei repudiare deseruisse vis. Usu inani expetenda an, no sea
+      omnis perpetua torquatos, id graece luptatum has. Enim nemore molestie vel
+      ei, cum an possim insolens. Eu quo vero prompta mentitum, ut vix stet
+      aperiam praesent.</p>
+    </div>
+  </div>
+
+  <div class="feature-images">
+      <a href="img/disney/disney01.png"><img src="img/disney/disneybox01.png"
+      /></a><a href="img/disney/disney02.png"><img src="img/disney/disneybox02.png"
+      /></a><a href="img/disney/disney03.png"><img src="img/disney/disneybox03.png" /></a>
+  </div>
+</div>
+</div>
     <a id="atomic" href="atomic"><img src="img/index/atomic.png"></a><!--
     atomic feature appears here:--><a
     id="pi" href="pi"><img src="img/index/pi.png"></a><!--
@@ -101,25 +123,7 @@
     id="eb" href="eb"><img src="img/index/eb.png"></a><!--
     eb feature appears here:--><a
     id="kmd" href="kmd"><img src="img/index/kmd.png"></a><!--
-    kmd feature appears here:--><div class=feature><div class="featureLeftColumn">
-    <!-- Put this "Feature's" "logo" in here -->
-    <img class="featureLogo" src="">
-</div>
-
-<div class="featureRightColumn">
-    <!-- Put the paragraph of text in here -->
-    <div class="featureText">
-        <p>
-            Hey it's me KMD
-        </p>
-    </div>
-    <!-- This is the stack of images -->
-    <div class="featureImageGroup">
-        <img src="">
-        <img src="">
-        <img src="">
-    </div>
-</div></div><a
+    kmd feature appears here:--><a
     id="microsoft" href="microsoft"><img src="img/index/microsoft.png"></a><!--
     microsoft feature appears here:--><a
     id="pg" href="pg"><img src="img/index/pg.png"></a><!--
