@@ -14,7 +14,7 @@
 
 	var historySupport = !!(window.history && history.pushState);
 
-    var updateFeature = function() {
+    var updateFeature = function(scrollLocation) {
 		var path = location.pathname;
 		var feature = path.slice(path.lastIndexOf("/")+1);
 
@@ -24,7 +24,10 @@
 		}
 
 		var square = $("#"+feature);
-		$("html, body").animate({scrollTop: square.offset().top+square.height()-32}, scrollTime);
+		if (scrollLocation === undefined) {
+			scrollLocation = square.offset().top + square.height() - 32;
+		}
+		$("html, body").animate({scrollTop: scrollLocation}, scrollTime);
 
 	    var href = "features/" + feature + ".html";
 		$("#"+feature).after($("<div class=feature><img src=\""+loadingImage+"\" /></div>").load(href, function(response, status, xhr) {
@@ -97,7 +100,8 @@
 			}).addClass("current");
 
 			history.pushState(null, null, $(this).attr("href"));
-			updateFeature();
+			// BUG: scrolling to page top on nav click might not be ideal
+			updateFeature(0);
 		});
 
 		$("<img />").attr("src", loadingImage);
