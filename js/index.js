@@ -2,7 +2,15 @@
 (function() {
     "use strict";
     var scrollTime = 500,
-		loadingImage = "img/colorbox/loading.gif";
+		loadingImage = "img/colorbox/loading.gif",
+        colorList = [
+			"color-cyan",
+			"color-green",
+			"color-magenta",
+			"color-pink",
+			"color-orange",
+			"color-yellow"
+		];
 
 	var historySupport = !!(window.history && history.pushState);
 
@@ -39,52 +47,64 @@
 		});
 	}
 
+    var clearColorClasses = function(element) {
+		var i,
+			classes = (element.attr("class") || "").split(" ");
+		for (i = 0; i < classes.length; i++) {
+			if (classes[i].substring(0, "color-".length) === "color-") {
+			element.removeClass(classes[i]);
+			}
+		}
+    };
+    
+    var currentHeaderColor;
+    var randomizeHeaderColor = function() {
+		var body = $("body"),
+			randColor = colorList[Math.floor(Math.random()*colorList.length)];
+		clearColorClasses(body);
+		if (currentHeaderColor === randColor) {
+			randomizeHeaderColor();
+			return;
+		}
+		currentHeaderColor = randColor;
+		body.addClass(randColor);
+    };
+
 	$(document).ready(function() {
-		$("#tiles > a, #navv > a").on("click", function(event) {
+		$("#tiles > a").on("click", function(event) {
 			if (!historySupport) {
 				// let the browser treat it like a regular link
 				return;
 			}
 			event.preventDefault();
 
-			console.log($(this).attr("href"));
 			history.pushState(null, null, $(this).attr("href"));
 			updateFeature();
 		});
+		$("#navv > a").on("click", function(event) {
+			if (!historySupport) {
+				// let the browser treat it like a regular link
+				return;
+			}
+			event.preventDefault();
+
+			randomizeHeaderColor();
+
+			$("nav li a").removeClass("current");
+			var destination = this.href;
+			$("nav li a").filter(function() {
+				return this.href === destination;
+			}).addClass("current");
+
+			history.pushState(null, null, $(this).attr("href"));
+			updateFeature();
+		});
+
 		$("<img />").attr("src", loadingImage);
+
+        randomizeHeaderColor();
 	});
 }());
-$(function(){
-    "use strict";
-
-    /******************************
-    PUBLIC PROPERTIES
-    *******************************/
-    var colorList = [
-		"color-cyan",
-		"color-green",
-		"color-magenta",
-		"color-pink",
-		"color-orange",
-		"color-yellow"
-    ];
-    
-    /******************************
-    PRIVATE PROPERTIES
-    *******************************/
-    // var imgFadeInSpeed = 3000;
-    var currentHeaderColor;
-
-    /**********************
-    COMMENCE THE INITIATION
-    ***********************/
-    (function () {
-
-		/* BUG: broken in IE
-			$("img").css("opacity", "0").load(function(){
-				imgFadeInAfterLoad($(this));
-			});
-		*/
 
 	    // zero the height of the old element and remove it
 	    // xhr into a new element and then set it's height
@@ -98,50 +118,3 @@ $(function(){
 	    // set timeout if not long enough
 	    // otherwise call directly
 
-        randomizeHeaderColor();
-
-        $("nav li a").click(function(event) {
-			event.preventDefault();
-
-			$("nav li a").removeClass("current");
-
-			// addClass on header item
-			var destination = this.href;
-			$("nav li a").filter(function() {
-				return this.href === destination;
-			}).addClass("current");
-
-			randomizeHeaderColor();
-		});
-
-    }());
-
-
-	/*
-    function imgFadeInAfterLoad(jqImgTagObj){
-        jqImgTagObj.animate({opacity: 100}, imgFadeInSpeed);
-    }
-	*/
-    
-    function clearColorClasses(element) {
-		var i,
-			classes = (element.attr("class") || "").split(" ");
-		for (i = 0; i < classes.length; i++) {
-			if (classes[i].substring(0, "color-".length) === "color-") {
-			element.removeClass(classes[i]);
-			}
-		}
-    }
-    
-    function randomizeHeaderColor() {
-		var body = $("body"),
-			randColor = colorList[Math.floor(Math.random()*colorList.length)];
-		clearColorClasses(body);
-		if(currentHeaderColor === randColor){
-			randomizeHeaderColor();
-			return;
-		}
-		currentHeaderColor = randColor;
-		body.addClass(randColor);
-    }
-});

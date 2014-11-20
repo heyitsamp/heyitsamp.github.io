@@ -327,6 +327,9 @@ nav > a {
     border: 2px solid;
     border-radius: 12px;
 }
+nav > div {
+    color: white;
+}
 
 nav a:hover, nav a:focus {
     color: #fff;
