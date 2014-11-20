@@ -106,8 +106,12 @@ img.feature-logo {
     background-image: url(../img/disney/disney_bg.png);
 }
 .atomic {
-    background-image: url(../img/disney/disney_bg.png);
+    background-image: url(../img/atomic/atomic_bg.png);
 }
+.atomic {
+    padding-bottom: 400px;
+}
+
 .pg {
     background-image: url(../img/pg/pg_bg.png);
 }
@@ -426,7 +430,7 @@ nav a:active {
 }
 
 #microsoft {
-    background: #333333;
+    background: #0099cc;
 }
 
 #pg {
