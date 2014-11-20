@@ -1,4 +1,4 @@
-/* global $, document, console, window, colorboxOptions, location, history */
+/* global $, document, console, window, location, history */
 (function() {
     "use strict";
 
@@ -37,7 +37,7 @@
 
         //Return clauses
 
-        if(currentFeature == feature){
+        if(currentFeature === feature){
             return;
         } else {
             currentFeature = feature;
@@ -47,7 +47,7 @@
         //$("#tiles > div.feature").slideUp(scrollTime, function(){$(this).remove();});
         $("#tiles > div.feature").slideUp(scrollTime, function(){$(this).remove();});
 
-        if (feature.length === 0 || feature == "index.html") {
+        if (feature.length === 0 || feature === "index.html") {
             return;
         }
 
@@ -60,7 +60,18 @@
 
         var featureHrefPrepend = "features/";
         var href = featureHrefPrepend + feature + ".html";
-
+        function ajaxCallback(response, status, xhr) {
+            if (status !== "success") {
+                console.log("Error: "+xhr.status+" "+xhr.statusText+": "+href);
+                // The browser will give a familiar error message if we do
+                // it the old fashioned way.
+                // However, after this, back is broken in IE and Chrome.
+                window.location.href = feature;
+                return;
+            } else {
+                $(this).slideDown(scrollTime);
+            }
+        }
         if(square.has("img").length > 0){
             //Is tile
             var target = square.offset().top+square.height()-32;
@@ -76,19 +87,6 @@
             //Is nav item
             $("html, body").animate({scrollTop: 0}, scrollTime);
             $("#tiles").prepend($("<div class=feature><img src=\""+loadingImage+"\" /></div>").load(href, ajaxCallback));
-        }
-
-        function ajaxCallback(response, status, xhr) {
-            if (status !== "success") {
-                console.log("Error: "+xhr.status+" "+xhr.statusText+": "+href);
-                // The browser will give a familiar error message if we do
-                // it the old fashioned way.
-                // However, after this, back is broken in IE and Chrome.
-                window.location.href = feature;
-                return;
-            } else {
-                $(this).slideDown(scrollTime);
-            }
         }
     };
 
@@ -194,9 +192,8 @@
         }
         */
     });
+    /*function trace(str){
+        console.log(str);
+    }*/
+
 }());
-
-
-function trace(str){
-    console.log(str);
-}
