@@ -27,7 +27,7 @@ body{
 }
 
 div.feature {
-    /*display:none;*/
+    display:none;
     float: left;
     width: 100%;
     text-align: left;

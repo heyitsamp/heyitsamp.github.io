@@ -1,18 +1,15 @@
 /* global $, document, console, window, colorboxOptions, location, history */
 (function() {
+    "use strict";
 
     //Run this JS soon as the js file loads
     //$({....}) waits until the document loads. $(){} <---- Function is same as $(document).ready(){}
 
-    "use strict";
+
     var scrollTime = 500,
 		loadingImage = "img/colorbox/loading.gif";
 
 	var historySupport = !!(window.history && history.pushState);
-
-    /*
-       * Function defs
-    */
     
 	if (historySupport) {
 		$(window).on("popstate", function() {
@@ -20,9 +17,9 @@
 		});
 	}
 
-    /******************************
-        PUBLIC PROPERTIES
-    *******************************/
+    /*********************
+        PROPERTIES
+    **********************/
     var colorList = [
         "color-cyan",
         "color-green",
@@ -32,14 +29,8 @@
         "color-yellow"
     ];
 
-    /******************************
-    PRIVATE PROPERTIES
-    *******************************/
-    // var imgFadeInSpeed = 3000;
     var currentHeaderColor;
-
     var currentFeature;
-
 
     var updateFeature = function() {
         var path = location.pathname;
@@ -47,33 +38,46 @@
 
         //Return clauses
 
-        if (feature.length === 0 || feature == "index.html") {
-            return;
-        }
         if(currentFeature == feature){
             return;
         } else {
             currentFeature = feature;
         }
-        //end return clauses
 
-        $("#tiles > div.feature").slideUp(0, function(){$(this).remove();});
+        //Only remove the feature if it's not the current one
+        //$("#tiles > div.feature").slideUp(scrollTime, function(){$(this).remove();});
+        $("#tiles > div.feature").slideUp(scrollTime, function(){$(this).remove();});
+
+        if (feature.length === 0 || feature == "index.html") {
+            return;
+        }
+
+        //end return clauses
 
         var square = $("#"+feature);
 
         /*We're determining whether this is a tile by checking to see if our
         "square" variable contains an <img> tag*/
 
+        var featureHrefPrepend = "features/";
+        var href;
+
         if(square.has("img").length > 0){
             //Is tile
-            $("html, body").animate({scrollTop: square.offset().top+square.height()-32}, scrollTime);
-            var href = "features/" + feature + ".html";
+            var target = square.offset().top+square.height()-32;
+            $("html, body").animate({scrollTop: target}, {duration:scrollTime, step:function(now, fx) {
+                /*This whole ordeal is about resetting the target position of this animation for each step
+                of the animationbecause as the existing open feature divs are animating closed, the value for
+                the .top of the tile we just clicked on is changing, as the old feature div is animating closed
+                */
+                fx.end = square.offset().top+square.height()-32;
+            }});
+            href = featureHrefPrepend + feature + ".html";
             $("#"+feature).after($("<div class=feature><img src=\""+loadingImage+"\" /></div>").load(href, ajaxCallback));
-
         } else {
             //Is nav item
             $("html, body").animate({scrollTop: 0}, scrollTime);
-            var href = "/" + feature + ".html";
+            href = featureHrefPrepend + feature + ".html";
             $("#tiles").prepend($("<div class=feature><img src=\""+loadingImage+"\" /></div>").load(href, ajaxCallback));
         }
 
@@ -85,6 +89,8 @@
                 // However, after this, back is broken in IE and Chrome.
                 window.location.href = feature;
                 return;
+            } else {
+                $(this).slideDown(scrollTime);
             }
         }
     };
@@ -111,13 +117,11 @@
         }
     }
 
-
-
     /*
-       * Runs when the rest of the document has loaded, this is like an init() function
+       * Runs when the rest of the document has loaded, this is like an init() function for the website
     */
 
-    $(function(){
+    $(document).ready(function(){
         randomizeHeaderColor();
 
         $("#tiles > a").on("click", function(event) {
@@ -145,11 +149,10 @@
 
 			randomizeHeaderColor();
 
-           if (!historySupport) {
+            if (!historySupport) {
 				// let the browser treat it like a regular link
 				return;
 			}
-
 			event.preventDefault();
 
 			history.pushState(null, null, $(this).attr("href"));
@@ -195,3 +198,8 @@
         */
     });
 }());
+
+
+function trace(str){
+    console.log(str);
+}
