@@ -10,8 +10,8 @@
 		var path = location.pathname;
 		var feature = path.slice(path.lastIndexOf("/")+1);
 
-		$("#tiles > div.feature").remove();
-		if (feature.length === 0 || feature == "index.html") {
+		$("div.feature").remove();
+		if (feature.length === 0 || feature === "index.html") {
 			return;
 		}
 
@@ -40,13 +40,14 @@
 	}
 
 	$(document).ready(function() {
-		$("#tiles > a").on("click", function(event) {
+		$("#tiles > a, #navv > a").on("click", function(event) {
 			if (!historySupport) {
 				// let the browser treat it like a regular link
 				return;
 			}
 			event.preventDefault();
 
+			console.log($(this).attr("href"));
 			history.pushState(null, null, $(this).attr("href"));
 			updateFeature();
 		});

@@ -75,17 +75,18 @@
                 We use the dark background to conserve the battery on your device. We are conservationists, designers and developers. Builders of the future.
             </div>
         </div>
-        
-        <nav>
-            <ul>
-                <li><a href=".">HOME</a></li>
-                <li><a href="about">ABOUT</a></li>
-                <li><a href="labs">LABS</a></li>
-                <li><a href="contact">CONTACT</a></li>
-            </ul>
-        </nav>
+
+        <nav id="navv"><a
+	  href=".">HOME</a><!--
+	  no home feature required --><a
+	  id="about" href="about">ABOUT</a><!--
+	  about feature appears here:--><a
+	  id="labs" href="labs">LABS</a><!--
+	  labs feature appears here:--><a
+	  id="contact" href="contact">CONTACT</a><!--
+	  contact feature appears here:--></nav>
     </header>
-    
+
   <div id="tiles"><a
     id="atomic" href="atomic"><img src="img/index/atomic.png"></a><!--
     atomic feature appears here:--><a

@@ -2,8 +2,6 @@
 
 /*
 TODO:
---> Get amp logos with high enough resolution that will not give highest quality results on any platform, but acceptable on most. Get 220 x 70
-
 For the header, text on top of an image is what the big website guys are doing. 
 */
 
@@ -72,8 +70,6 @@ div.feature-information {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-}
-img.feature-logo, div.feature-text {
 }
 div.feature-text {
     max-width: 50%;
@@ -184,16 +180,12 @@ img.feature-logo {
     fill: #ffcc00;
 }
 
-nav li a.current,
-nav li a.current:hover {
+nav > a.current,
+nav > a.current:hover {
     border-color: white;
     color: white;
 }
 
-
-#logoLockup{
-    
-}
 
 #logoImgContainer{
     display:inline-block;
@@ -202,15 +194,6 @@ nav li a.current:hover {
 .myLogo{
     fill: #ffffff;
 }
-
-/*make sure that CSS and HTML agree on width and height always for everything*/
-/*
-#logoImgContainer img{
-    width: 104px; 
-    height: auto;
-    
-}
-*/
 
 @media all and (max-width: 548px) {
   #logoImgContainer img{
@@ -262,10 +245,6 @@ header {
     padding-left: 32px;
     padding-right: 32px;
     padding-bottom: 16px;
-}
-
-.featureLeftColumn{
-    
 }
 
 .featureRightColumn{
@@ -335,44 +314,22 @@ goes on top of the feature text!!!!*/
     height: auto;
 }
 
-nav{
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-}
-
-ul {
-    padding:0;
-}
-
-nav li{
-    display: inline-block;
-    list-style: none;
-    margin:0px;
-    padding:12px;
+nav > a {
     font-size: 10pt;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-color: #ffffff;
-}
-
-nav li a{
-    display: block;
+    color: #ffffff;
+    display: inline-block;
     width: 70px;
-    padding: 5px 15px;
+    margin: 0 10px;
+    padding: 12px;
     text-decoration: none;
     border: 2px solid;
     border-radius: 12px;
-    
 }
 
 nav a:hover, nav a:focus {
     color: #fff;
-}
-
-nav a:active {
-    
 }
 
 #everythingBelowFeatureSection{

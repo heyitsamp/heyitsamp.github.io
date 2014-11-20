@@ -84,7 +84,12 @@
 	  id="labs" href="labs">LABS</a><!--
 	  labs feature appears here:--><a
 	  id="contact" href="contact">CONTACT</a><!--
-	  contact feature appears here:--></nav>
+	  contact feature appears here:--><div class=feature><div class="disney"><!-- this div makes firefox happy. i'm sure we'll find a use for it ~sk -->
+  <p>ipsum dolor sit amet, denique adolescens ut sed. Mei simul tantas
+  aliquam ei, eleifend maiestatis cu usu. Porro tempor efficiantur nam ex, sed
+  erat erant ad. Ex dicat causae eirmod eos, at hinc soleat lobortis sit.</p>
+</div>
+</div></nav>
     </header>
 
   <div id="tiles"><a
@@ -103,24 +108,7 @@
     id="microsoft" href="microsoft"><img src="img/index/microsoft.png"></a><!--
     microsoft feature appears here:--><a
     id="pg" href="pg"><img src="img/index/pg.png"></a><!--
-    pg feature appears here:--><div class=feature><div class="featureLeftColumn">
-    <!-- Put this "Feature's" "logo" in here -->
-    <img class="featureLogo" src="">
-</div>
-
-<div class="featureRightColumn">
-    <!-- Put the paragraph of text in here -->
-    <div class="featureText">
-        <p>
-        </p>
-    </div>
-    <!-- This is the stack of images -->
-    <div class="featureImageGroup">
-        <img src="">
-        <img src="">
-        <img src="">
-    </div>
-</div></div><a
+    pg feature appears here:--><a
     id="profile01" href="profile01"><img src="img/index/profile01.png"></a><!--
     profile01 feature appears here:--><a
     id="usejets" href="usejets"><img src="img/index/usjets.png"></a><!--
