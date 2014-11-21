@@ -2,7 +2,9 @@
 (function() {
     "use strict";
     var scrollTime = 500,
+		revealTime = 500,
 		loadingImage = "img/colorbox/loading.gif",
+		loadingRevealTime = 50,
         colorList = [
 			"color-cyan",
 			"color-green",
@@ -14,24 +16,58 @@
 
 	var historySupport = !!(window.history && history.pushState);
 
+	// updateFeature should be called whenever the URL might have changed,
+	// including when loading this page for the first time.
+	// It should make the document match the URL and scroll to whichever
+	// feature may be loaded.
     var updateFeature = function(scrollLocation) {
-		var path = location.pathname;
-		var feature = path.slice(path.lastIndexOf("/")+1);
+		var path = location.pathname,
+		    feature = path.slice(path.lastIndexOf("/")+1);
 
-		$("div.feature").remove();
+		// BUG: this reloads an existing feature. That's good if the user
+		// clicked the same feature (because then the page doesn't seem to
+		// have ignored the click), but bad if this is a newly loaded fallback.
+		$("div.feature").slideUp(revealTime, function() {
+			$(this).remove();
+		});
+
 		if (feature.length === 0 || feature === "index.html") {
 			return;
 		}
 
-		var square = $("#"+feature);
-		if (scrollLocation === undefined) {
-			scrollLocation = square.offset().top + square.height() - 32;
+		// Create a function to calculate the scroll destination because
+		// it will be moving if there is an old feature higher on the page
+		// animating closed while the scroll is happening.
+		var scrollF,
+		    square = $("#"+feature);
+		if (scrollLocation !== undefined) {
+			scrollF = function() { return scrollLocation; };
+		} else {
+			scrollF = function() {
+				return square.offset().top + square.height() - 32;
+			};
 		}
-		$("html, body").animate({scrollTop: scrollLocation}, scrollTime);
+		$("html, body").animate({scrollTop: scrollF()}, {
+			duration: scrollTime,
+			step: function(_, fx) {
+				fx.end = scrollF();
+			}
+		});
 
-	    var href = "features/" + feature + ".html";
-		$("#"+feature).after($("<div class=feature><img src=\""+loadingImage+"\" /></div>").load(href, function(response, status, xhr) {
-			if (status !== "success") {
+		var dest = $("<div class=feature></div>")
+			.insertAfter("#"+feature);
+
+		var spinner = $("<div class=spinner><img src=\""+loadingImage+"\" /></div>")
+			.hide()
+			.appendTo(dest)
+			.slideDown(loadingRevealTime);
+
+		var href = "features/" + feature + ".html";
+		$.ajax({
+			url: href,
+			dataType: "html",
+			error: function(xhr) {
+				// BUG(sk): test error message with 404
 				console.log("Error: "+xhr.status+" "+xhr.statusText+": "+href);
 
 				// The browser will give a familiar error message if we do
@@ -39,9 +75,19 @@
 				// However, after this, back is broken in IE and Chrome.
 				window.location.href = feature;
 				return;
+			},
+			success: function(data) {
+				spinner.slideUp({
+					duration: loadingRevealTime,
+					queue: false
+				});
+				$(data)
+					.hide()
+					.appendTo(dest)
+					.slideDown(revealTime);
+				$("div.feature-images > a").colorbox(colorboxOptions);
 			}
-			$("div.feature-images > a").colorbox(colorboxOptions);
-		}));
+		});
     };
     
 	if (historySupport) {
@@ -107,18 +153,8 @@
 		$("<img />").attr("src", loadingImage);
 
         randomizeHeaderColor();
+
+		// If this is a fallback, this will scroll to its location.
+		updateFeature();
 	});
 }());
-
-	    // zero the height of the old element and remove it
-	    // xhr into a new element and then set it's height
-
-	    // how to load something zero height and animate it's height to full?
-
-	    // how to xhr not to element?
-	    // or xhr to zero height element?
-
-	    // in load success, check time
-	    // set timeout if not long enough
-	    // otherwise call directly
-

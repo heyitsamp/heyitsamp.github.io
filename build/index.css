@@ -37,6 +37,10 @@ div.feature {
     width: 100%;
     text-align: left;
 }
+div.feature > div.spinner {
+    display: block;
+    text-align: center;
+}
 
 .cboxElement:hover,
 .cboxElement:active,
