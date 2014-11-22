@@ -101,7 +101,7 @@
     id="kmd" href="kmd"><img src="img/index/kmd.png"></a><!--
     kmd feature appears here:--><a
     id="microsoft" href="microsoft"><img src="img/index/microsoft.png"></a><!--
-    microsoft feature appears here:--><div class=feature><div class="microsoft"><!-- this div makes firefox happy. i'm sure we'll find a use for it ~sk -->
+    microsoft feature appears here:--><div class=feature><div class="microsoft feature">
   <div class="feature-information">
     <img class="feature-logo" src="img/index/microsoft.png" />
     <div class="feature-text">

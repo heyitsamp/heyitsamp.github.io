@@ -37,8 +37,9 @@ div.feature {
     width: 100%;
     text-align: left;
 }
-div.feature > div.spinner {
-    display: block;
+div.spinner {
+    float: left;
+    width: 100%;
     text-align: center;
 }
 
@@ -50,8 +51,7 @@ div.feature > div.spinner {
 
 
 
-div.feature > div {
-    display: inline-block;
+div.feature {
     background-repeat: no-repeat;
     background-position: center;
 }

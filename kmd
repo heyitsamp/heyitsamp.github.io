@@ -99,25 +99,28 @@
     id="eb" href="eb"><img src="img/index/eb.png"></a><!--
     eb feature appears here:--><a
     id="kmd" href="kmd"><img src="img/index/kmd.png"></a><!--
-    kmd feature appears here:--><div class=feature><div class="featureLeftColumn">
-    <!-- Put this "Feature's" "logo" in here -->
-    <img class="featureLogo" src="">
-</div>
+    kmd feature appears here:--><div class=feature><div class="feature">
+  <div class="featureLeftColumn">
+      <!-- Put this "Feature's" "logo" in here -->
+      <img class="featureLogo" src="">
+  </div>
 
-<div class="featureRightColumn">
-    <!-- Put the paragraph of text in here -->
-    <div class="featureText">
-        <p>
-            Hey it's me KMD
-        </p>
-    </div>
-    <!-- This is the stack of images -->
-    <div class="featureImageGroup">
-        <img src="">
-        <img src="">
-        <img src="">
-    </div>
-</div></div><a
+  <div class="featureRightColumn">
+      <!-- Put the paragraph of text in here -->
+      <div class="featureText">
+	  <p>
+	      Hey it's me KMD
+	  </p>
+      </div>
+      <!-- This is the stack of images -->
+      <div class="featureImageGroup">
+	  <img src="">
+	  <img src="">
+	  <img src="">
+      </div>
+  </div>
+</div>
+</div><a
     id="microsoft" href="microsoft"><img src="img/index/microsoft.png"></a><!--
     microsoft feature appears here:--><a
     id="pg" href="pg"><img src="img/index/pg.png"></a><!--

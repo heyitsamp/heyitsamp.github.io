@@ -95,7 +95,7 @@
     id="coca-cola" href="coca-cola"><img src="img/index/coca-cola.png"></a><!--
     coca-cola feature appears here:--><a
     id="disney" href="disney"><img src="img/index/disney.png"></a><!--
-    disney feature appears here:--><div class=feature><div class="disney"><!-- this div makes firefox happy. i'm sure we'll find a use for it ~sk -->
+    disney feature appears here:--><div class=feature><div class="disney feature">
   <div class="feature-information">
     <img class="feature-logo" src="img/index/disney.png" />
     <div class="feature-text">

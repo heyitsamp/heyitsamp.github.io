@@ -58,12 +58,9 @@
 			}
 		});
 
-		var dest = $("<div class=feature></div>")
-			.insertAfter("#"+feature);
-
 		var spinner = $("<div class=spinner><img src=\""+loadingImage+"\" /></div>")
 			.hide()
-			.appendTo(dest)
+			.insertAfter("#"+feature)
 			.slideDown(loadingRevealTime);
 
 		var href = "features/" + feature + ".html";
@@ -81,10 +78,16 @@
 				return;
 			},
 			success: function(data) {
-				spinner.slideUp({duration: loadingRevealTime, queue: false});
+				spinner.slideUp({
+					duration: loadingRevealTime,
+					queue: false,
+					complete: function() {
+						$(this).remove();
+					}
+				});
 				$(data)
 					.hide()
-					.appendTo(dest)
+					.insertAfter(spinner)
 					.slideDown(revealTime);
 				$("div.feature-images > a").colorbox(colorboxOptions);
 			}

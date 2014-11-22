@@ -82,7 +82,7 @@
 	  id="about" href="about">ABOUT</a><!--
 	  about feature appears here:--><a
 	  id="labs" href="labs">LABS</a><!--
-	  labs feature appears here:--><div class=feature><div class="disney"><!-- this div makes firefox happy. i'm sure we'll find a use for it ~sk -->
+	  labs feature appears here:--><div class=feature><div class="disney feature">
   <p>ipsum dolor sit amet, denique adolescens ut sed. Mei simul tantas
   aliquam ei, eleifend maiestatis cu usu. Porro tempor efficiantur nam ex, sed
   erat erant ad. Ex dicat causae eirmod eos, at hinc soleat lobortis sit.</p>

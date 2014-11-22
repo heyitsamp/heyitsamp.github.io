@@ -91,24 +91,27 @@
     id="atomic" href="atomic"><img src="img/index/atomic.png"></a><!--
     atomic feature appears here:--><a
     id="pi" href="pi"><img src="img/index/pi.png"></a><!--
-    pi feature appears here:--><div class=feature><div class="featureLeftColumn">
-    <!-- Put this "Feature's" "logo" in here -->
-    <img class="featureLogo" src="">
-</div>
+    pi feature appears here:--><div class=feature><div class="feature">
+  <div class="featureLeftColumn">
+      <!-- Put this "Feature's" "logo" in here -->
+      <img class="featureLogo" src="">
+  </div>
 
-<div class="featureRightColumn">
-    <!-- Put the paragraph of text in here -->
-    <div class="featureText">
-        <p>
-        </p>
-    </div>
-    <!-- This is the stack of images -->
-    <div class="featureImageGroup">
-        <img src="">
-        <img src="">
-        <img src="">
-    </div>
-</div></div><a
+  <div class="featureRightColumn">
+      <!-- Put the paragraph of text in here -->
+      <div class="featureText">
+	  <p>
+	  </p>
+      </div>
+      <!-- This is the stack of images -->
+      <div class="featureImageGroup">
+	  <img src="">
+	  <img src="">
+	  <img src="">
+      </div>
+  </div>
+</div>
+</div><a
     id="coca-cola" href="coca-cola"><img src="img/index/coca-cola.png"></a><!--
     coca-cola feature appears here:--><a
     id="disney" href="disney"><img src="img/index/disney.png"></a><!--
