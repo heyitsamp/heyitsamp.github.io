@@ -107,10 +107,14 @@ img.feature-logo {
     background-image: url(../img/disney/disney_bg.png);
 }
 .atomic {
-    background-image: url(../img/disney/disney_bg.png);
+    background-image: url(../img/atomic/atomic_bg.png);
 }
+.atomic {
+    padding-bottom: 400px;
+}
+
 .pg {
-    background-image: url(../img/disney/disney_bg.png);
+    background-image: url(../img/pg/pg_bg.png);
 }
 .pi {
     background-image: url(../img/disney/disney_bg.png);
@@ -120,6 +124,10 @@ img.feature-logo {
 }
 .kmd {
     background-image: url(../img/disney/disney_bg.png);
+}
+
+.cocacola {
+    background-image: url(..img/cocacola/cocacola_bg.png);
 }
 
 
@@ -387,7 +395,7 @@ nav a:hover, nav a:focus {
 }
 
 #microsoft {
-    background: #333333;
+    background: #0099cc;
 }
 
 #pg {
