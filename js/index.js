@@ -27,8 +27,12 @@
 		// BUG: this reloads an existing feature. That's good if the user
 		// clicked the same feature (because then the page doesn't seem to
 		// have ignored the click), but bad if this is a newly loaded fallback.
-		$("div.feature").slideUp(revealTime, function() {
-			$(this).remove();
+		$("div.feature").slideUp({
+			duration: revealTime,
+			queue: false,
+			complete: function() {
+				$(this).remove();
+			}
 		});
 
 		if (feature.length === 0 || feature === "index.html") {
@@ -77,10 +81,7 @@
 				return;
 			},
 			success: function(data) {
-				spinner.slideUp({
-					duration: loadingRevealTime,
-					queue: false
-				});
+				spinner.slideUp({duration: loadingRevealTime, queue: false});
 				$(data)
 					.hide()
 					.appendTo(dest)
