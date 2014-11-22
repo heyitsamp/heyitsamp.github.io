@@ -104,6 +104,10 @@ img.feature-logo {
     background-image: url(../img/disney/disney_bg.png);
 }
 
+.cocacola {
+    background-image: url(..img/cocacola/cocacola_bg.png);
+}
+
 
 /* Half my kingdom for some SCSS. (I don't have a kingdom, so I'm safe.) --SK */
 
