@@ -38,6 +38,7 @@ div.feature {
     text-align: left;
 }
 div.spinner {
+    position:absolute;
     float: left;
     width: 100%;
     text-align: center;
