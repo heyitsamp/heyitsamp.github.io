@@ -76,7 +76,7 @@
             </div>
         </div>
 
-        <nav id="navv"><a
+        <nav><a
 	  href=".">HOME</a><!--
 	  no home feature required --><a
 	  id="about" href="about">ABOUT</a><!--
@@ -132,5 +132,18 @@
     profile02 feature appears here:--><a
     id="profile03" href="profile03"><img src="img/index/profile03.png"></a><!--
     profile03 feature appears here:--></div>
-
+    
+    <footer>
+        <div id="copyright">&copy;2014</div>
+        |
+        <a id="contact" href="contact">CONTACT</a>
+        |
+        <div id="backToTopBtnContainer">
+            <div id="backToTopText">BACK TO THE TOP</div>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="38px" height="38px" viewBox="0 0 38 38" enable-background="new 0 0 38 38" xml:space="preserve">
+                <path class="backToTopSvgElement"fill="#FFFFFF" d="M18.933,0.264c-10.242,0-18.545,8.303-18.545,18.545s8.303,18.545,18.545,18.545s18.545-8.303,18.545-18.545
+	S29.175,0.264,18.933,0.264z M21.5,19.667v10.885h-5.133V19.667H6.149L18.933,6.883l12.785,12.783H21.5z"/>
+            </svg>
+        </div>
+    </footer>
 </body>
