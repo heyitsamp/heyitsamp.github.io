@@ -97,24 +97,23 @@
     id="microsoft" href="microsoft"><img src="img/index/microsoft.png"></a><!--
     microsoft feature appears here:--><a
     id="pi" href="pi"><img src="img/index/pi.png"></a><!--
-    pi feature appears here:--><div class=feature><div class="featureLeftColumn">
-    <!-- Put this "Feature's" "logo" in here -->
-    <img class="featureLogo" src="">
-</div>
+    pi feature appears here:--><div class=feature><div class="pi"><!-- this div makes firefox happy. i'm sure we'll find a use for it ~sk -->
+  <div class="feature-information">
+    <img class="feature-logo" src="img/index/pi.png" />
+    <div class="feature-text">
+      <p>ipsum dolor sit amet, denique adolescens ut sed. Mei simul tantas
+      aliquam ei, eleifend maiestatis cu usu. Porro tempor efficiantur nam ex, sed
+      erat erant ad. Ex dicat causae eirmod eos, at hinc soleat lobortis sit.</p>
 
-<div class="featureRightColumn">
-    <!-- Put the paragraph of text in here -->
-    <div class="featureText">
-        <p>
-        </p>
+      <p>Usu graece iisque contentiones cu, cu affert meliore prodesset cum. Et
+      est tota mutat, ei repudiare deseruisse vis. Usu inani expetenda an, no sea
+      omnis perpetua torquatos, id graece luptatum has. Enim nemore molestie vel
+      ei, cum an possim insolens. Eu quo vero prompta mentitum, ut vix stet
+      aperiam praesent.</p>
     </div>
-    <!-- This is the stack of images -->
-    <div class="featureImageGroup">
-        <img src="">
-        <img src="">
-        <img src="">
-    </div>
-</div></div><a
+  </div>
+</div>
+</div><a
     id="coca-cola" href="coca-cola"><img src="img/index/coca-cola.png"></a><!--
     coca-cola feature appears here:--><a
     id="eb" href="eb"><img src="img/index/eb.png"></a><!--
