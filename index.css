@@ -21,7 +21,6 @@ body{
     margin-bottom: 15px;
     margin-left: 0px;
     margin-right: 0px;
-    
 }
 
 div.feature {
@@ -112,63 +111,69 @@ img.feature-logo {
 
 /* Half my kingdom for some SCSS. (I don't have a kingdom, so I'm safe.) --SK */
 
-.color-cyan header, .color-cyan nav a, .color-cyan nav a:hover, color-cyan nav a:visited {
+.color-cyan header, .color-cyan nav a, .color-cyan nav a:hover, color-cyan nav a:visited,
+.color-cyan footer, .color-cyan footer a, .color-cyan footer a:hover, color-cyan footer a:visited {
     color: #00ffff;
 }
 .color-cyan nav a {
     border-color: #00ffff;
 }
-.color-cyan #logoImgContainer path {
+.color-cyan #logoImgContainer path, .color-cyan #backToTopBtnContainer path  {
     fill: #00ffff;
 }
 
-.color-green header, .color-green nav a, .color-green nav a:hover, color-green nav a:visited {
+.color-green header, .color-green nav a, .color-green nav a:hover, color-green nav a:visited,
+.color-green footer, .color-green footer a, .color-green footer a:hover, color-green footer a:visited {
     color: #33ff00;
 }
 .color-green nav a {
     border-color: #33ff00;
 }
-.color-green #logoImgContainer path {
+.color-green #logoImgContainer path, .color-green #backToTopBtnContainer path {
     fill: #33ff00;
 }
 
-.color-magenta header, .color-magenta nav a, .color-magenta nav a:hover, color-magenta nav a:visited {
+.color-magenta header, .color-magenta nav a, .color-magenta nav a:hover, color-magenta nav a:visited,
+.color-magenta footer, .color-magenta footer a, .color-magenta footer a:hover, color-magenta footer a:visited {
     color: #ff33cc;
 }
 .color-magenta nav a {
     border-color: #ff33cc;
 }
-.color-magenta #logoImgContainer path {
+.color-magenta #logoImgContainer path, .color-magenta #backToTopBtnContainer path {
     fill: #ff33cc;
 }
 
-.color-pink header, .color-pink nav a, .color-pink nav a:hover, color-pink nav a:visited {
+.color-pink header, .color-pink nav a, .color-pink nav a:hover, color-pink nav a:visited,
+.color-pink footer, .color-pink footer a, .color-pink footer a:hover, color-pink footer a:visited {
     color: #ff0066;
 }
 .color-pink nav a {
     border-color: #ff0066;
 }
-.color-pink #logoImgContainer path {
+.color-pink #logoImgContainer path, .color-pink #backToTopBtnContainer path {
     fill: #ff0066;
 }
 
-.color-orange header, .color-orange nav a, .color-orange nav a:hover, color-orange nav a:visited {
+.color-orange header, .color-orange nav a, .color-orange nav a:hover, color-orange nav a:visited,
+.color-orange footer, .color-orange footer a, .color-orange footer a:hover, color-orange footer a:visited {
     color: #ff9900;
 }
 .color-orange nav a {
     border-color: #ff9900;
 }
-.color-orange #logoImgContainer path {
+.color-orange #logoImgContainer path, .color-orange #backToTopBtnContainer path {
     fill: #ff9900;
 }
 
-.color-yellow header, .color-yellow nav a, .color-yellow nav a:hover, color-yellow nav a:visited {
+.color-yellow header, .color-yellow nav a, .color-yellow nav a:hover, color-yellow nav a:visited,
+.color-yellow footer, .color-yellow footer a, .color-yellow footer a:hover, color-yellow footer a:visited {
     color: #ffcc00;
 }
 .color-yellow nav a {
     border-color: #ffcc00;
 }
-.color-yellow #logoImgContainer path {
+.color-yellow #logoImgContainer path, .color-yellow #backToTopBtnContainer path {
     fill: #ffcc00;
 }
 
@@ -371,21 +376,34 @@ nav a:hover, nav a:focus {
 }
 
 footer{
+    font-family: 'Roboto', sans-serif;
+    font-size: 9pt;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
     width:100%;
     color: #fff;
-    /*Don't set padding in here, do it in footerText*/
-}
-
-footer small{
-    /*Add padding and stuff to me!*/
-
+    text-align:center;
+    margin-bottom: 60px;
 }
 
 #footerText{
 
 }
 
-#backToTop{
-    float:right;
+#footerText a{
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#backToTopBtnContainer{
+    padding-left: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
     cursor:pointer;
 }
