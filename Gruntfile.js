@@ -41,6 +41,10 @@ module.exports = function(grunt) {
 			postcss: {
 				files: ['index.css'],
 				tasks: ['postcss']
+			},
+			jshint: {
+				files: ['js/*.js'],
+				tasks: ['jshint']
 			}
 		}
     });
