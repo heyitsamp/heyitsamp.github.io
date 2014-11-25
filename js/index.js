@@ -35,9 +35,16 @@
 			}
 		});
 
+        $("nav a").removeClass("current");
+
 		if (feature.length === 0 || feature === "index.html") {
 			return;
 		}
+
+        $("nav a").each(function() {
+            if($(this).attr("href") === feature)
+                $(this).addClass("current");
+        })
 
 		// Create a function to calculate the scroll destination because
 		// it will be moving if there is an old feature higher on the page
@@ -142,12 +149,6 @@
 			event.preventDefault();
 
 			randomizeHeaderColor();
-
-			$("nav li a").removeClass("current");
-			var destination = this.href;
-			$("nav li a").filter(function() {
-				return this.href === destination;
-			}).addClass("current");
 
 			history.pushState(null, null, $(this).attr("href"));
 			// BUG: scrolling to page top on nav click might not be ideal
