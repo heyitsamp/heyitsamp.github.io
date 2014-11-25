@@ -154,7 +154,7 @@
 			updateFeature(0);
 		});
 
-        $("#footer a").on("click", function(event) {
+        $("footer a").on("click", function(event) {
 			if (!historySupport) {
 				// let the browser treat it like a regular link
 				return;
