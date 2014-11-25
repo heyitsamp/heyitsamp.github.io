@@ -134,27 +134,7 @@
 			history.pushState(null, null, $(this).attr("href"));
 			updateFeature();
 		});
-		$("nav a").on("click", function(event) {
-			if (!historySupport) {
-				// let the browser treat it like a regular link
-				return;
-			}
-			event.preventDefault();
-
-			randomizeHeaderColor();
-
-			$("nav li a").removeClass("current");
-			var destination = this.href;
-			$("nav li a").filter(function() {
-				return this.href === destination;
-			}).addClass("current");
-
-			history.pushState(null, null, $(this).attr("href"));
-			// BUG: scrolling to page top on nav click might not be ideal
-			updateFeature(0);
-		});
-
-        $("footer a").on("click", function(event) {
+		$("nav a, footer a").on("click", function(event) {
 			if (!historySupport) {
 				// let the browser treat it like a regular link
 				return;
@@ -177,8 +157,6 @@
         $("#backToTopBtnContainer").on("click", function(){
             $("html, body").animate({ scrollTop: 0 }, scrollTime);
         });
-
-
 
 		$("<img />").attr("src", loadingImage);
 
