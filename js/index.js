@@ -41,10 +41,7 @@
 			return;
 		}
 
-        $("nav a").each(function() {
-            if($(this).attr("href") === feature)
-                $(this).addClass("current");
-        })
+        $("nav a[href='"+feature+"']").addClass("current");
 
 		// Create a function to calculate the scroll destination because
 		// it will be moving if there is an old feature higher on the page
