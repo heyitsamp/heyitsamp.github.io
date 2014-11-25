@@ -108,8 +108,6 @@ img.feature-logo {
 }
 .atomic {
     background-image: url(../img/atomic/atomic_bg.png);
-}
-.atomic {
     padding-bottom: 400px;
 }
 
@@ -128,6 +126,7 @@ img.feature-logo {
 
 .coca-cola {
     background-image: url(../img/cocacola/cocacola_bg.png);
+    padding-bottom: 200px;
 }
 
 
