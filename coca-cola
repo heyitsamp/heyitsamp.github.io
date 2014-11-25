@@ -90,8 +90,12 @@
       <!--about feature appears here:-->
       <!--labs feature appears here:-->
       <!--contact feature appears here:-->
-    <a id="atomic" href="atomic"><img src="img/index/atomic.png"></a><!--
+    <a id="disney" href="disney"><img src="img/index/disney.png"></a><!--
+    disney feature appears here:--><a 
+    id="atomic" href="atomic"><img src="img/index/atomic.png"></a><!--
     atomic feature appears here:--><a
+    id="microsoft" href="microsoft"><img src="img/index/microsoft.png"></a><!--
+    microsoft feature appears here:--><a
     id="pi" href="pi"><img src="img/index/pi.png"></a><!--
     pi feature appears here:--><a
     id="coca-cola" href="coca-cola"><img src="img/index/coca-cola.png"></a><!--
@@ -104,14 +108,10 @@
   </div>
 </div>
 </div><a
-    id="disney" href="disney"><img src="img/index/disney.png"></a><!--
-    disney feature appears here:--><a
     id="eb" href="eb"><img src="img/index/eb.png"></a><!--
     eb feature appears here:--><a
     id="kmd" href="kmd"><img src="img/index/kmd.png"></a><!--
     kmd feature appears here:--><a
-    id="microsoft" href="microsoft"><img src="img/index/microsoft.png"></a><!--
-    microsoft feature appears here:--><a
     id="pg" href="pg"><img src="img/index/pg.png"></a><!--
     pg feature appears here:--><a
     id="profile01" href="profile01"><img src="img/index/profile01.png"></a><!--
