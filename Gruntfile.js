@@ -45,7 +45,7 @@ module.exports = function(grunt) {
 		}
     });
 
-	grunt.registerTask('fallbacks', 'Create fallbacks pages for reloading and direct linking.', function() {
+	grunt.registerTask('fallbacks', 'Create fallback pages for reloading and direct linking.', function() {
 		var files = grunt.file.expand(grunt.config('fallbacks.files')),
 			template = grunt.file.read('index.html'),
 			marker = ' feature appears here:-->',

@@ -79,15 +79,18 @@
         <nav>
             <ul>
                 <li><a href=".">HOME</a></li>
-                <li><a href="about">ABOUT</a></li>
-                <li><a href="labs">LABS</a></li>
-                <li><a href="contact">CONTACT</a></li>
+                <li><a id="about" href="about">ABOUT</a></li>
+                <li><a id="labs" href="labs">LABS</a></li>
+                <li><a id="contact" href="contact">CONTACT</a></li>
             </ul>
         </nav>
     </header>
     
-  <div id="tiles"><a
-    id="atomic" href="atomic"><img src="img/index/atomic.png"></a><!--
+  <div id="tiles">
+      <!--about feature appears here:-->
+      <!--labs feature appears here:-->
+      <!--contact feature appears here:-->
+    <a id="atomic" href="atomic"><img src="img/index/atomic.png"></a><!--
     atomic feature appears here:--><a
     id="pi" href="pi"><img src="img/index/pi.png"></a><!--
     pi feature appears here:--><a
@@ -130,14 +133,4 @@
     id="profile03" href="profile03"><img src="img/index/profile03.png"></a><!--
     profile03 feature appears here:--></div>
 
-  <footer>
-      <nav>
-	  <ul>
-	    <li><a href=".">HOME</a></li>
-	    <li><a href="about">ABOUT</a></li>
-	    <li><a href="labs">LABS</a></li>
-	    <li><a href="contact">CONTACT</a></li>
-	  </ul>
-      </nav>
-  </footer>
 </body>

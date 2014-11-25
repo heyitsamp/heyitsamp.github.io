@@ -88,7 +88,29 @@
     
   <div id="tiles">
       <!--about feature appears here:-->
-      <!--labs feature appears here:-->
+      <!--labs feature appears here:--><div class=feature><div class="microsoft"><!-- this div makes firefox happy. i'm sure we'll find a use for it ~sk -->
+  <div class="feature-information">
+    <img class="feature-logo" src="img/index/microsoft.png" />
+    <div class="feature-text">
+      <p>ipsum dolor sit amet, denique adolescens ut sed. Mei simul tantas
+      aliquam ei, eleifend maiestatis cu usu. Porro tempor efficiantur nam ex, sed
+      erat erant ad. Ex dicat causae eirmod eos, at hinc soleat lobortis sit.</p>
+
+      <p>Usu graece iisque contentiones cu, cu affert meliore prodesset cum. Et
+      est tota mutat, ei repudiare deseruisse vis. Usu inani expetenda an, no sea
+      omnis perpetua torquatos, id graece luptatum has. Enim nemore molestie vel
+      ei, cum an possim insolens. Eu quo vero prompta mentitum, ut vix stet
+      aperiam praesent.</p>
+    </div>
+  </div>
+
+  <div class="feature-images">
+      <a href="img/microsoft/microsoft01.png"><img src="img/microsoft/microsoftbox01.png"
+      /></a><a href="img/microsoft/microsoft02.png"><img src="img/microsoft/microsoftbox02.png"
+      /></a><a href="img/microsoft/microsoft03.png"><img src="img/microsoft/microsoftbox03.png" /></a>
+  </div>
+</div>
+</div>
       <!--contact feature appears here:-->
     <a id="atomic" href="atomic"><img src="img/index/atomic.png"></a><!--
     atomic feature appears here:--><a
@@ -105,29 +127,7 @@
     id="microsoft" href="microsoft"><img src="img/index/microsoft.png"></a><!--
     microsoft feature appears here:--><a
     id="pg" href="pg"><img src="img/index/pg.png"></a><!--
-    pg feature appears here:--><div class=feature><div class="pg"><!-- this div makes firefox happy. i'm sure we'll find a use for it ~sk -->
-  <div class="feature-information">
-    <img class="feature-logo" src="img/index/pg.png" />
-    <div class="feature-text">
-      <p>ipsum dolor sit amet, denique adolescens ut sed. Mei simul tantas
-      aliquam ei, eleifend maiestatis cu usu. Porro tempor efficiantur nam ex, sed
-      erat erant ad. Ex dicat causae eirmod eos, at hinc soleat lobortis sit.</p>
-
-      <p>Usu graece iisque contentiones cu, cu affert meliore prodesset cum. Et
-      est tota mutat, ei repudiare deseruisse vis. Usu inani expetenda an, no sea
-      omnis perpetua torquatos, id graece luptatum has. Enim nemore molestie vel
-      ei, cum an possim insolens. Eu quo vero prompta mentitum, ut vix stet
-      aperiam praesent.</p>
-    </div>
-  </div>
-
-  <div class="feature-images">
-      <a href="img/pg/pg01.png"><img src="img/pg/pgbox01.png"
-      /></a><a href="img/pg/pg02.png"><img src="img/pg/pgbox02.png"
-      /></a><a href="img/pg/pg03.png"><img src="img/pg/pgbox03.png" /></a>
-  </div>
-</div>
-</div><a
+    pg feature appears here:--><a
     id="profile01" href="profile01"><img src="img/index/profile01.png"></a><!--
     profile01 feature appears here:--><a
     id="usejets" href="usejets"><img src="img/index/usjets.png"></a><!--

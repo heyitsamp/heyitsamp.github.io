@@ -79,15 +79,18 @@
         <nav>
             <ul>
                 <li><a href=".">HOME</a></li>
-                <li><a href="about">ABOUT</a></li>
-                <li><a href="labs">LABS</a></li>
-                <li><a href="contact">CONTACT</a></li>
+                <li><a id="about" href="about">ABOUT</a></li>
+                <li><a id="labs" href="labs">LABS</a></li>
+                <li><a id="contact" href="contact">CONTACT</a></li>
             </ul>
         </nav>
     </header>
     
-  <div id="tiles"><a
-    id="atomic" href="atomic"><img src="img/index/atomic.png"></a><!--
+  <div id="tiles">
+      <!--about feature appears here:-->
+      <!--labs feature appears here:-->
+      <!--contact feature appears here:-->
+    <a id="atomic" href="atomic"><img src="img/index/atomic.png"></a><!--
     atomic feature appears here:--><div class=feature><div class="atomic"><!-- this div makes firefox happy. i'm sure we'll find a use for it ~sk -->
   <div class="feature-information">
     <img class="feature-logo" src="img/index/atomic.png" />
@@ -122,14 +125,4 @@
     id="profile03" href="profile03"><img src="img/index/profile03.png"></a><!--
     profile03 feature appears here:--></div>
 
-  <footer>
-      <nav>
-	  <ul>
-	    <li><a href=".">HOME</a></li>
-	    <li><a href="about">ABOUT</a></li>
-	    <li><a href="labs">LABS</a></li>
-	    <li><a href="contact">CONTACT</a></li>
-	  </ul>
-      </nav>
-  </footer>
 </body>

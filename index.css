@@ -27,6 +27,7 @@ body{
 }
 
 div.feature {
+    display:none;
     float: left;
     width: 100%;
     text-align: left;
@@ -104,14 +105,14 @@ img.feature-logo {
     background-image: url(../img/disney/disney_bg.png);
 }
 
-.cocacola {
-    background-image: url(..img/cocacola/cocacola_bg.png);
+.coca-cola {
+    background-image: url(../img/cocacola/cocacola_bg.png);
 }
 
 
 /* Half my kingdom for some SCSS. (I don't have a kingdom, so I'm safe.) --SK */
 
-.color-cyan header, .color-cyan footer, .color-cyan nav a, .color-cyan nav a:hover, color-cyan nav a:visited {
+.color-cyan header, .color-cyan nav a, .color-cyan nav a:hover, color-cyan nav a:visited {
     color: #00ffff;
 }
 .color-cyan nav a {
@@ -121,7 +122,7 @@ img.feature-logo {
     fill: #00ffff;
 }
 
-.color-green header, .color-green footer, .color-green nav a, .color-green nav a:hover, color-green nav a:visited {
+.color-green header, .color-green nav a, .color-green nav a:hover, color-green nav a:visited {
     color: #33ff00;
 }
 .color-green nav a {
@@ -131,7 +132,7 @@ img.feature-logo {
     fill: #33ff00;
 }
 
-.color-magenta header, .color-magenta footer, .color-magenta nav a, .color-magenta nav a:hover, color-magenta nav a:visited {
+.color-magenta header, .color-magenta nav a, .color-magenta nav a:hover, color-magenta nav a:visited {
     color: #ff33cc;
 }
 .color-magenta nav a {
@@ -141,7 +142,7 @@ img.feature-logo {
     fill: #ff33cc;
 }
 
-.color-pink header, .color-pink footer, .color-pink nav a, .color-pink nav a:hover, color-pink nav a:visited {
+.color-pink header, .color-pink nav a, .color-pink nav a:hover, color-pink nav a:visited {
     color: #ff0066;
 }
 .color-pink nav a {
@@ -151,7 +152,7 @@ img.feature-logo {
     fill: #ff0066;
 }
 
-.color-orange header, .color-orange footer, .color-orange nav a, .color-orange nav a:hover, color-orange nav a:visited {
+.color-orange header, .color-orange nav a, .color-orange nav a:hover, color-orange nav a:visited {
     color: #ff9900;
 }
 .color-orange nav a {
@@ -161,7 +162,7 @@ img.feature-logo {
     fill: #ff9900;
 }
 
-.color-yellow header, .color-yellow footer, .color-yellow nav a, .color-yellow nav a:hover, color-yellow nav a:visited {
+.color-yellow header, .color-yellow nav a, .color-yellow nav a:hover, color-yellow nav a:visited {
     color: #ffcc00;
 }
 .color-yellow nav a {
@@ -305,10 +306,6 @@ goes on top of the feature text!!!!*/
     padding:0px;
     width: 100%;
     height: auto;
-}
-
-footer {
-    text-align: center;
 }
 
 nav{
