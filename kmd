@@ -134,4 +134,14 @@
     id="profile03" href="profile03"><img src="img/index/profile03.png"></a><!--
     profile03 feature appears here:--></div>
 
+    <footer>
+        <img src="img/backToTopBtn.jpg" id="backToTop"></img>
+        <small>
+            <!--Put copyright info and other small text here-->
+            &copy;&copy;&copy;&copy;&copy;&copy;Small-text-here&copy;&copy;&copy;&copy;&copy;&copy;
+        </small>
+        <div id="footerText">
+            
+        </div>
+    </footer>
 </body>

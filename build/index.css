@@ -405,3 +405,23 @@ nav a:hover, nav a:focus {
 #branding{
     background: #fff;
 }
+
+footer{
+    width:100%;
+    color: #fff;
+    /*Don't set padding in here, do it in footerText*/
+}
+
+footer small{
+    /*Add padding and stuff to me!*/
+
+}
+
+#footerText{
+
+}
+
+#backToTop{
+    float:right;
+    cursor:pointer;
+}

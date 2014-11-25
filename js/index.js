@@ -154,6 +154,13 @@
 			updateFeature(0);
 		});
 
+        $("#backToTop").on("click", function(){
+            $("html, body").animate({ scrollTop: 0 }, scrollTime);
+            console.log("alksjdfkljasdf");
+        });
+
+
+
 		$("<img />").attr("src", loadingImage);
 
         randomizeHeaderColor();
