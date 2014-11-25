@@ -32,6 +32,7 @@ body{
 }
 
 div.feature {
+    display:none;
     float: left;
     width: 100%;
     text-align: left;
@@ -107,8 +108,6 @@ img.feature-logo {
 }
 .atomic {
     background-image: url(../img/atomic/atomic_bg.png);
-}
-.atomic {
     padding-bottom: 400px;
 }
 
@@ -116,7 +115,8 @@ img.feature-logo {
     background-image: url(../img/pg/pg_bg.png);
 }
 .pi {
-    background-image: url(../img/disney/disney_bg.png);
+    background-image: url(../img/pi/pi_bg.png);
+    padding-bottom: 200px;
 }
 .usgov {
     background-image: url(../img/disney/disney_bg.png);
@@ -126,7 +126,8 @@ img.feature-logo {
 }
 
 .cocacola {
-    background-image: url(..img/cocacola/cocacola_bg.png);
+    background-image: url(../img/cocacola/cocacola_bg.png);
+    padding-bottom: 200px;
 }
 
 
