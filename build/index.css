@@ -400,9 +400,13 @@ nav a:hover, nav a:focus {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-}
-#tiles > .size > .aspect > a > img {
-    margin: auto;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 #atomic {

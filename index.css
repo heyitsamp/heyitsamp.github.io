@@ -361,9 +361,8 @@ nav a:hover, nav a:focus {
 
     /* give up and use flexbox for vertically centering the image */
     display: flex;
-}
-#tiles > .size > .aspect > a > img {
-    margin: auto;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #atomic {
