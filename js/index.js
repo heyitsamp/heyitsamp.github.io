@@ -64,7 +64,7 @@
 
 		var spinner = $("<div class=spinner><img src=\""+loadingImage+"\" /></div>")
 			.hide()
-			.insertAfter("#"+feature)
+			.insertAfter("#insert-"+feature)
 			.slideDown(loadingRevealTime);
 
 		var href = "features/" + feature + ".html";

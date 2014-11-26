@@ -52,7 +52,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('fallbacks', 'Create fallback pages for reloading and direct linking.', function() {
 		var files = grunt.file.expand(grunt.config('fallbacks.files')),
 			template = grunt.file.read('index.html'),
-			marker = ' feature appears here:-->',
+			marker = function(name) { return 'id="insert-' + name + '"></div>'; },
 			status = true;
 
 		for (var i = 0; i < files.length; i++) {
@@ -65,7 +65,7 @@ module.exports = function(grunt) {
 			}
 			grunt.log.writeln('creating ' + bare);
 
-			var m = bare + marker;
+			var m = marker(bare);
 			var insertionPoint = template.indexOf(m);
 			if (insertionPoint < 0) {
 				grunt.log.writeln('Marker not found: '+m);
@@ -77,9 +77,7 @@ module.exports = function(grunt) {
 			insertionPoint += m.length;
 			grunt.file.write(bare,
 				template.slice(0, insertionPoint) +
-				'<div class=feature>' +
 				grunt.file.read(f) +
-				'</div>' +
 				template.slice(insertionPoint));
 		}
 		return status;

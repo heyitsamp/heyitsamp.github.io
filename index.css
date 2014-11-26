@@ -43,6 +43,9 @@ div.spinner {
 }
 
 
+div.insertion-point {
+    display: none;
+}
 
 div.feature {
     background-repeat: no-repeat;
