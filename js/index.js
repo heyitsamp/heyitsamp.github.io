@@ -130,7 +130,7 @@
     };
 
 	$(document).ready(function() {
-		$("#tiles > a").on("click", function(event) {
+		$("#tiles a").on("click", function(event) {
 			if (!historySupport) {
 				// let the browser treat it like a regular link
 				return;
