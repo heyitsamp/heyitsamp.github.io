@@ -378,6 +378,8 @@ nav a:hover, nav a:focus {
 }
 #tiles > .size > .aspect > a {
     position: absolute;
+    top: 0;
+    left: 0;
     /* These percents are derived from:
      * margin: 16px
      * padding: 16px // to keep image away from edge of tile
