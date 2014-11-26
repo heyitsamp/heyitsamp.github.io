@@ -104,7 +104,8 @@ img.feature-logo {
     background-image: url(../img/microsoft/microsoft_bg.png);
 }
 .eddiebauer {
-    background-image: url(../img/disney/disney_bg.png);
+    background-image: url(../img/eddiebauer/eddiebauer_bg.png);
+     padding-bottom: 400px;
 }
 .atomic {
     background-image: url(../img/atomic/atomic_bg.png);
@@ -122,10 +123,11 @@ img.feature-logo {
     background-image: url(../img/disney/disney_bg.png);
 }
 .kmd {
-    background-image: url(../img/disney/disney_bg.png);
+    background-image: url(../img/kmd/kmd_bg.png);
+    padding-bottom: 400px;
 }
 
-.cocacola {
+.coca-cola {
     background-image: url(../img/cocacola/cocacola_bg.png);
     padding-bottom: 200px;
 }
