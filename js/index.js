@@ -52,7 +52,9 @@
 			scrollF = function() { return scrollLocation; };
 		} else {
 			scrollF = function() {
-				return square.offset().top + square.height() - 32;
+				// The bottom of the element is inside the visible color
+				// due to padding.
+				return square.offset().top + square.height();
 			};
 		}
 		$("html, body").animate({scrollTop: scrollF()}, {
