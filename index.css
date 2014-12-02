@@ -86,7 +86,8 @@ img.feature-logo {
     background-image: url(../img/microsoft/microsoft_bg.png);
 }
 .eddiebauer {
-    background-image: url(../img/disney/disney_bg.png);
+    background-image: url(../img/eddiebauer/eddiebauer_bg.png);
+     padding-bottom: 400px;
 }
 .atomic {
     background-image: url(../img/atomic/atomic_bg.png);
@@ -104,10 +105,11 @@ img.feature-logo {
     background-image: url(../img/disney/disney_bg.png);
 }
 .kmd {
-    background-image: url(../img/disney/disney_bg.png);
+    background-image: url(../img/kmd/kmd_bg.png);
+    padding-bottom: 400px;
 }
 
-.cocacola {
+.coca-cola {
     background-image: url(../img/cocacola/cocacola_bg.png);
     padding-bottom: 200px;
 }
@@ -217,6 +219,7 @@ nav > a.current:hover {
     margin-left:20px;
     width:300px;
     display:inline-block;
+    line-height: 24px;
 }
 
 header {
@@ -307,13 +310,15 @@ nav > a {
     display: inline-block;
     width: 70px;
     margin: 0 10px;
-    padding: 12px;
+    margin-top: 15px;
+    padding: 8px;
     text-decoration: none;
     border: 2px solid;
     border-radius: 12px;
 }
 nav > div {
     color: white;
+    
 }
 
 nav a:hover, nav a:focus {
