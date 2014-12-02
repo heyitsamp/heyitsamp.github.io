@@ -95,7 +95,7 @@
 					.hide()
 					.insertAfter(spinner)
 					.slideDown(revealTime);
-				$("div.feature-images > a").colorbox(colorboxOptions);
+				$("div.feature-images a").colorbox(colorboxOptions);
 			}
 		});
     };
