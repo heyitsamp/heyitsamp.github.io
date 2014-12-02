@@ -90,16 +90,17 @@ img.feature-logo {
     height: auto;
     margin-right: 30px;
 }
+@media all and (max-width: 400px) {
+    div.feature-information {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+    }
+}
 
-.feature-images {
-    text-align: center;
-}
-.feature-images img {
-    width: 250px;
-    height: 250px;
-    margin: 16px;
-    border-radius: 16px
-}
+
 .disney {
     background-image: url(../img/disney/disney_bg.png);
 }
@@ -114,7 +115,6 @@ img.feature-logo {
     background-image: url(../img/atomic/atomic_bg.png);
     padding-bottom: 400px;
 }
-
 .pg {
     background-image: url(../img/pg/pg_bg.png);
 }
@@ -129,7 +129,6 @@ img.feature-logo {
     background-image: url(../img/kmd/kmd_bg.png);
     padding-bottom: 400px;
 }
-
 .coca-cola {
     background-image: url(../img/cocacola/cocacola_bg.png);
     padding-bottom: 200px;
@@ -223,16 +222,6 @@ nav > a.current:hover {
   #logoImgContainer img{
       height: auto;
   }
-}
-
-@media all and (max-width: 400px) {
-    div.feature-information{
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    }
 }
 
 #logoText{
@@ -366,22 +355,23 @@ nav a:hover, nav a:focus {
     z-index: 2;
 }
 
-#tiles {
+/* class for a block of tiles */
+.tiles {
     text-align: center;
 }
-#tiles > .size {
+.tiles > .size {
     display: inline-block;
     vertical-align: bottom;
     width: 50%;
     max-width: 282px; /* 250 + 16 * 2 */
 }
-#tiles > .size > .aspect {
+.tiles > .size > .aspect {
     position: relative;
     width: 100%;
     height: 0;
     padding-bottom: 100%; /* percent of parent width */
 }
-#tiles > .size > .aspect > a {
+.tiles > .size > .aspect > a {
     position: absolute;
     top: 0;
     left: 0;
@@ -394,12 +384,11 @@ nav a:hover, nav a:focus {
     width: 88.652482%;
     height: 88.652482%;
     box-sizing: border-box; /* padding subtracts from content area */
-    padding: 5.673759%;
     margin: 5.673759%;
     border-radius: 5.673759%;
-
-    cursor: pointer;
-
+}
+/* index tiles specific stuff */
+#tiles > .size > .aspect > a {
     /* give up and use flexbox for vertically centering the image */
     display: -webkit-box;
     display: -webkit-flex;
@@ -412,6 +401,11 @@ nav a:hover, nav a:focus {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
+}
+/* feature tiles specific stuff */
+.feature-images img {
+    max-width: 100%;
+    border-radius: 5.673759%;
 }
 
 #atomic {

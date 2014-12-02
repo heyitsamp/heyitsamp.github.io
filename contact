@@ -92,7 +92,7 @@
 </div>
 
 
-  <div id="tiles"><div
+  <div id="tiles" class="tiles"><div
     class="size"><div class="aspect"><a
     id="disney" href="disney"><img
       src="img/index/disney.png"></a></div></div><div

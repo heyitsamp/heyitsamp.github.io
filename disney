@@ -87,7 +87,7 @@
     <div class="insertion-point" id="insert-labs"></div>
     <div class="insertion-point" id="insert-contact"></div>
 
-  <div id="tiles"><div
+  <div id="tiles" class="tiles"><div
     class="size"><div class="aspect"><a
     id="disney" href="disney"><img
       src="img/index/disney.png"></a></div></div><div
@@ -107,11 +107,16 @@
     </div>
   </div>
 
-  <div class="feature-images">
-      <a href="img/disney/disney01.png"><img src="img/disney/disneybox01.png"
-      /></a><a href="img/disney/disney02.png"><img src="img/disney/disneybox02.png"
-      /></a><a href="img/disney/disney03.png"><img src="img/disney/disneybox03.png" /></a>
-  </div>
+  <div class="feature-images tiles"><div
+    class="size"><div class="aspect"><a
+      href="img/disney/disney01.png"><img
+      src="img/disney/disneybox01.png" /></a></div></div><div
+    class="size"><div class="aspect"><a
+      href="img/disney/disney02.png"><img
+      src="img/disney/disneybox02.png" /></a></div></div><div
+    class="size"><div class="aspect"><a
+      href="img/disney/disney03.png"><img
+      src="img/disney/disneybox03.png" /></a></div></div></div>
 </div>
 <div
     class="size"><div class="aspect"><a 
