@@ -389,6 +389,9 @@ nav a:hover, nav a:focus {
 }
 /* index tiles specific stuff */
 #tiles > .size > .aspect > a {
+    /* keep logo images off edges of tiles */
+    padding: 5.673759%;
+
     /* give up and use flexbox for vertically centering the image */
     display: -webkit-box;
     display: -webkit-flex;
