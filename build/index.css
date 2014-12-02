@@ -203,10 +203,33 @@ img.feature-logo {
     fill: #ffcc00;
 }
 
-nav > a.current,
-nav > a.current:hover {
+nav a.current,
+nav a.current:hover {
     border-color: white;
     color: white;
+}
+nav a:hover {
+    color: #fff;
+}
+
+/* group nav elements by two so there's never a short line with just one */
+nav .group {
+    display: inline-block;
+}
+nav a {
+    display: inline-block;
+
+    font-size: 10pt;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    width: 70px;
+    margin: 0 10px;
+    margin-top: 15px;
+    padding: 8px;
+    text-decoration: none;
+    border: 2px solid;
+    border-radius: 12px;
 }
 
 
@@ -325,29 +348,6 @@ goes on top of the feature text!!!!*/
     padding:0px;
     width: 100%;
     height: auto;
-}
-
-nav > a {
-    font-size: 10pt;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    color: #ffffff;
-    display: inline-block;
-    width: 70px;
-    margin: 0 10px;
-    margin-top: 15px;
-    padding: 8px;
-    text-decoration: none;
-    border: 2px solid;
-    border-radius: 12px;
-}
-nav > div {
-    color: white;
-    
-}
-
-nav a:hover, nav a:focus {
-    color: #fff;
 }
 
 #everythingBelowFeatureSection{
