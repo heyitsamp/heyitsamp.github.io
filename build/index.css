@@ -133,6 +133,10 @@ img.feature-logo {
     background-image: url(../img/cocacola/cocacola_bg.png);
     padding-bottom: 200px;
 }
+.tapout {
+    background-image: url(../img/tapout/tapout_bg.png);
+    padding-bottom: 400px;
+}
 
 
 /* Half my kingdom for some SCSS. (I don't have a kingdom, so I'm safe.) --SK */
@@ -441,6 +445,9 @@ goes on top of the feature text!!!!*/
 
 #pg {
     background: #ff0066;
+}
+#tapout {
+    background: #ff3300;
 }
 
 #branding{
