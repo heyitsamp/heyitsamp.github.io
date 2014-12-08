@@ -1,10 +1,11 @@
 /* global $, document, console, window, colorboxOptions, location, history */
 (function() {
     "use strict";
-    var scrollTime = 500,
-		revealTime = 500,
+    var scrollTime = 5000,
+		revealTime = 5000,
 		loadingImage = "img/colorbox/loading.gif",
-		loadingRevealTime = 50,
+		loadingRevealTime = 500,
+		fakeNetworkDelay = 2000,
         colorList = [
 			"color-cyan",
 			"color-green",
@@ -70,7 +71,7 @@
 			.slideDown(loadingRevealTime);
 
 		var href = "features/" + feature + ".html";
-		$.ajax({
+		window.setTimeout(function() { $.ajax({
 			url: href,
 			dataType: "html",
 			error: function(xhr) {
@@ -97,7 +98,7 @@
 					.slideDown(revealTime);
 				$("div.feature-images a").colorbox(colorboxOptions);
 			}
-		});
+		}); }, fakeNetworkDelay);
     };
     
 	if (historySupport) {
