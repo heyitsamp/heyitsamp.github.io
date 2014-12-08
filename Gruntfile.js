@@ -77,7 +77,7 @@ module.exports = function(grunt) {
 			insertionPoint += m.length;
 			grunt.file.write(bare,
 				template.slice(0, insertionPoint) +
-				grunt.file.read(f) +
+				grunt.file.read(f).trim() + // whitespace breaks the layout
 				template.slice(insertionPoint));
 		}
 		return status;
