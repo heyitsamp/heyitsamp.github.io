@@ -118,6 +118,11 @@ img.feature-logo {
     padding-bottom: 400px;
 }
 
+.contact {
+    background-image: url(../img/contact/contact_bg.png);
+    padding-bottom: 200px;
+}
+
 /* Half my kingdom for some SCSS. (I don't have a kingdom, so I'm safe.) --SK */
 
 .color-cyan header, .color-cyan nav a, .color-cyan nav a:hover, color-cyan nav a:visited,
