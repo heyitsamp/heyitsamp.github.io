@@ -57,6 +57,7 @@ div.feature-information {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
 }
 div.feature-text {
     max-width: 50%;
