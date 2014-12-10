@@ -136,7 +136,7 @@ img.feature-logo {
 }
 .tapout {
     background-image: url(../img/tapout/tapout_bg.png);
-    padding-bottom: 400px;
+    padding-bottom: 300px;
 }
 
 .labs {
@@ -146,6 +146,10 @@ img.feature-logo {
 
 .contact {
     background-image: url(../img/contact/contact_bg.png);
+    padding-bottom: 200px;
+}
+.abaout {
+    background-image: url(../img/about/about_bg.png);
     padding-bottom: 200px;
 }
 
