@@ -251,6 +251,7 @@ nav a {
 header {
     text-align: center;
     background: black;
+    padding-bottom: 30px
 }
 
 .featureBorder {
