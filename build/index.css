@@ -81,7 +81,9 @@ div.feature-information {
     padding-top: 20px;
 }
 div.feature-text {
-    max-width: 50%;
+    width: 50%;
+    max-width: 35em; 
+/* this uses ems bc it is relative to readability by words per line of paragraph */
     font-family:sans-serif;
     line-height: 34px;
     color: #cccccc;
@@ -91,16 +93,20 @@ img.feature-logo {
     height: auto;
     margin-right: 30px;
 }
+
+/*BREAK POINT Styles for break point, stacking logo over content*/
 @media all and (max-width: 400px) {
     div.feature-information {
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	   -webkit-box-orient: vertical;
+	   -webkit-box-direction: normal;
+	   -webkit-flex-direction: column;
+	       -ms-flex-direction: column;
+	           flex-direction: column;
+    }
+    div.feature-text {
+        width: 96%;
     }
 }
-
 
 .disney {
     background-image: url(../img/disney/disney_bg.png);
@@ -260,6 +266,11 @@ nav a {
     fill: #ffffff;
 }
 
+@media all and (max-width: 548px) {
+  #logoImgContainer img{
+      height: auto;
+  }
+}
 @media all and (max-width: 548px) {
   #logoImgContainer img{
       height: auto;
