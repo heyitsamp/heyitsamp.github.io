@@ -72,7 +72,7 @@
 </svg>
             </div>
             <div id="logoText" color="#fff">
-                We use the dark background to conserve the battery on your device. We are conservationists, designers and developers. Builders of the future.
+                Welcome. This site utilizes our custom crafted responsive template we call "Candystore". Please have a look around, it is populated with a porfolio of our favorite works.
             </div>
         </div>
 
@@ -85,9 +85,11 @@
     <!-- no home insertion point required -->
     <div class="insertion-point" id="insert-about"></div>
     <div class="insertion-point" id="insert-labs"></div><div class="labs feature">
-  <p>ipsum dolor sit amet, denique adolescens ut sed. Mei simul tantas
-  aliquam ei, eleifend maiestatis cu usu. Porro tempor efficiantur nam ex, sed
-  erat erant ad. Ex dicat causae eirmod eos, at hinc soleat lobortis sit.</p>
+  <div class="feature-information">
+    <div class="feature-text">
+      <p>Currently we are experimenting on a content delivery app that pushes super concentrated packets of funny to the user, allowing them to become a purveyor of funny in any situation at the push of a button. Look out for Funny Tap.</p>
+    </div>
+  </div>
 </div>
     <div class="insertion-point" id="insert-contact"></div>
 
@@ -104,6 +106,10 @@
     id="microsoft" href="microsoft"><img
       src="img/index/microsoft.png"></a></div></div><div
       class="insertion-point" id="insert-microsoft"></div><div
+    class="size"><div class="aspect"><a
+    id="tapout" href="tapout"><img
+      src="img/index/tapout.png"></a></div></div><div
+      class="insertion-point" id="insert-tapout"></div><div
     class="size"><div class="aspect"><a
     id="pi" href="pi"><img
       src="img/index/pi.png"></a></div></div><div

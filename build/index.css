@@ -78,31 +78,39 @@ div.feature-information {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-top: 20px;
 }
 div.feature-text {
-    max-width: 50%;
+    width: 50%;
+    max-width: 35em; 
+/* this uses ems bc it is relative to readability by words per line of paragraph */
     font-family:sans-serif;
     line-height: 34px;
-    color: #999999;
+    color: #cccccc;
 }
 img.feature-logo {
     width: 150px;
     height: auto;
     margin-right: 30px;
 }
+
+/*BREAK POINT Styles for break point, stacking logo over content*/
 @media all and (max-width: 400px) {
     div.feature-information {
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	   -webkit-box-orient: vertical;
+	   -webkit-box-direction: normal;
+	   -webkit-flex-direction: column;
+	       -ms-flex-direction: column;
+	           flex-direction: column;
+    }
+    div.feature-text {
+        width: 96%;
     }
 }
 
-
 .disney {
     background-image: url(../img/disney/disney_bg.png);
+    padding-bottom: 400px;
 }
 .microsoft {
     background-image: url(../img/microsoft/microsoft_bg.png);
@@ -120,7 +128,7 @@ img.feature-logo {
 }
 .pi {
     background-image: url(../img/pi/pi_bg.png);
-    padding-bottom: 200px;
+    padding-bottom: 300px;
 }
 .usgov {
     background-image: url(../img/disney/disney_bg.png);
@@ -133,7 +141,24 @@ img.feature-logo {
     background-image: url(../img/cocacola/cocacola_bg.png);
     padding-bottom: 200px;
 }
+.tapout {
+    background-image: url(../img/tapout/tapout_bg.png);
+    padding-bottom: 300px;
+}
 
+.labs {
+    background-image: url(../img/labs/labs_bg.png);
+    padding-bottom: 400px;
+}
+
+.contact {
+    background-image: url(../img/contact/contact_bg.png);
+    padding-bottom: 200px;
+}
+.abaout {
+    background-image: url(../img/about/about_bg.png);
+    padding-bottom: 200px;
+}
 
 /* Half my kingdom for some SCSS. (I don't have a kingdom, so I'm safe.) --SK */
 
@@ -246,6 +271,11 @@ nav a {
       height: auto;
   }
 }
+@media all and (max-width: 548px) {
+  #logoImgContainer img{
+      height: auto;
+  }
+}
 
 #logoText{
     font-size: 10pt;
@@ -254,7 +284,7 @@ nav a {
     
     text-align: left;
     margin-left:20px;
-    width:300px;
+    width:360px;
     display:inline-block;
     line-height: 24px;
 }
@@ -262,6 +292,7 @@ nav a {
 header {
     text-align: center;
     background: black;
+    padding-bottom: 30px
 }
 
 .featureBorder {
@@ -441,6 +472,9 @@ goes on top of the feature text!!!!*/
 
 #pg {
     background: #ff0066;
+}
+#tapout {
+    background: #ff3300;
 }
 
 #branding{

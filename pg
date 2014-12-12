@@ -72,7 +72,7 @@
 </svg>
             </div>
             <div id="logoText" color="#fff">
-                We use the dark background to conserve the battery on your device. We are conservationists, designers and developers. Builders of the future.
+                Welcome. This site utilizes our custom crafted responsive template we call "Candystore". Please have a look around, it is populated with a porfolio of our favorite works.
             </div>
         </div>
 
@@ -101,6 +101,10 @@
       src="img/index/microsoft.png"></a></div></div><div
       class="insertion-point" id="insert-microsoft"></div><div
     class="size"><div class="aspect"><a
+    id="tapout" href="tapout"><img
+      src="img/index/tapout.png"></a></div></div><div
+      class="insertion-point" id="insert-tapout"></div><div
+    class="size"><div class="aspect"><a
     id="pi" href="pi"><img
       src="img/index/pi.png"></a></div></div><div
       class="insertion-point" id="insert-pi"></div><div
@@ -123,15 +127,7 @@
   <div class="feature-information">
     <img class="feature-logo" src="img/index/pg.png" />
     <div class="feature-text">
-      <p>ipsum dolor sit amet, denique adolescens ut sed. Mei simul tantas
-      aliquam ei, eleifend maiestatis cu usu. Porro tempor efficiantur nam ex, sed
-      erat erant ad. Ex dicat causae eirmod eos, at hinc soleat lobortis sit.</p>
-
-      <p>Usu graece iisque contentiones cu, cu affert meliore prodesset cum. Et
-      est tota mutat, ei repudiare deseruisse vis. Usu inani expetenda an, no sea
-      omnis perpetua torquatos, id graece luptatum has. Enim nemore molestie vel
-      ei, cum an possim insolens. Eu quo vero prompta mentitum, ut vix stet
-      aperiam praesent.</p>
+      <p>While at TMPWW, Amp's creative team leader worked tirelessly for years on one of their biggest clients, PG. That's Procter and Gamble folks. Even created a new style guide just for their new recruitment brand to manage and purvey the spirit of PG through their microsite, Twitter, Facebook pages, you name it. The microsite for PG won many industry awards including the coveted Dansker Award.</p>
     </div>
   </div>
 

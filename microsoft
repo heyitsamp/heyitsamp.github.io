@@ -72,7 +72,7 @@
 </svg>
             </div>
             <div id="logoText" color="#fff">
-                We use the dark background to conserve the battery on your device. We are conservationists, designers and developers. Builders of the future.
+                Welcome. This site utilizes our custom crafted responsive template we call "Candystore". Please have a look around, it is populated with a porfolio of our favorite works.
             </div>
         </div>
 
@@ -103,15 +103,7 @@
   <div class="feature-information">
     <img class="feature-logo" src="img/index/microsoft.png" />
     <div class="feature-text">
-      <p>ipsum dolor sit amet, denique adolescens ut sed. Mei simul tantas
-      aliquam ei, eleifend maiestatis cu usu. Porro tempor efficiantur nam ex, sed
-      erat erant ad. Ex dicat causae eirmod eos, at hinc soleat lobortis sit.</p>
-
-      <p>Usu graece iisque contentiones cu, cu affert meliore prodesset cum. Et
-      est tota mutat, ei repudiare deseruisse vis. Usu inani expetenda an, no sea
-      omnis perpetua torquatos, id graece luptatum has. Enim nemore molestie vel
-      ei, cum an possim insolens. Eu quo vero prompta mentitum, ut vix stet
-      aperiam praesent.</p>
+      <p>For one year, our creative team leader did the Microsoft homepage, the 4th largest site in the world, at the time. Responsible for all product launches and advertising, it was said the "best ad ever" game out of it. Other pieces received record breaking click throughs, and some ads were virally emailed around, something they had not yet seen coming from the home page.</p>
     </div>
   </div>
 
@@ -126,6 +118,10 @@
       href="img/microsoft/microsoft03.png"><img
       src="img/microsoft/microsoftbox03.png" /></a></div></div></div>
 </div><div
+    class="size"><div class="aspect"><a
+    id="tapout" href="tapout"><img
+      src="img/index/tapout.png"></a></div></div><div
+      class="insertion-point" id="insert-tapout"></div><div
     class="size"><div class="aspect"><a
     id="pi" href="pi"><img
       src="img/index/pi.png"></a></div></div><div

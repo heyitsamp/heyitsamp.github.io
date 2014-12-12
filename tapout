@@ -103,18 +103,18 @@
     class="size"><div class="aspect"><a
     id="tapout" href="tapout"><img
       src="img/index/tapout.png"></a></div></div><div
-      class="insertion-point" id="insert-tapout"></div><div
-    class="size"><div class="aspect"><a
-    id="pi" href="pi"><img
-      src="img/index/pi.png"></a></div></div><div
-      class="insertion-point" id="insert-pi"></div><div class="pi feature">
+      class="insertion-point" id="insert-tapout"></div><div class="tapout feature">
   <div class="feature-information">
-    <img class="feature-logo" src="img/index/pi.svg" />
+    <img class="feature-logo" src="img/index/tapout.png" />
     <div class="feature-text">
-      <p>An apprentice of Chihuly, the world renowned blown glass artist, John Kiley established Pi Glass, a start up with a unique and beautiful product. They manufactured tinted glass suplements for glass blowers, aiming to set the standard like Pantone has done for the design world. The Pantone color kit was definately and influence on the sample kit for Pi.</p>
+      <p>Our first mobile app title, Tap Out is a free, rushing, tapping, button mashing game for a single player. See how many taps you can tap out before time runs out. Find it on Google Play Store. </p>
     </div>
   </div>
 </div><div
+    class="size"><div class="aspect"><a
+    id="pi" href="pi"><img
+      src="img/index/pi.png"></a></div></div><div
+      class="insertion-point" id="insert-pi"></div><div
     class="size"><div class="aspect"><a
     id="coca-cola" href="coca-cola"><img
       src="img/index/coca-cola.png"></a></div></div><div

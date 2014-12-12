@@ -72,7 +72,7 @@
 </svg>
             </div>
             <div id="logoText" color="#fff">
-                We use the dark background to conserve the battery on your device. We are conservationists, designers and developers. Builders of the future.
+                Welcome. This site utilizes our custom crafted responsive template we call "Candystore". Please have a look around, it is populated with a porfolio of our favorite works.
             </div>
         </div>
 
@@ -95,29 +95,9 @@
   <div class="feature-information">
     <img class="feature-logo" src="img/index/disney.png" />
     <div class="feature-text">
-      <p>ipsum dolor sit amet, denique adolescens ut sed. Mei simul tantas
-      aliquam ei, eleifend maiestatis cu usu. Porro tempor efficiantur nam ex, sed
-      erat erant ad. Ex dicat causae eirmod eos, at hinc soleat lobortis sit.</p>
+      <p>Disney was looking for some fresh direction on their gigantic career portal. A few bubbles and some pixie dust is all it took to put a twinkle in their eyes, well, along with some solid creative direction. They took the time to write in the team Basecamp how much they enjoyed the creative on these pages, that counts. This project won a 2012 Webby award, and many recruitment industry awards, for nailing it.
 
-      <p>Usu graece iisque contentiones cu, cu affert meliore prodesset cum. Et
-      est tota mutat, ei repudiare deseruisse vis. Usu inani expetenda an, no sea
-      omnis perpetua torquatos, id graece luptatum has. Enim nemore molestie vel
-      ei, cum an possim insolens. Eu quo vero prompta mentitum, ut vix stet
-      aperiam praesent.</p>
-    </div>
-  </div>
-
-  <div class="feature-images tiles"><div
-    class="size"><div class="aspect"><a
-      href="img/disney/disney01.png"><img
-      src="img/disney/disneybox01.png" /></a></div></div><div
-    class="size"><div class="aspect"><a
-      href="img/disney/disney02.png"><img
-      src="img/disney/disneybox02.png" /></a></div></div><div
-    class="size"><div class="aspect"><a
-      href="img/disney/disney03.png"><img
-      src="img/disney/disneybox03.png" /></a></div></div></div>
-</div><div
+    </div><div
     class="size"><div class="aspect"><a 
     id="atomic" href="atomic"><img
       src="img/index/atomic.png"></a></div></div><div
@@ -126,6 +106,10 @@
     id="microsoft" href="microsoft"><img
       src="img/index/microsoft.png"></a></div></div><div
       class="insertion-point" id="insert-microsoft"></div><div
+    class="size"><div class="aspect"><a
+    id="tapout" href="tapout"><img
+      src="img/index/tapout.png"></a></div></div><div
+      class="insertion-point" id="insert-tapout"></div><div
     class="size"><div class="aspect"><a
     id="pi" href="pi"><img
       src="img/index/pi.png"></a></div></div><div
