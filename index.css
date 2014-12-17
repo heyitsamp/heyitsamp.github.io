@@ -26,7 +26,6 @@ body{
 div.feature {
     float: left;
     width: 100%;
-    text-align: left;
 }
 
 div.spinner {
@@ -47,11 +46,6 @@ div.insertion-point {
     display: none;
 }
 
-div.feature {
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 div.feature-information {
     display: flex;
     flex-direction: row;
@@ -60,9 +54,11 @@ div.feature-information {
     padding-top: 20px;
 }
 div.feature-text {
+    text-align: left;
     width: 50%;
     max-width: 35em; 
-/* this uses ems bc it is relative to readability by words per line of paragraph */
+    /* this uses ems because it's relative to readability by words per line of
+     * paragraph */
     font-family:sans-serif;
     line-height: 34px;
     color: #cccccc;
@@ -83,6 +79,10 @@ img.feature-logo {
     }
 }
 
+div.feature {
+    background-repeat: no-repeat;
+    background-position: center;
+}
 img.work {
     max-width: 100%;
 }
