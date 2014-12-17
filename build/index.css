@@ -108,9 +108,12 @@ img.feature-logo {
     }
 }
 
+img.work {
+    max-width: 100%;
+}
+
 .disney {
     background-image: url(../img/disney/disney_bg.png);
-    padding-bottom: 400px;
 }
 .microsoft {
     background-image: url(../img/microsoft/microsoft_bg.png);
