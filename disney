@@ -89,8 +89,8 @@
 
   <div id="tiles" class="tiles"><div
     class="size"><div class="aspect"><a
-    id="disney" href="disney"><img
-      src="img/index/disney.png"></a></div></div><div
+    id="disney" href="disney"><span class="align"><img
+      src="img/index/disney.png"></a></span></div></div><div
       class="insertion-point" id="insert-disney"></div><div class="disney feature">
   <div class="feature-information">
     <img class="feature-logo" src="img/index/disney.png" />
@@ -101,52 +101,52 @@
   <img class="work" src="img/disney/disney_work.png" />
 </div><div
     class="size"><div class="aspect"><a 
-    id="atomic" href="atomic"><img
-      src="img/index/atomic.png"></a></div></div><div
+    id="atomic" href="atomic"><span class="align"><img
+      src="img/index/atomic.png"></span></a></div></div><div
       class="insertion-point" id="insert-atomic"></div><div
     class="size"><div class="aspect"><a
-    id="microsoft" href="microsoft"><img
-      src="img/index/microsoft.png"></a></div></div><div
+    id="microsoft" href="microsoft"><span class="align"><img
+      src="img/index/microsoft.png"></span></a></div></div><div
       class="insertion-point" id="insert-microsoft"></div><div
     class="size"><div class="aspect"><a
-    id="tapout" href="tapout"><img
-      src="img/index/tapout.png"></a></div></div><div
+    id="tapout" href="tapout"><span class="align"><img
+      src="img/index/tapout.png"></span></a></div></div><div
       class="insertion-point" id="insert-tapout"></div><div
     class="size"><div class="aspect"><a
-    id="pi" href="pi"><img
-      src="img/index/pi.png"></a></div></div><div
+    id="pi" href="pi"><span class="align"><img
+      src="img/index/pi.png"></span></a></div></div><div
       class="insertion-point" id="insert-pi"></div><div
     class="size"><div class="aspect"><a
-    id="coca-cola" href="coca-cola"><img
-      src="img/index/coca-cola.png"></a></div></div><div
+    id="coca-cola" href="coca-cola"><span class="align"><img
+      src="img/index/coca-cola.png"></span></a></div></div><div
       class="insertion-point" id="insert-coca-cola"></div><div
     class="size"><div class="aspect"><a
-    id="eb" href="eb"><img
-      src="img/index/eb.png"></a></div></div><div
+    id="eb" href="eb"><span class="align"><img
+      src="img/index/eb.png"></span></a></div></div><div
       class="insertion-point" id="insert-eb"></div><div
     class="size"><div class="aspect"><a
-    id="kmd" href="kmd"><img
-      src="img/index/kmd.png"></a></div></div><div
+    id="kmd" href="kmd"><span class="align"><img
+      src="img/index/kmd.png"></span></a></div></div><div
       class="insertion-point" id="insert-kmd"></div><div
     class="size"><div class="aspect"><a
-    id="pg" href="pg"><img
-      src="img/index/pg.png"></a></div></div><div
+    id="pg" href="pg"><span class="align"><img
+      src="img/index/pg.png"></span></a></div></div><div
       class="insertion-point" id="insert-pg"></div><div
     class="size"><div class="aspect"><a
-    id="profile01" href="profile01"><img
-      src="img/index/profile01.png"></a></div></div><div
+    id="profile01" href="profile01"><span class="align"><img
+      src="img/index/profile01.png"></span></a></div></div><div
       class="insertion-point" id="insert-profile01"></div><div
     class="size"><div class="aspect"><a
-    id="usejets" href="usejets"><img
-      src="img/index/usjets.png"></a></div></div><div
+    id="usejets" href="usejets"><span class="align"><img
+      src="img/index/usjets.png"></span></a></div></div><div
       class="insertion-point" id="insert-usejets"></div><div
     class="size"><div class="aspect"><a
-    id="profile02" href="profile02"><img
-      src="img/index/profile02.png"></a></div></div><div
+    id="profile02" href="profile02"><span class="align"><img
+      src="img/index/profile02.png"></span></a></div></div><div
       class="insertion-point" id="insert-profile02"></div><div
     class="size"><div class="aspect"><a
-    id="profile03" href="profile03"><img
-      src="img/index/profile03.png"></a></div></div><div
+    id="profile03" href="profile03"><span class="align"><img
+      src="img/index/profile03.png"></span></a></div></div><div
       class="insertion-point" id="insert-profile03"></div></div>
 
     <footer>
