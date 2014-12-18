@@ -105,9 +105,6 @@ img.work {
 .pi {
     background-image: url(../img/pi/pi_bg.jpg);
 }
-.usgov {
-    background-image: url(../img/disney/disney_bg.jpg);
-}
 .kmd {
     background-image: url(../img/kmd/kmd_bg.jpg);
 }
@@ -118,7 +115,10 @@ img.work {
     background-image: url(../img/tapout/tapout_bg.jpg);
     padding-bottom: 5%;
 }
-
+.gov {
+    background-image: url(../img/gov/gov_bg.jpg);
+    padding-bottom: 5%;
+}
 .labs {
     background-image: url(../img/labs/labs_bg.png);
     padding-bottom: 400px;
@@ -130,7 +130,7 @@ img.work {
 }
 .about {
     background-image: url(../img/about/about_bg.png);
-    padding-bottom: 200px;
+    padding-bottom: 50px;
 }
 
 /* Half my kingdom for some SCSS. (I don't have a kingdom, so I'm safe.) --SK */
@@ -426,13 +426,15 @@ goes on top of the feature text!!!!*/
 
 #pg {
     background: #ff0066;
+    
 }
 #tapout {
     background: #ff3300;
 }
 
-#branding{
-    background: #fff;
+
+#gov {
+    background: #00cccc;   
 }
 
 footer{
