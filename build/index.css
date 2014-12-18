@@ -144,6 +144,10 @@ img.work {
     background-image: url(../img/gov/gov_bg.jpg);
     padding-bottom: 5%;
 }
+.safdie {
+    background-image: url(../img/safdie/safdie_bg.jpg);
+}
+
 .labs {
     background-image: url(../img/labs/labs_bg.png);
     padding-bottom: 400px;
@@ -248,7 +252,7 @@ nav a {
     color: #ffffff;
     width: 70px;
     margin: 0 10px;
-    margin-top: 15px;
+    margin-top: 25px;
     padding: 8px;
     text-decoration: none;
     border: 2px solid;
@@ -445,7 +449,7 @@ goes on top of the feature text!!!!*/
 }
 
 #pi {
-    background: #00ccff;
+    background: #ff0066;
 }
 
 #coca-cola {
@@ -468,19 +472,21 @@ goes on top of the feature text!!!!*/
     background: #0099cc;
 }
 
-#pg {
-    background: #ff0066;
+#safdie {
+    background: #00ccff;
     
 }
 #tapout {
     background: #ff3300;
 }
 
-
 #gov {
     background: #00cccc;   
 }
-
+#pg {
+    background: #ccff00;
+    
+}
 footer{
     font-family: 'Roboto', sans-serif;
     font-size: 9pt;
@@ -504,6 +510,7 @@ footer{
     color: #fff;
     text-align:center;
     margin-bottom: 60px;
+    padding-top: 30px;
 }
 
 #copyright{

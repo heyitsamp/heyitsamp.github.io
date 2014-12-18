@@ -107,21 +107,19 @@
     class="size"><div class="aspect"><a
     id="safdie" href="safdie"><img
       src="img/index/safdie.svg"></a></div></div><div
-      class="insertion-point" id="insert-safdie"></div><div
+      class="insertion-point" id="insert-safdie"></div><div class="safdie feature">
+  <div class="feature-information">
+    <img class="feature-logo" src="img/index/safdie.svg" />
+    <div class="feature-text">
+      <p>Moshe Safdie is one of the world’s most innovative architects, his work is out of a dream, a really beautiful one. Working out of NYC, Bill, our youngest programmer was graced with the technical build of his site.</p>
+    </div>
+  </div>
+  <img class="work" src="img/safdie/safdie_work.png" />
+</div><div
     class="size"><div class="aspect"><a
     id="coca-cola" href="coca-cola"><img
       src="img/index/coca-cola.png"></a></div></div><div
-      class="insertion-point" id="insert-coca-cola"></div><div class="coca-cola feature">
-  <div class="feature-information">
-    <img class="feature-logo" src="img/index/coca-cola.png" />
-    <div class="feature-text">
-      <p>In a campaign involving 25 design firms, Coca Cola was looking to solve a design challenge where a consumer could drink a coke while driving a car, without tilting the bottle. </p>
-<p>Keeping it simple, the solution we came up with is a plastic bottle that maintained the classic Coke bottle shape and brand, with a plastic bag like membrane inside. Like what astronauts use, the inner membrane would collapse and deliver the soda. This solution was selected as one of the top 3 of the campaign.
-</p>
-    </div>
-  </div>
-  <img class="work" src="img/cocacola/cocacola_work.png" />
-</div><div
+      class="insertion-point" id="insert-coca-cola"></div><div
     class="size"><div class="aspect"><a
     id="eb" href="eb"><img
       src="img/index/eb.png"></a></div></div><div

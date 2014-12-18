@@ -99,7 +99,7 @@
   <div class="feature-information">
     <img class="feature-logo" src="img/index/atomic.png" />
     <div class="feature-text">
-      <p>How to aquire a chunk of a market when you only have less than 1% of it? Hire some crazy go nuts thinkers, (that's us). Atomic wanted a piece of the freestyle ski market, the solution we came up with; sell 3 skis, all with unique graphics. The rationale was multifaceted, each consumer could chose a unique style with 3 skis, they will have a spare after ripping the edge off on the rail, and most importantly, 2 roommates buy Triplets, and sell the spare on Ebay, virally spreading the user base. Mission accomplished, the Atomic team were the bad boys with all the cameras on thier booth. They were quite satisfited with this new position.</p>
+      <p>How to acquire a chunk of a market when you only have less than 1% of it? Hire some crazy go nuts thinkers, (that's us). Atomic wanted a piece of the freestyle ski market, the solution we came up with was to sell a set 3 skis, each with unique graphics. The rationale was multifaceted; each consumer could chose a unique style with 3 skis, if the skiier rips the edge off on a rail they would have a spare, and most importantly, 2 roommates buy Triplets, and sell the spare to third roomie, or on Ebay, virally spreading the user base. Mission accomplished, the Atomic team were the bad boys with all the cameras on their booth. They were quite satisfied with this new position.</p>
     </div>
   </div>
   <img class="work" src="img/atomic/atomic_work.png" />
@@ -113,9 +113,9 @@
       src="img/index/tapout.png"></a></div></div><div
       class="insertion-point" id="insert-tapout"></div><div
     class="size"><div class="aspect"><a
-    id="pi" href="pi"><img
-      src="img/index/pi.png"></a></div></div><div
-      class="insertion-point" id="insert-pi"></div><div
+    id="safdie" href="safdie"><img
+      src="img/index/safdie.svg"></a></div></div><div
+      class="insertion-point" id="insert-safdie"></div><div
     class="size"><div class="aspect"><a
     id="coca-cola" href="coca-cola"><img
       src="img/index/coca-cola.png"></a></div></div><div
@@ -139,11 +139,11 @@
     class="size"><div class="aspect"><a
     id="usejets" href="usejets"><img
       src="img/index/usjets.png"></a></div></div><div
-      class="insertion-point" id="insert-usejets"></div><div
+      class="insertion-point" id="insert-usjets"></div><div
     class="size"><div class="aspect"><a
-    id="profile03" href="profile03"><img
-      src="img/index/profile03.png"></a></div></div><div
-      class="insertion-point" id="insert-profile03"></div></div>
+    id="pi" href="pi"><img
+      src="img/index/pi.png"></a></div></div><div
+      class="insertion-point" id="insert-pi"></div></div>
 
     <footer>
         <span id="copyright">&copy;2014</span>
