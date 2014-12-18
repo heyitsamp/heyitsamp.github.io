@@ -95,52 +95,52 @@
 
   <div id="tiles" class="tiles"><div
     class="size"><div class="aspect"><a
-    id="disney" href="disney"><img
-      src="img/index/disney.png"></a></div></div><div
+    id="disney" href="disney"><span class="align"><img
+      src="img/index/disney.png"></a></span></div></div><div
       class="insertion-point" id="insert-disney"></div><div
     class="size"><div class="aspect"><a 
-    id="atomic" href="atomic"><img
-      src="img/index/atomic.png"></a></div></div><div
+    id="atomic" href="atomic"><span class="align"><img
+      src="img/index/atomic.png"></span></a></div></div><div
       class="insertion-point" id="insert-atomic"></div><div
     class="size"><div class="aspect"><a
-    id="microsoft" href="microsoft"><img
-      src="img/index/microsoft.png"></a></div></div><div
+    id="microsoft" href="microsoft"><span class="align"><img
+      src="img/index/microsoft.png"></span></a></div></div><div
       class="insertion-point" id="insert-microsoft"></div><div
     class="size"><div class="aspect"><a
-    id="tapout" href="tapout"><img
-      src="img/index/tapout.png"></a></div></div><div
+    id="tapout" href="tapout"><span class="align"><img
+      src="img/index/tapout.png"></span></a></div></div><div
       class="insertion-point" id="insert-tapout"></div><div
     class="size"><div class="aspect"><a
-    id="safdie" href="safdie"><img
-      src="img/index/safdie.svg"></a></div></div><div
+    id="safdie" href="safdie"><span class="align"><img
+      src="img/index/safdie.svg"></span></a></div></div><div
       class="insertion-point" id="insert-safdie"></div><div
     class="size"><div class="aspect"><a
-    id="coca-cola" href="coca-cola"><img
-      src="img/index/coca-cola.png"></a></div></div><div
+    id="coca-cola" href="coca-cola"><span class="align"><img
+      src="img/index/coca-cola.png"></span></a></div></div><div
       class="insertion-point" id="insert-coca-cola"></div><div
     class="size"><div class="aspect"><a
-    id="eb" href="eb"><img
-      src="img/index/eb.png"></a></div></div><div
+    id="eb" href="eb"><span class="align"><img
+      src="img/index/eb.png"></span></a></div></div><div
       class="insertion-point" id="insert-eb"></div><div
     class="size"><div class="aspect"><a
-    id="kmd" href="kmd"><img
-      src="img/index/kmd.png"></a></div></div><div
+    id="kmd" href="kmd"><span class="align"><img
+      src="img/index/kmd.png"></span></a></div></div><div
       class="insertion-point" id="insert-kmd"></div><div
     class="size"><div class="aspect"><a
-    id="pg" href="pg"><img
-      src="img/index/pg.png"></a></div></div><div
+    id="pg" href="pg"><span class="align"><img
+      src="img/index/pg.png"></span></a></div></div><div
       class="insertion-point" id="insert-pg"></div><div
     class="size"><div class="aspect"><a
     id="gov" href="gov"><img
       src="img/index/gov.png"></a></div></div><div
       class="insertion-point" id="insert-gov"></div><div
     class="size"><div class="aspect"><a
-    id="usejets" href="usejets"><img
-      src="img/index/usjets.png"></a></div></div><div
-      class="insertion-point" id="insert-usjets"></div><div
+    id="usejets" href="usejets"><span class="align"><img
+      src="img/index/usjets.png"></span></a></div></div><div
+      class="insertion-point" id="insert-usejets"></div><div
     class="size"><div class="aspect"><a
-    id="pi" href="pi"><img
-      src="img/index/pi.png"></a></div></div><div
+    id="pi" href="pi"><span class="align"><img
+      src="img/index/pi.png"></span></a></div></div><div
       class="insertion-point" id="insert-pi"></div></div>
 
     <footer>

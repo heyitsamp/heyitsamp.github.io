@@ -1,5 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
 
+/* reset */
+img {
+    vertical-align: bottom;
+}
+
 /*
 TODO:
 For the header, text on top of an image is what the big website guys are doing. 
@@ -438,6 +443,16 @@ goes on top of the feature text!!!!*/
         -ms-flex-align: center;
             align-items: center;
 }
+/* because more wrappers are the answer for everything!
+ * this element overcomes too many browser specific bugs to list :( */
+#tiles > .size > .aspect > a > .align {
+    display: block;
+    width: 100%;
+}
+#tiles > .size > .aspect > a > span > img {
+    max-width: 100%;
+}
+
 /* feature tiles specific stuff */
 .feature-images img {
     max-width: 100%;
