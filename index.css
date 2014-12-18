@@ -26,7 +26,6 @@ body{
 div.feature {
     float: left;
     width: 100%;
-    text-align: left;
 }
 
 div.spinner {
@@ -47,11 +46,6 @@ div.insertion-point {
     display: none;
 }
 
-div.feature {
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 div.feature-information {
     display: flex;
     flex-direction: row;
@@ -60,9 +54,11 @@ div.feature-information {
     padding-top: 20px;
 }
 div.feature-text {
+    text-align: left;
     width: 50%;
     max-width: 35em; 
-/* this uses ems bc it is relative to readability by words per line of paragraph */
+    /* this uses ems because it's relative to readability by words per line of
+     * paragraph */
     font-family:sans-serif;
     line-height: 34px;
     color: #cccccc;
@@ -83,42 +79,44 @@ img.feature-logo {
     }
 }
 
+div.feature {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+img.work {
+    max-width: 100%;
+}
+
 .disney {
-    background-image: url(../img/disney/disney_bg.png);
-    padding-bottom: 400px;
+    background-image: url(../img/disney/disney_bg.jpg);
 }
 .microsoft {
     background-image: url(../img/microsoft/microsoft_bg.png);
 }
 .eddiebauer {
-    background-image: url(../img/eddiebauer/eddiebauer_bg.png);
-     padding-bottom: 400px;
+    background-image: url(../img/eddiebauer/eddiebauer_bg.jpg);
 }
 .atomic {
-    background-image: url(../img/atomic/atomic_bg.png);
-    padding-bottom: 400px;
+    background-image: url(../img/atomic/atomic_bg.jpg);
 }
 .pg {
     background-image: url(../img/pg/pg_bg.png);
 }
 .pi {
-    background-image: url(../img/pi/pi_bg.png);
-    padding-bottom: 300px;
+    background-image: url(../img/pi/pi_bg.jpg);
 }
 .usgov {
-    background-image: url(../img/disney/disney_bg.png);
+    background-image: url(../img/disney/disney_bg.jpg);
 }
 .kmd {
-    background-image: url(../img/kmd/kmd_bg.png);
-    padding-bottom: 400px;
+    background-image: url(../img/kmd/kmd_bg.jpg);
 }
 .coca-cola {
-    background-image: url(../img/cocacola/cocacola_bg.png);
-    padding-bottom: 200px;
+    background-image: url(../img/cocacola/cocacola_bg.jpg);
 }
 .tapout {
-    background-image: url(../img/tapout/tapout_bg.png);
-    padding-bottom: 300px;
+    background-image: url(../img/tapout/tapout_bg.jpg);
+    padding-bottom: 5%;
 }
 
 .labs {
@@ -130,7 +128,7 @@ img.feature-logo {
     background-image: url(../img/contact/contact_bg.png);
     padding-bottom: 200px;
 }
-.abaout {
+.about {
     background-image: url(../img/about/about_bg.png);
     padding-bottom: 200px;
 }
