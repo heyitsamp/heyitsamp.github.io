@@ -5,6 +5,10 @@ img {
     vertical-align: bottom;
 }
 
+a, a:visited {
+    color: #ccc;
+}
+
 /*
 TODO:
 For the header, text on top of an image is what the big website guys are doing. 
