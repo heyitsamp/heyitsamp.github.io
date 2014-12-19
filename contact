@@ -89,8 +89,8 @@
   <div class="feature-information">
     <div class="feature-text">
         <p>We are out there.</p>
-        <p>207-370-8553</p>      
-        <p>team@heyitsamp.com</p>  
+        <p><a href="tel:207-370-8553" style="color:#CCCCCC;">207-370-8553</a></p>      
+        <p><a href="mailto:team@heyitsamp.com " style="color:#CCCCCC;">team@heyitsamp.com</a></p>  
     </div>
   </div>
 
