@@ -97,15 +97,15 @@
   <div id="tiles" class="tiles"><div
     class="size"><div class="aspect"><a
     id="disney" href="disney"><span class="align"><img
-      src="img/index/disney.png"></a></span></div></div><div
+      src="img/index/disney.svg"></a></span></div></div><div
       class="insertion-point" id="insert-disney"></div><div
     class="size"><div class="aspect"><a 
     id="atomic" href="atomic"><span class="align"><img
-      src="img/index/atomic.png"></span></a></div></div><div
+      src="img/index/atomic.svg"></span></a></div></div><div
       class="insertion-point" id="insert-atomic"></div><div
     class="size"><div class="aspect"><a
     id="microsoft" href="microsoft"><span class="align"><img
-      src="img/index/microsoft.png"></span></a></div></div><div
+      src="img/index/microsoft.svg"></span></a></div></div><div
       class="insertion-point" id="insert-microsoft"></div><div
     class="size"><div class="aspect"><a
     id="tapout" href="tapout"><span class="align"><img
@@ -117,31 +117,31 @@
       class="insertion-point" id="insert-safdie"></div><div
     class="size"><div class="aspect"><a
     id="coca-cola" href="coca-cola"><span class="align"><img
-      src="img/index/coca-cola.png"></span></a></div></div><div
+      src="img/index/cocacola.svg"></span></a></div></div><div
       class="insertion-point" id="insert-coca-cola"></div><div
     class="size"><div class="aspect"><a
     id="eb" href="eb"><span class="align"><img
-      src="img/index/eb.png"></span></a></div></div><div
+      src="img/index/eb.svg"></span></a></div></div><div
       class="insertion-point" id="insert-eb"></div><div
     class="size"><div class="aspect"><a
     id="kmd" href="kmd"><span class="align"><img
-      src="img/index/kmd.png"></span></a></div></div><div
+      src="img/index/kmd.svg"></span></a></div></div><div
       class="insertion-point" id="insert-kmd"></div><div
     class="size"><div class="aspect"><a
     id="pg" href="pg"><span class="align"><img
-      src="img/index/pg.png"></span></a></div></div><div
+      src="img/index/pg.svg"></span></a></div></div><div
       class="insertion-point" id="insert-pg"></div><div
     class="size"><div class="aspect"><a
     id="gov" href="gov"><img
-      src="img/index/gov.png"></a></div></div><div
+      src="img/index/gov.svg"></a></div></div><div
       class="insertion-point" id="insert-gov"></div><div
     class="size"><div class="aspect"><a
     id="usejets" href="usejets"><span class="align"><img
-      src="img/index/usjets.png"></span></a></div></div><div
+      src="img/index/usjets.svg"></span></a></div></div><div
       class="insertion-point" id="insert-usejets"></div><div
     class="size"><div class="aspect"><a
     id="pi" href="pi"><span class="align"><img
-      src="img/index/pi.png"></span></a></div></div><div
+      src="img/index/pi.svg"></span></a></div></div><div
       class="insertion-point" id="insert-pi"></div></div>
 
     <footer>
