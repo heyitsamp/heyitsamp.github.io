@@ -96,7 +96,7 @@ img.feature-logo {
 }
 
 /*BREAK POINT Styles for break point, stacking logo over content*/
-@media all and (max-width: 400px) {
+@media all and (max-width: 600px) {
     div.feature-information {
 	   -webkit-box-orient: vertical;
 	   -webkit-box-direction: normal;
@@ -257,7 +257,6 @@ nav a {
     color: #ffffff;
     width: 70px;
     margin: 0 10px;
-    margin-top: 25px;
     padding: 8px;
     text-decoration: none;
     border: 2px solid;
@@ -269,16 +268,8 @@ nav a {
     display:inline-block;
 }
 
-.myLogo{
-    fill: #ffffff;
-}
 
-@media all and (max-width: 548px) {
-  #logoImgContainer img{
-      height: auto;
-  }
-}
-@media all and (max-width: 548px) {
+@media all and (max-width: 600px) {
   #logoImgContainer img{
       height: auto;
   }
@@ -291,9 +282,16 @@ nav a {
     
     text-align: left;
     margin-left:20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     width:360px;
     display:inline-block;
     line-height: 24px;
+}
+@media all and (max-width: 600px) {
+  #logoText {
+      width: 90%;
+  }
 }
 
 header {
