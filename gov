@@ -136,11 +136,15 @@
     </div>
   </div>
   <img class="work" src="img/gov/gov_work.png" />
-</div><div
+</div><!--<div
     class="size"><div class="aspect"><a
-    id="usejets" href="usejets"><span class="align"><img
+    id="usjets" href="usjets"><span class="align"><img
       src="img/index/usjets.svg"></span></a></div></div><div
-      class="insertion-point" id="insert-usejets"></div><div
+      class="insertion-point" id="insert-usjets"></div>--><div
+    class="size"><div class="aspect"><a
+    id="highwire" href="highwire"><span class="align"><img
+      src="img/index/highwire.svg"></span></a></div></div><div
+      class="insertion-point" id="insert-highwire"></div><div
     class="size"><div class="aspect"><a
     id="pi" href="pi"><span class="align"><img
       src="img/index/pi.svg"></span></a></div></div><div
