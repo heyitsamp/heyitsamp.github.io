@@ -68,7 +68,7 @@
 		var spinner = $("<div class=spinner><img src=\""+loadingImage+"\" /></div>")
 			.hide()
 			.insertAfter("#insert-"+feature)
-			.slideDown(loadingRevealTime);
+			.fadeIn(loadingRevealTime);
 
 		var href = "features/" + feature + ".html";
 		window.setTimeout(function() { $.ajax({
@@ -85,7 +85,7 @@
 				return;
 			},
 			success: function(data) {
-				spinner.slideUp({
+				spinner.fadeOut({
 					duration: loadingRevealTime,
 					queue: false,
 					complete: function() {
