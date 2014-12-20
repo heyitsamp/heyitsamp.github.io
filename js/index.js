@@ -3,7 +3,7 @@
     "use strict";
     var scrollTime = 5000,
 		revealTime = 5000,
-		loadingImage = "img/colorbox/loading.gif",
+		loadingImage = "img/spiffygif_30x30_360.gif",
 		loadingRevealTime = 500,
 		fakeNetworkDelay = 2000,
         colorList = [
