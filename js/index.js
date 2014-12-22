@@ -1,8 +1,8 @@
 /* global $, document, console, window, colorboxOptions, location, history */
 (function() {
     "use strict";
-    var scrollTime = 5000,
-		revealTime = 5000,
+    var scrollTime = 500,
+		revealTime = 500,
 		loadingImage = "img/spiffygif_30x30_360.gif",
 		loadingRevealTime = 500,
 		fakeNetworkDelay = 2000,
