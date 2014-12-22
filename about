@@ -84,7 +84,7 @@
     </header>
     <!-- no home insertion point required -->
     <div class="insertion-point" id="insert-about"></div><div class="about feature">
-  <div class="feature-information">
+  <div class="feature-about">
     <div class="feature-about-photos">
         <a href="#">
             <img src="img/profiles/drew.png">

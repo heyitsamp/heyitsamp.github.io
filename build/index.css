@@ -49,16 +49,10 @@ div.insertion-point {
 
 /*Custom for the About page*/
 @media all and (min-width: 600px) {
-    div .feature-about-photos{
-        width: 222px;
-    }
-    div .feature-about-photos a{
-
-    }
 }
 
 div .feature-about-photos{
-    max-width: 100%;
+    max-width: 90%;
     text-align: center;
 }
 
@@ -78,6 +72,28 @@ div .feature-about-photos img{
     margin:0px;
     padding:0px;
 }
+
+div.feature-about{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 20px;
+}
+
 
 /*End custom for the About page*/
 

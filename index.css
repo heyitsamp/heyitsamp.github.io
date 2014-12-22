@@ -49,16 +49,10 @@ div.insertion-point {
 
 /*Custom for the About page*/
 @media all and (min-width: 600px) {
-    div .feature-about-photos{
-        width: 222px;
-    }
-    div .feature-about-photos a{
-
-    }
 }
 
 div .feature-about-photos{
-    max-width: 100%;
+    max-width: 90%;
     text-align: center;
 }
 
@@ -78,6 +72,15 @@ div .feature-about-photos img{
     margin:0px;
     padding:0px;
 }
+
+div.feature-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
 
 /*End custom for the About page*/
 
