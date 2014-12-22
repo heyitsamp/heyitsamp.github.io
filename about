@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="build/index.css">
     <link rel="stylesheet" href="css/colorbox.css">
-
+    
     <!-- Favicon stuff -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
@@ -85,43 +85,37 @@
     <!-- no home insertion point required -->
     <div class="insertion-point" id="insert-about"></div><div class="about feature">
   <div class="feature-information">
+    <div class="feature-about-photos">
+        <a href="#">
+            <img src="img/profiles/drew.png">
+            <h3>Drew Donley</h3>
+        </a>
+        <a href="#">
+            <img src="img/profiles/seth.png">
+            <h3>Seth Klein</h3>
+        </a>
+        <a href="#">
+            <img src="img/profiles/bill.png">
+            <h3>Bill Woodruff</h3>
+        </a>
+   </div>
     <div class="feature-text">
-      <ul class="products">
-         <li>
-             <a href="#">
-                 <img src="img/profiles/drew.png">
-                 <h3>Drew Donley</h3>
-             </a>
-         </li>
-         <li>
-             <a href="#">
-                <img src="img/profiles/seth.png">
-                <h3>Seth Klein</h3>
-             </a>
-         </li>
-         <li>
-             <a href="#">
-                <img src="img/profiles/bill.png">
-                <h3>Bill Woodruff</h3>
-             </a>
-         </li>
-       </ul>
          <p>We are a team of diverse thinkers who all share a passion in building the exceptional. Some of us are developers, some are designers, and in the middle our skills blend. We work out of the Portland Pi Company, and hit the maker scene just about every week. We are inspired by timeless work.</p>
         <p>Our focus is the development of well crafted digital experiences and entities, including websites, microsites, games, apps, responsive builds for both web and mobile. We can pretty much build anything. Here are a few of our core skills and offerings:</p>
-<!-- <code><ul id="double"> <span class="code-comment"></span>
-  <li>HTML5</li>
-  <li>CSS</li>
-  <li>Javascript</li>
-  <li>Phonegap</li>
-  <li>Unity</li>
-  <li>PHP</li>
-  <li>Heroku</li>
-  <li>Back End to Front</li>
-  <li>Branding &amp; Identity</li>
-  <li>Strategic Marketing</li>
-  <li>Game Development</li>
-  <li>Prototypes</li>
-</ul></code> -->
+<code><ul id="double"> <span class="code-comment"></span>
+    <li>HTML5</li>
+    <li>CSS</li>
+    <li>Javascript</li>
+    <li>Phonegap</li>
+    <li>Unity</li>
+    <li>PHP</li>
+    <li>Heroku</li>
+    <li>Back End to Front</li>
+    <li>Branding &amp; Identity</li>
+    <li>Strategic Marketing</li>
+    <li>Game Development</li>
+    <li>Prototypes</li>  
+</ul></code>
 
         <p>Drew is an award winning designer, creative leader, startupper with over 15 years experience in digital design, branding and advertising. You can peruse many of the work samples to see how the "recipe" goes deep to find a solution that changes the game.</p>
         <p>Seth's primary language is programming, pretty much all of it, front end to back. He is our technical architect. One of his favorite languages is Go, a new ultra clean framework built by Google.</p>
