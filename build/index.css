@@ -21,6 +21,9 @@ body {
     margin-right: 0px;
 }
 
+h3 {
+    font-size: 9px;
+}
 div.feature {
     float: left;
     width: 100%;
@@ -156,6 +159,38 @@ img.work {
     background-image: url(../img/about/about_bg.png);
     padding-bottom: 50px;
 }
+
+.feature-text img{
+    width: 100px;
+    margin-left: 10px;
+}
+
+ul.products {
+    width: auto
+}
+ul.products li {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    margin-left: 30px;
+    font-size: 9px;
+}
+
+<code>ul{
+  margin-bottom:20px;
+  overflow:hidden;
+
+}
+li{
+  line-height:3em;
+  float:left;
+  display:inline;
+}
+#double li  { width:50%;} <span class="code-comment">/* 2 col */</span>
+#triple li  { width:33.333%; } <span class="code-comment">/* 3 col */</span>
+#quad li    { width:25%; } <span class="code-comment">/* 4 col */</span>
+#six li     { width:16.666%; } <span class="code-comment">/* 6 col */</span></code>
+
 
 /* Half my kingdom for some SCSS. (I don't have a kingdom, so I'm safe.) --SK */
 
