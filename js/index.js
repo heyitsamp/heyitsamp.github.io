@@ -5,7 +5,7 @@
 		revealTime = 500,
 		loadingImage = "img/spiffygif_30x30_360.gif",
 		loadingRevealTime = 500,
-		fakeNetworkDelay = 2000,
+		fakeNetworkDelay = 0,
         colorList = [
 			"color-cyan",
 			"color-green",
