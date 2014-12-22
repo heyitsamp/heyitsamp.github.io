@@ -9,18 +9,7 @@ a, a:visited {
     color: #ccc;
 }
 
-/*
-TODO:
-For the header, text on top of an image is what the big website guys are doing. 
-*/
-
-.flexBox {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
-body{
+body {
     background: black;
     /*When there's padding on the left and right sides,
     when the browser is closed as much as it can go, the Amp
@@ -32,6 +21,9 @@ body{
     margin-right: 0px;
 }
 
+h3 {
+    font-size: 9px;
+}
 div.feature {
     float: left;
     width: 100%;
@@ -54,6 +46,45 @@ div.spinner {
 div.insertion-point {
     display: none;
 }
+
+/*Custom for the About page*/
+@media all and (min-width: 600px) {
+}
+
+div .feature-about-photos{
+    max-width: 90%;
+    text-align: center;
+}
+
+div .feature-about-photos a{
+    display: inline-block;
+}
+
+div .feature-about-photos img{
+    width:100px;
+    margin:10px;
+}
+
+div .feature-about h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 9px;
+}
+
+#skillset ul{
+    margin:0px;
+    padding:0px;
+}
+
+div.feature-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+
+/*End custom for the About page*/
 
 div.feature-information {
     display: flex;
@@ -132,6 +163,11 @@ img.work {
     background-image: url(../img/safdie/safdie_bg.jpg);
 }
 
+.highwire {
+    background-image: url(../img/highwire/highwire_bg.jpg);
+}
+
+
 .labs {
     background-image: url(../img/labs/labs_bg.png);
     padding-bottom: 400px;
@@ -145,6 +181,37 @@ img.work {
     background-image: url(../img/about/about_bg.png);
     padding-bottom: 50px;
 }
+
+.feature-text img{
+    width: 100px;
+    margin-left: 10px;
+}
+
+ul.products {
+    width: auto
+}
+ul.products li {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    margin-left: 30px;
+    font-size: 9px;
+}
+
+code ul{
+  margin-bottom:20px;
+  overflow:hidden;
+}
+li{
+  line-height:3em;
+  float:left;
+  display:inline;
+}
+#  li  { width:50%;} /* 2 col */
+#double li  { width:50%;}/* 2 col */
+#triple li  { width:33.333%; }/* 3 col */
+#quad li    { width:25%; } /* 4 col */
+#six li     { width:16.666%; }/* 6 col */
 
 /* Half my kingdom for some SCSS. (I don't have a kingdom, so I'm safe.) --SK */
 
@@ -278,84 +345,11 @@ header {
     padding-bottom: 30px
 }
 
-.featureBorder {
-    margin-bottom: 0px;
-    background: black;
-    padding-top: 0px;
-    /*padding-bottom: 20px;*/
-    padding-left: 16px;
-    padding-right: 16px;
-    border: none;
-    border-top: 1px solid #2e2e2e;
-    height: 1px;
-}
-
 #feature {
-    color:white;
+    color: white;
     padding-left: 32px;
     padding-right: 32px;
     padding-bottom: 16px;
-}
-
-.featureRightColumn{
-    display:flex-inline;
-    flex-flow: column;
-    flex-wrap: no-wrap;
-    max-width: 300px;
-}
-
-.featureImageGroup{
-    display:flex;
-    flex-flow: column;
-    flex-wrap: wrap;
-}
-
-.featureImageGroup > *{
-    padding-bottom: 16px;
-    padding-top: 16px;
-    min-width:100%;
-    max-width:100%;
-    width: 100%;
-    height: auto;
-}
-
-.featureText{
-    font-size: 10pt;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-color: #ff0000;
-    
-    white-space: normal;
-    padding-right: 16px;
-    padding-left: 8px;
-    padding-top: 8px;
-    width: 250px;
-}
-
-.featureLogo{
-    margin-top: 100px;
-    margin-right: 30px;
-    width: 163px;
-}
-
-/*This is needed to remove the margin for when the logo
-goes on top of the feature text!!!!*/
-@media all and (max-width: 548px) {
-    .featureLogo{
-        margin-top: 0px;
-    }
-}
-
-#featureSectionBottomBorderContainer {
-    margin:0px;
-    padding:0px;
-    width: 100%;
-    height: auto;
-}
-
-#everythingBelowFeatureSection{
-    position: absolute;
-    z-index: 2;
 }
 
 /* class for a block of tiles */
@@ -424,6 +418,10 @@ goes on top of the feature text!!!!*/
     background: #ff0066;
 }
 
+#highwire {
+    background: #00ff33;
+}
+
 #coca-cola {
     background: #ff9900;
 }
@@ -459,6 +457,7 @@ goes on top of the feature text!!!!*/
     background: #ccff00;
     
 }
+
 footer{
     font-family: 'Roboto', sans-serif;
     font-size: 9pt;

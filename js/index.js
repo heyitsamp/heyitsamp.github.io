@@ -3,8 +3,9 @@
     "use strict";
     var scrollTime = 500,
 		revealTime = 500,
-		loadingImage = "img/colorbox/loading.gif",
-		loadingRevealTime = 50,
+		loadingImage = "img/spiffygif_30x30_360.gif",
+		loadingRevealTime = 500,
+		fakeNetworkDelay = 2000,
         colorList = [
 			"color-cyan",
 			"color-green",
@@ -67,10 +68,10 @@
 		var spinner = $("<div class=spinner><img src=\""+loadingImage+"\" /></div>")
 			.hide()
 			.insertAfter("#insert-"+feature)
-			.slideDown(loadingRevealTime);
+			.fadeIn(loadingRevealTime);
 
 		var href = "features/" + feature + ".html";
-		$.ajax({
+		window.setTimeout(function() { $.ajax({
 			url: href,
 			dataType: "html",
 			error: function(xhr) {
@@ -84,7 +85,7 @@
 				return;
 			},
 			success: function(data) {
-				spinner.slideUp({
+				spinner.fadeOut({
 					duration: loadingRevealTime,
 					queue: false,
 					complete: function() {
@@ -97,7 +98,7 @@
 					.slideDown(revealTime);
 				$("div.feature-images a").colorbox(colorboxOptions);
 			}
-		});
+		}); }, fakeNetworkDelay);
     };
     
 	if (historySupport) {
