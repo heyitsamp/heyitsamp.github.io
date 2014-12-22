@@ -4,7 +4,7 @@
     var scrollTime = 500,
 		revealTime = 500,
 		loadingImage = "img/spiffygif_30x30_360.gif",
-		loadingRevealTime = 500,
+		loadingRevealTime = 50,
 		fakeNetworkDelay = 0,
         colorList = [
 			"color-cyan",
