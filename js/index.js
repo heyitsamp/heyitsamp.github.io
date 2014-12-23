@@ -96,12 +96,17 @@
 					.hide()
 					.insertAfter(spinner)
 					.slideDown(revealTime)
-					.find("img.work")
-						.hide()
-						.on("load", function() {
-							$(this)
-								.slideDown(revealTime);
-						});
+					.find("img.work").each(function() {
+						var $img = $(this);
+						if ($img.complete) {
+							return;
+						}
+						$img.hide()
+							.on("load", function() {
+								$(this)
+									.slideDown(revealTime);
+							});
+					});
 				$("div.feature-images a").colorbox(colorboxOptions);
 			}
 		}); }, fakeNetworkDelay);
