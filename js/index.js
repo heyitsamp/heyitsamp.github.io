@@ -95,7 +95,13 @@
 				$(data)
 					.hide()
 					.insertAfter(spinner)
-					.slideDown(revealTime);
+					.slideDown(revealTime)
+					.find("img.work")
+						.hide()
+						.on("load", function() {
+							$(this)
+								.slideDown(revealTime);
+						});
 				$("div.feature-images a").colorbox(colorboxOptions);
 			}
 		}); }, fakeNetworkDelay);
