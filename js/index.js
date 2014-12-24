@@ -97,11 +97,10 @@
 					.insertAfter(spinner)
 					.slideDown(revealTime)
 					.find("img.work").each(function() {
-						var $img = $(this);
-						if ($img.complete) {
+						if (this.complete) {
 							return;
 						}
-						$img.hide()
+						$(this).hide()
 							.on("load", function() {
 								$(this)
 									.slideDown(revealTime);
