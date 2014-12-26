@@ -151,7 +151,7 @@
 			history.pushState(null, null, $(this).attr("href"));
 			updateFeature();
 		});
-		$("nav a, footer a").on("click", function(event) {
+		$("nav a, footer a, #logo").on("click", function(event) {
 			if (!historySupport) {
 				// let the browser treat it like a regular link
 				return;

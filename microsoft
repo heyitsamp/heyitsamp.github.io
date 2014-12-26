@@ -34,8 +34,7 @@
 <body>
     <header>
         <div id="logoLockup">
-            <div id="logoImgContainer">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <div id="logoImgContainer"><a id="logo" href="."><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="233.5px" height="82px" viewBox="-117.649 -24.833 233.5 82" enable-background="new -117.649 -24.833 233.5 82"
 	 xml:space="preserve">
 <g id="Layer_2">
@@ -88,9 +87,7 @@
 	<path fill="#FFFFFF" d="M-61.198,12.261c-6.514,0-11.812,5.3-11.812,11.812c0,6.514,5.298,11.812,11.812,11.812
 		c6.513,0,11.812-5.298,11.812-11.812C-49.385,17.561-54.685,12.261-61.198,12.261z"/>
 </g>
-</svg>
-
-            </div>
+</svg></a></div>
             <div id="logoText" color="#fff">
                 Welcome. This site utilizes our custom crafted responsive template we call "Candystore". Please have a look around, it is populated with a portfolio of our favorite works.
             </div>
