@@ -383,6 +383,10 @@ header {
     margin: 5.673759%;
     border-radius: 5.673759%;
 }
+.tiles a img {
+    /* needed for ie 10, but not for ie 11 */
+    border: none;
+}
 /* index tiles specific stuff */
 #tiles > .size > .aspect > a {
     /* keep logo images off edges of tiles */
