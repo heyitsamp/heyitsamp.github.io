@@ -123,6 +123,7 @@ img.feature-logo {
 div.feature {
     background-repeat: no-repeat;
     background-position: center;
+    text-align: center;
 }
 img.work {
     max-width: 100%;
@@ -170,13 +171,10 @@ img.work {
 
 
 .labs {
-    background-image: url(../img/labs/labs_bg.png);
-    padding-bottom: 400px;
+    background-image: url(../img/labs/labs_bg.jpg);
 }
 
 .contact {
-    background-image: url(../img/contact/contact_bg.png);
-    padding-bottom: 200px;
 }
 .about {
     background-image: url(../img/about/about_bg.png);
