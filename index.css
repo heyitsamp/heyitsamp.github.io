@@ -123,6 +123,7 @@ img.feature-logo {
 div.feature {
     background-repeat: no-repeat;
     background-position: center;
+    text-align: center;
 }
 img.work {
     max-width: 100%;
