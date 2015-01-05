@@ -40,6 +40,7 @@
 <g id="Layer_2">
 </g>
 <g>
+	<title>Amp</title>
 	<path fill="#FFFFFF" d="M-18.667,29.006h-4.45v-1.226h1.458v-4.378l-1.494,0.324v-1.256l3.039-0.614v5.924h1.447V29.006z"/>
 	<path fill="#FFFFFF" d="M-12.69,29.006h-4.446v-1.226h1.455v-4.378l-1.495,0.324v-1.256l3.039-0.614v5.924h1.447V29.006z"/>
 </g>
@@ -107,35 +108,35 @@
   <div id="tiles" class="tiles"><div
     class="size"><div class="aspect"><a
     id="disney" href="disney"><span class="align"><img
-      src="img/index/disney.svg"></a></span></div></div><div
+      alt="Disney" src="img/index/disney.svg"></a></span></div></div><div
       class="insertion-point" id="insert-disney"></div><div
     class="size"><div class="aspect"><a 
     id="atomic" href="atomic"><span class="align"><img
-      src="img/index/atomic.svg"></span></a></div></div><div
+      alt="Atomic" src="img/index/atomic.svg"></span></a></div></div><div
       class="insertion-point" id="insert-atomic"></div><div
     class="size"><div class="aspect"><a
     id="microsoft" href="microsoft"><span class="align"><img
-      src="img/index/microsoft.svg"></span></a></div></div><div
+      alt="Microsoft" src="img/index/microsoft.svg"></span></a></div></div><div
       class="insertion-point" id="insert-microsoft"></div><div
     class="size"><div class="aspect"><a
     id="tapout" href="tapout"><span class="align"><img
-      src="img/index/tapout.png"></span></a></div></div><div
+      alt="Tap Out" src="img/index/tapout.png"></span></a></div></div><div
       class="insertion-point" id="insert-tapout"></div><div
     class="size"><div class="aspect"><a
     id="safdie" href="safdie"><span class="align"><img
-      src="img/index/safdie.svg"></span></a></div></div><div
+      alt="Safdie Architects" src="img/index/safdie.svg"></span></a></div></div><div
       class="insertion-point" id="insert-safdie"></div><div
     class="size"><div class="aspect"><a
     id="coca-cola" href="coca-cola"><span class="align"><img
-      src="img/index/cocacola.svg"></span></a></div></div><div
+      alt="Coca-Cola" src="img/index/cocacola.svg"></span></a></div></div><div
       class="insertion-point" id="insert-coca-cola"></div><div
     class="size"><div class="aspect"><a
     id="eb" href="eb"><span class="align"><img
-      src="img/index/eb.svg"></span></a></div></div><div
+      alt="Eddie Bauer" src="img/index/eb.svg"></span></a></div></div><div
       class="insertion-point" id="insert-eb"></div><div
     class="size"><div class="aspect"><a
     id="kmd" href="kmd"><span class="align"><img
-      src="img/index/kmd.svg"></span></a></div></div><div
+      alt="KMD" src="img/index/kmd.svg"></span></a></div></div><div
       class="insertion-point" id="insert-kmd"></div><div class="kmd feature">
   <div class="feature-information">
     <img class="feature-logo" src="img/index/kmd.svg" />
@@ -147,23 +148,23 @@
 </div><div
     class="size"><div class="aspect"><a
     id="pg" href="pg"><span class="align"><img
-      src="img/index/pg.svg"></span></a></div></div><div
+      alt="PG" src="img/index/pg.svg"></span></a></div></div><div
       class="insertion-point" id="insert-pg"></div><div
     class="size"><div class="aspect"><a
     id="gov" href="gov"><span class="align"><img
-      src="img/index/gov.svg"></span></a></div></div><div
+      alt="RECOVERY.gov" src="img/index/gov.svg"></span></a></div></div><div
       class="insertion-point" id="insert-gov"></div><!--<div
     class="size"><div class="aspect"><a
     id="usjets" href="usjets"><span class="align"><img
-      src="img/index/usjets.svg"></span></a></div></div><div
+      alt="US Jets" src="img/index/usjets.svg"></span></a></div></div><div
       class="insertion-point" id="insert-usjets"></div>--><div
     class="size"><div class="aspect"><a
     id="highwire" href="highwire"><span class="align"><img
-      src="img/index/highwire.svg"></span></a></div></div><div
+      alt="High Wire Hydroponics" src="img/index/highwire.svg"></span></a></div></div><div
       class="insertion-point" id="insert-highwire"></div><div
     class="size"><div class="aspect"><a
     id="pi" href="pi"><span class="align"><img
-      src="img/index/pi.svg"></span></a></div></div><div
+      alt="PI Glass" src="img/index/pi.svg"></span></a></div></div><div
       class="insertion-point" id="insert-pi"></div></div>
 
     <footer>
