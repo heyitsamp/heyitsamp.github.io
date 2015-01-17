@@ -125,7 +125,27 @@
   <div class="feature-information">
     <img class="feature-logo" src="img/index/tapout.png" />
     <div class="feature-text">
-      <p>Our first mobile app title, <a href="https://play.google.com/store/apps/details?id=com.heyitsamp.tapout">Tap Out</a>, is a free, rushing, tapping, button mashing game for a single player. See how many taps you can tap out before time runs out. Find it on the <a href="https://play.google.com/store/apps/details?id=com.heyitsamp.tapout">Google Play Store</a>.</p>
+      <p>
+        <a href="https://play.google.com/store/apps/details?id=com.heyitsamp.tapout">Tap Out</a>
+	is a little mobile game we made quite by accident while doing
+	something else. Since it was fun, we published it! The goal is
+	to make as many taps as you can in five seconds. It's great for
+	challenging friends with newer and better techniques and then
+	bringing them together around a larger phone or tablet for even
+	higher scores.
+      </p>
+      <p>
+        Tap Out has been through three versions, the first two under another
+	name. Version one was implemented in
+	<a href="http://phonegap.com/">PhoneGap</a>. Version two switched to
+	<a href="http://unity3d.com/">Unity</a>. Seth had that finished a week
+	after picking up Unity and
+	<a href="http://en.wikipedia.org/wiki/C_Sharp_%28programming_language%29">C#</a>
+	for the first time. Version three was a
+	<a href="http://en.wikipedia.org/wiki/User_experience_design">UX</a>
+	pass and brought the game to it's current state where we find people
+	can just pick it up and play with no extra explanation.
+      </p>
     </div>
   </div>
   <img class="work" src="img/tapout/tapout_work.png" />
