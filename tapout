@@ -121,34 +121,36 @@
     class="size"><div class="aspect"><a
     id="tapout" href="tapout"><span class="align"><img
       alt="Tap Out" src="img/index/tapout.png"></span></a></div></div><div
-      class="insertion-point" id="insert-tapout"></div><div class="tapout feature">
-  <div class="feature-information">
-    <img class="feature-logo" src="img/index/tapout.png" />
-    <div class="feature-text">
-      <p>
-        <a href="https://play.google.com/store/apps/details?id=com.heyitsamp.tapout">Tap Out</a>
-	is a little mobile game we made quite by accident while doing
-	something else. Since it was fun, we published it! The goal is
-	to make as many taps as you can in five seconds. It's great for
-	challenging friends with newer and better techniques and then
-	bringing them together around a larger phone or tablet for even
-	higher scores.
-      </p>
-      <p>
-        Tap Out has been through three versions, the first two under another
-	name. Version one was implemented in
-	<a href="http://phonegap.com/">PhoneGap</a>. Version two switched to
-	<a href="http://unity3d.com/">Unity</a>. Seth had that finished a week
-	after picking up Unity and
-	<a href="http://en.wikipedia.org/wiki/C_Sharp_%28programming_language%29">C#</a>
-	for the first time. Version three was a
-	<a href="http://en.wikipedia.org/wiki/User_experience_design">UX</a>
-	pass and brought the game to it's current state where we find people
-	can just pick it up and play with no extra explanation.
-      </p>
+      class="insertion-point" id="insert-tapout"></div><div class="slide">
+  <div class="tapout feature">
+    <div class="feature-information">
+      <img class="feature-logo" src="img/index/tapout.png" />
+      <div class="feature-text">
+	<p>
+	  <a href="https://play.google.com/store/apps/details?id=com.heyitsamp.tapout">Tap Out</a>
+	  is a little mobile game we made quite by accident while doing
+	  something else. Since it was fun, we published it! The goal is
+	  to make as many taps as you can in five seconds. It's great for
+	  challenging friends with newer and better techniques and then
+	  bringing them together around a larger phone or tablet for even
+	  higher scores.
+	</p>
+	<p>
+	  Tap Out has been through three versions, the first two under another
+	  name. Version one was implemented in
+	  <a href="http://phonegap.com/">PhoneGap</a>. Version two switched to
+	  <a href="http://unity3d.com/">Unity</a>. Seth had that finished a week
+	  after picking up Unity and
+	  <a href="http://en.wikipedia.org/wiki/C_Sharp_%28programming_language%29">C#</a>
+	  for the first time. Version three was a
+	  <a href="http://en.wikipedia.org/wiki/User_experience_design">UX</a>
+	  pass and brought the game to it's current state where we find people
+	  can just pick it up and play with no extra explanation.
+	</p>
+      </div>
     </div>
+    <img class="work" src="img/tapout/tapout_work.png" />
   </div>
-  <img class="work" src="img/tapout/tapout_work.png" />
 </div><div
     class="size"><div class="aspect"><a
     id="safdie" href="safdie"><span class="align"><img
@@ -187,17 +189,19 @@
       alt="PI Glass" src="img/index/pi.svg"></span></a></div></div><div
       class="insertion-point" id="insert-pi"></div></div>
 
-    <footer>
-        <span id="copyright">&copy;2014</span>
-        |
-        <a href="contact" id="contact-footer">CONTACT</a>
-        |
-        <div id="backToTopBtnContainer">
-            <span id="backToTopText">BACK TO THE TOP</span>
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="38px" height="38px" viewBox="0 0 38 38" enable-background="new 0 0 38 38" xml:space="preserve">
-                <path class="backToTopSvgElement" fill="#FFFFFF" d="M18.933,0.264c-10.242,0-18.545,8.303-18.545,18.545s8.303,18.545,18.545,18.545s18.545-8.303,18.545-18.545
-	S29.175,0.264,18.933,0.264z M21.5,19.667v10.885h-5.133V19.667H6.149L18.933,6.883l12.785,12.783H21.5z"/>
-            </svg>
-        </div>
-    </footer>
+    <div class="scroll-simplifier">
+      <footer>
+	  <span id="copyright">&copy;2014</span>
+	  |
+	  <a href="contact" id="contact-footer">CONTACT</a>
+	  |
+	  <div id="backToTopBtnContainer">
+	      <span id="backToTopText">BACK TO THE TOP</span>
+	      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="38px" height="38px" viewBox="0 0 38 38" enable-background="new 0 0 38 38" xml:space="preserve">
+		  <path class="backToTopSvgElement" fill="#FFFFFF" d="M18.933,0.264c-10.242,0-18.545,8.303-18.545,18.545s8.303,18.545,18.545,18.545s18.545-8.303,18.545-18.545
+	  S29.175,0.264,18.933,0.264z M21.5,19.667v10.885h-5.133V19.667H6.149L18.933,6.883l12.785,12.783H21.5z"/>
+	      </svg>
+	  </div>
+      </footer>
+    </div>
 </body>
